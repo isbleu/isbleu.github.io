@@ -1,0 +1,622 @@
+// questions.js
+const allUnitsData = {
+    "unit1": {
+      "name": "Unit 1: Some Strategies for Learning English", // [cite: 1]
+      "wordTranslationCtoE": [
+        { "id": "u1_w_001", "type": "CtoE_word", "question": "汲取；吸收", "answer": "absorb", "options": [] }, // [cite: 1]
+        { "id": "u1_w_002", "type": "CtoE_word", "question": "对（某人某事的）了解；认识；熟人", "answer": "acquaintance", "options": [] }, // [cite: 1]
+        { "id": "u1_w_003", "type": "CtoE_word", "question": "分配（任务）给某人", "answer": "assign", "options": [] }, // [cite: 1]
+        { "id": "u1_w_004", "type": "CtoE_word", "question": "知道的；意识到的", "answer": "aware", "options": [] }, // [cite: 1, 2]
+        { "id": "u1_w_005", "type": "CtoE_word", "question": "掌握，运用能力", "answer": "command", "options": [] }, // [cite: 2]
+        { "id": "u1_w_006", "type": "CtoE_word", "question": "做出（错或非法的事）；犯（罪或错等）", "answer": "commit", "options": [] }, // [cite: 2]
+        { "id": "u1_w_007", "type": "CtoE_word", "question": "交流情况（消息、思想等）； 沟通", "answer": "communicate", "options": [] }, // [cite: 2]
+        { "id": "u1_w_008", "type": "CtoE_word", "question": "抱怨", "answer": "complain", "options": [] }, // [cite: 2]
+        { "id": "u1_w_009", "type": "CtoE_word", "question": "集中注意力，专心", "answer": "concentrate (on)", "options": [] }, // [cite: 2]
+        { "id": "u1_w_010", "type": "CtoE_word", "question": "经常（发生）的，不断的", "answer": "constant", "options": [] }, // [cite: 2]
+        { "id": "u1_w_011", "type": "CtoE_word", "question": "有效的", "answer": "effective", "options": [] }, // [cite: 2]
+        { "id": "u1_w_012", "type": "CtoE_word", "question": "扩大，放大；变大", "answer": "enlarge", "options": [] }, // [cite: 2]
+        { "id": "u1_w_013", "type": "CtoE_word", "question": "环境；自然（生态）环境", "answer": "environment", "options": [] }, // [cite: 2, 3]
+        { "id": "u1_w_014", "type": "CtoE_word", "question": "处理，对付，控制", "answer": "handle", "options": [] }, // [cite: 3]
+        { "id": "u1_w_015", "type": "CtoE_word", "question": "方法，手段", "answer": "means", "options": [] }, // [cite: 3]
+        { "id": "u1_w_016", "type": "CtoE_word", "question": "然而，尽管如此", "answer": "nevertheless", "options": [] }, // [cite: 3]
+        { "id": "u1_w_017", "type": "CtoE_word", "question": "机会", "answer": "opportunity", "options": [] }, // [cite: 3]
+        { "id": "u1_w_018", "type": "CtoE_word", "question": "过程", "answer": "process", "options": [] }, // [cite: 3]
+        { "id": "u1_w_019", "type": "CtoE_word", "question": "购买；购置物", "answer": "purchase", "options": [] }, // [cite: 3]
+        { "id": "u1_w_020", "type": "CtoE_word", "question": "可靠的", "answer": "reliable", "options": [] }, // [cite: 3]
+        { "id": "u1_w_021", "type": "CtoE_word", "question": "策略", "answer": "strategy", "options": [] }, // [cite: 3, 4]
+        { "id": "u1_w_022", "type": "CtoE_word", "question": "总结；概括，概述", "answer": "summarize", "options": [] } // [cite: 4]
+      ],
+      "phraseTranslationEtoC": [
+        { "id": "u1_p_001", "type": "EtoC_phrase", "question": "apart from", "answer": "除…外（还有）", "options": [] }, // [cite: 4]
+        { "id": "u1_p_002", "type": "EtoC_phrase", "question": "at a time", "answer": "每次，一次", "options": [] }, // [cite: 4]
+        { "id": "u1_p_003", "type": "EtoC_phrase", "question": "be bound to", "answer": "肯定会", "options": [] }, // [cite: 4]
+        { "id": "u1_p_004", "type": "EtoC_phrase", "question": "by no means", "answer": "决不", "options": [] }, // [cite: 4]
+        { "id": "u1_p_005", "type": "EtoC_phrase", "question": "in addition to", "answer": "除…外（还有）", "options": [] }, // [cite: 4]
+        { "id": "u1_p_006", "type": "EtoC_phrase", "question": "in detail", "answer": "详细地", "options": [] }, // [cite: 4]
+        { "id": "u1_p_007", "type": "EtoC_phrase", "question": "on a regular/daily/weekly basis", "answer": "经常/每天/每周", "options": [] }, // [cite: 4]
+        { "id": "u1_p_008", "type": "EtoC_phrase", "question": "over and over again", "answer": "反复，多次", "options": [] }, // [cite: 4]
+        { "id": "u1_p_009", "type": "EtoC_phrase", "question": "put … into practice", "answer": "把…付诸实践", "options": [] }, // [cite: 4]
+        { "id": "u1_p_010", "type": "EtoC_phrase", "question": "seek out", "answer": "寻找，找出", "options": [] }, // [cite: 4]
+        { "id": "u1_p_011", "type": "EtoC_phrase", "question": "watch out for", "answer": "密切注意", "options": [] } // [cite: 4]
+      ],
+      "sentenceTranslationCtoE": [
+        { "id": "u1_s_001", "type": "CtoE_sentence", "question": "史密斯太太对我抱怨说，她经常发现与自己十六岁的女儿简直无法沟通。", "answer": "Mrs. Smith complained to me that she often found it simply impossible to communicate with her 16-year-old daughter.", "options": [] }, // [cite: 4]
+        { "id": "u1_s_002", "type": "CtoE_sentence", "question": "我坚信，阅读简写的英文小说是扩大我们词汇量的一种轻松愉快的方法。", "answer": "I firmly believe that reading simplified English novels is an easy and enjoyable way of enlarging our vocabulary.", "options": [] }, // [cite: 5]
+        { "id": "u1_s_003", "type": "CtoE_sentence", "question": "我认为我们在保护环境不受污染方面还做的不够。", "answer": "I don’t think we’re doing enough to protect our environment from pollution.", "options": [] }, // [cite: 6]
+        { "id": "u1_s_004", "type": "CtoE_sentence", "question": "经常看电影不仅会提高你的听力，而且还会帮助你培养说的技能。", "answer": "Seeing English movies on a regular basis will not only improve your ear, but will also help you build your speaking skills.", "options": [] }, // [cite: 7]
+        { "id": "u1_s_005", "type": "CtoE_sentence", "question": "如果你们对这些学习策略有什么问题，请随便问我。我将更详细地进行讲解。", "answer": "If you have any questions about these learning strategies, please feel free to ask me. And I’ll explain them in greater detail.", "options": [] } // [cite: 8, 9]
+      ],
+      "passageTranslationEtoC": [
+        {
+          "id": "u1_psg_001",
+          "type": "EtoC_passage",
+          "question": "Do not treat all new words in exactly the same way. Have you ever complained about your memory because you find it simply impossible to memorize all the new words you are learning? But, in fact, it is not your memory that is at fault. If you cram your head with too many new words at a time, some of them are bound to be crowded out. What you need to do is to deal with new words in different ways according to how frequently they occur in everyday use. While active words demand constant practice and useful words must be committed to memory, words that do not often occur in everyday situations require just a nodding acquaintance. You will find concentrating on active and useful words the most effective route to enlarge your vocabulary.", // [cite: 9, 10, 11, 12, 13, 14, 15]
+          "answer": "不要以完全同样的方式对待所有的生词。你可曾因为简直无法记住所学的所有生词而抱怨自己的记忆力太差？其实，责任并不在你的记忆力。如果你一下子把太多的生词塞进头脑，必定有一些生词会被挤出来。你需要做的是根据生词日常使用的频率以不同的方式对待它们。积极词汇需要经常练习，有用的词汇必须牢记，而在日常情况下不常出现的词只需见到时认识即可。你会发现把注意力集中于积极有用的词上是扩大词汇量最有效的途径。", // [cite: 16]
+          "options": []
+        }
+      ],
+      "multipleChoice": [
+        { "id": "u1_mc_001", "type": "MCQ", "question": "It pays to ________ as much as you can from reading and listening.", "options": ["absorb", "arrange", "assign", "accomplish"], "answer": "absorb" }, // [cite: 17]
+        { "id": "u1_mc_002", "type": "MCQ", "question": "Frankly speaking, he and I are not real friends, only nodding ________.", "options": ["findings", "means", "acquaintances", "observations"], "answer": "acquaintances" }, // [cite: 18]
+        { "id": "u1_mc_003", "type": "MCQ", "question": "It is said that the female reporter was ________ to cover the war in Iraq.", "options": ["complained", "applied", "handled", "assigned"], "answer": "assigned" }, // [cite: 19]
+        { "id": "u1_mc_004", "type": "MCQ", "question": "The naughty boy has no ________ over himself.", "options": ["opportunity", "process", "command", "strategy"], "answer": "command" }, // [cite: 19]
+        { "id": "u1_mc_005", "type": "MCQ", "question": "Can you ________ to memory all the main points of the lecture?", "options": ["concentrate", "commit", "communicate", "compose"], "answer": "commit" }, // [cite: 20]
+        { "id": "u1_mc_006", "type": "MCQ", "question": "The two friends haven't ________ with each other for years.", "options": ["operated", "graduated", "purchased", "communicated"], "answer": "communicated" }, // [cite: 21]
+        { "id": "u1_mc_007", "type": "MCQ", "question": "Neighbors ________ to the police about the noise from the building site.", "options": ["complained", "recognized", "suspected", "composed"], "answer": "complained" }, // [cite: 22]
+        { "id": "u1_mc_008", "type": "MCQ", "question": "Many firms are ________ on increasing their markets overseas.", "options": ["exposing", "illustrating", "concentrating", "purchasing"], "answer": "concentrating" }, // [cite: 22]
+        { "id": "u1_mc_009", "type": "MCQ", "question": "Her clinic has a ________ stream of parents wanting help.", "options": ["instant", "positive", "social", "constant"], "answer": "constant" }, // [cite: 23]
+        { "id": "u1_mc_010", "type": "MCQ", "question": "The new drug is much more ________ in treating headaches.", "options": ["effective", "absolute", "content", "evident"], "answer": "effective" }, // [cite: 23]
+        { "id": "u1_mc_011", "type": "MCQ", "question": "What is the best way to ________ our vocabulary?", "options": ["publish", "enlarge", "waken", "involve"], "answer": "enlarge" }, // [cite: 24]
+        { "id": "u1_mc_012", "type": "MCQ", "question": "An unhappy home ________ can affect a child's behavior.", "options": ["circumstances", "environment", "surroundings", "neighbor"], "answer": "environment" }, // [cite: 24]
+        { "id": "u1_mc_013", "type": "MCQ", "question": "You should learn to ________ the situation in the right way.", "options": ["handle", "promote", "shift", "invent"], "answer": "handle" }, // [cite: 25]
+        { "id": "u1_mc_014", "type": "MCQ", "question": "I'll have an ________ to visit the Bund when I'm in Shanghai.", "options": ["emotion", "entertainment", "approach", "opportunity"], "answer": "opportunity" }, // [cite: 25]
+        { "id": "u1_mc_015", "type": "MCQ", "question": "We can't act on your advice. ________, thank you for giving it.", "options": ["Eventually", "Occasionally", "Nevertheless", "Reluctantly"], "answer": "Nevertheless" }, // [cite: 25, 26]
+        { "id": "u1_mc_016", "type": "MCQ", "question": "They have started the ________ for establishing a new office.", "options": ["network", "package", "foundation", "process"], "answer": "process" }, // [cite: 27]
+        { "id": "u1_mc_017", "type": "MCQ", "question": "He gave his son some money for the ________ of his school books.", "options": ["benefit", "occasion", "purchase", "intention"], "answer": "purchase" }, // [cite: 28]
+        { "id": "u1_mc_018", "type": "MCQ", "question": "It is said that the news comes from ________ sources.", "options": ["efficient", "reliable", "prosperous", "worthwhile"], "answer": "reliable" }, // [cite: 28]
+        { "id": "u1_mc_019", "type": "MCQ", "question": "The government has no long-term ________ for reducing crime.", "options": ["strategy", "string", "sample", "stretch"], "answer": "strategy" }, // [cite: 29]
+        { "id": "u1_mc_020", "type": "MCQ", "question": "To ________, I agree with a large part of his argument.", "options": ["qualify", "summarize", "arrange", "expose"], "answer": "summarize" }, // [cite: 30]
+        { "id": "u1_mc_021", "type": "MCQ", "question": "________ his earnings as a football coach, he also runs a sports shop.", "options": ["In terms of", "Far from", "Except for", "Apart from"], "answer": "Apart from" }, // [cite: 31]
+        { "id": "u1_mc_022", "type": "MCQ", "question": "When you are handling so many affairs at a time, mistakes ________ happen.", "options": ["face up to", "look up to", "are bound to", "are able to"], "answer": "are bound to" }, // [cite: 32]
+        { "id": "u1_mc_023", "type": "MCQ", "question": "In the sentence \"Learning English is by no means easy\", \"by no means\" means ________.", "options": ["without method", "not at all", "absolutely", "above all"], "answer": "not at all" }, // [cite: 33]
+        { "id": "u1_mc_024", "type": "MCQ", "question": "________ his flat in London, he has a villa （别墅）. in Scotland.", "options": ["In addition to", "According to", "With respect to", "Owing to"], "answer": "In addition to" }, // [cite: 34]
+        { "id": "u1_mc_025", "type": "MCQ", "question": "Most of these topics have been discussed ________ at the meeting.", "options": ["in practice", "at fault", "by no means", "in detail"], "answer": "in detail" }, // [cite: 35]
+        { "id": "u1_mc_026", "type": "MCQ", "question": "The milkman delivers us milk ________.", "options": ["at a time", "on a regular basis", "with little effect", "for a while"], "answer": "on a regular basis" }, // [cite: 36]
+        { "id": "u1_mc_027", "type": "MCQ", "question": "They played the same record ________.", "options": ["over and over again", "a great deal", "hand in hand", "all of a sudden"], "answer": "over and over again" }, // [cite: 37]
+        { "id": "u1_mc_028", "type": "MCQ", "question": "The law should be ________ as soon as possible.", "options": ["out of the question", "made a difference", "put into practice", "out of place"], "answer": "put into practice" }, // [cite: 38]
+        { "id": "u1_mc_029", "type": "MCQ", "question": "You can ________ opportunities to practice speaking the language.", "options": ["look out", "seek out", "turn out", "carry out"], "answer": "seek out" }, // [cite: 39]
+        { "id": "u1_mc_030", "type": "MCQ", "question": "________ cars when you are crossing the road.", "options": ["Look forward to", "Put up with", "Go ahead with", "Watch out for"], "answer": "Watch out for" } // [cite: 40]
+      ]
+    },
+    "unit2": {
+      "name": "Unit 2: Sailing Round the World", // [cite: 40]
+      "wordTranslationCtoE": [
+        { "id": "u2_w_001", "type": "CtoE_word", "question": "完成", "answer": "accomplish", "options": [] }, // [cite: 40]
+        { "id": "u2_w_002", "type": "CtoE_word", "question": "征服", "answer": "conquer", "options": [] }, // [cite: 40, 41]
+        { "id": "u2_w_003", "type": "CtoE_word", "question": "联系，接触", "answer": "contact", "options": [] }, // [cite: 41]
+        { "id": "u2_w_004", "type": "CtoE_word", "question": "行过（一段距离）", "answer": "cover", "options": [] }, // [cite: 41]
+        { "id": "u2_w_005", "type": "CtoE_word", "question": "设备；装置", "answer": "device", "options": [] }, // [cite: 41, 42, 43]
+        { "id": "u2_w_006", "type": "CtoE_word", "question": "拖，拉", "answer": "drag", "options": [] }, // [cite: 43]
+        { "id": "u2_w_007", "type": "CtoE_word", "question": "接着的；下列的", "answer": "following", "options": [] }, // [cite: 43, 44]
+        { "id": "u2_w_008", "type": "CtoE_word", "question": "幸运地；幸亏", "answer": "fortunately", "options": [] }, // [cite: 44, 45]
+        { "id": "u2_w_009", "type": "CtoE_word", "question": "此外；而且", "answer": "moreover", "options": [] }, // [cite: 45, 46]
+        { "id": "u2_w_010", "type": "CtoE_word", "question": "在附近", "answer": "nearby", "options": [] }, // [cite: 46, 47]
+        { "id": "u2_w_011", "type": "CtoE_word", "question": "噩梦", "answer": "nightmare", "options": [] }, // [cite: 47, 48]
+        { "id": "u2_w_012", "type": "CtoE_word", "question": "以前", "answer": "previous", "options": [] }, // [cite: 48, 49]
+        { "id": "u2_w_013", "type": "CtoE_word", "question": "退休", "answer": "retire", "options": [] }, // [cite: 49]
+        { "id": "u2_w_014", "type": "CtoE_word", "question": "无疑地", "answer": "undoubtedly", "options": [] }, // [cite: 49, 50]
+        { "id": "u2_w_015", "type": "CtoE_word", "question": "航海；航行", "answer": "voyage", "options": [] }, // [cite: 50, 51]
+        { "id": "u2_w_016", "type": "CtoE_word", "question": "唤醒；醒来", "answer": "waken", "options": [] } // [cite: 51]
+      ],
+      "phraseTranslationEtoC": [
+        { "id": "u2_p_001", "type": "EtoC_phrase", "question": "be determined to (do sth.)", "answer": "决心（做某事）", "options": [] }, // [cite: 52]
+        { "id": "u2_p_002", "type": "EtoC_phrase", "question": "by far", "answer": "…得多", "options": [] }, // [cite: 52]
+        { "id": "u2_p_003", "type": "EtoC_phrase", "question": "can not help", "answer": "禁不住", "options": [] }, // [cite: 52]
+        { "id": "u2_p_004", "type": "EtoC_phrase", "question": "give up", "answer": "放弃", "options": [] }, // [cite: 52]
+        { "id": "u2_p_005", "type": "EtoC_phrase", "question": "in spite of", "answer": "尽管；虽然", "options": [] }, // [cite: 52]
+        { "id": "u2_p_006", "type": "EtoC_phrase", "question": "set out", "answer": "着手，开始", "options": [] }, // [cite: 52, 53]
+        { "id": "u2_p_007", "type": "EtoC_phrase", "question": "turn over", "answer": "（使）翻倒，（使）倾覆", "options": [] } // [cite: 53]
+      ],
+      "sentenceTranslationCtoE": [
+        { "id": "u2_s_001", "type": "CtoE_sentence", "question": "幸好附近有家医院，我们立即把他送到了那里。", "answer": "Fortunately there was a hospital nearby and we took him there at once.", "options": [] }, // [cite: 54]
+        { "id": "u2_s_002", "type": "CtoE_sentence", "question": "玛丽觉得单靠自己的力量执行她的计划是困难的。", "answer": "Mary thought it difficult to carry out her plan all by herself.", "options": [] }, // [cite: 55]
+        { "id": "u2_s_003", "type": "CtoE_sentence", "question": "他决心继续他的实验，不过他将用另一种方法来做。", "answer": "He is determined to continue his experiment but this time he’ll do it another way.", "options": [] }, // [cite: 56]
+        { "id": "u2_s_004", "type": "CtoE_sentence", "question": "她在读这部小说时，不禁想起了她在农村度过的那五年。", "answer": "When she read the novel, she couldn’t help thinking of the five years she had spent in the countryside.", "options": [] }, // [cite: 57]
+        { "id": "u2_s_005", "type": "CtoE_sentence", "question": "我们认为他不能在一刻钟内走完那段路程，但他成功地做到这一点。", "answer": "We didn’t think he could cover the distance in a quarter of an hour, but he succeeded in doing it.", "options": [] } // [cite: 58]
+      ],
+      "passageTranslationEtoC": [
+        {
+          "id": "u2_psg_001",
+          "type": "EtoC_passage",
+          "question": "The years passed. He gave up flying and began sailing. He enjoyed it greatly. Chichester was already 58 years old when he won the first solo transatlantic race. His old dream of going around the world came true, but this time he would sail. His friends and doctors did not think he could do it, as he had lung cancer. But Chichester was determined to carry out his plan. In August, 1966, at the age of nearly sixty-five, an age when many men retire, he began the greatest voyage of his life. Soon, he was away in his new 16-meter boat, Gispsy Moth.", // [cite: 59, 60, 61, 62, 63, 64]
+          "answer": "好多年过去了。他放弃了飞行，开始航海。他领略到航海的巨大乐趣。奇切斯特在首届横渡大西洋单人航海比赛中夺魁时，已经五十八岁。他周游世界的夙愿重又被唤起，不过这一次他是要架船环游。由于他患有肺癌，朋友们和医生们都认为他不该去，但奇切斯特决意实施自己的计划。1966年8月，在他快年满六十五岁的时候 — 许多人在这个年龄已经退休 — 他开始了一生中最了不起的一次航海。不久，他就驾着那艘16米长的新吉普赛·莫斯号启程出海了。", // [cite: 65]
+          "options": []
+        }
+      ],
+      "multipleChoice": [
+          { "id": "u2_mc_001", "type": "MCQ", "question": "We tried to dissuade him ________ swimming across the lake, but he didn't listen.", "options": ["into", "from", "without", "off"], "answer": "from" }, // [cite: 66]
+          { "id": "u2_mc_002", "type": "MCQ", "question": "The city was extensively ________ during that horrible earthquake.", "options": ["hurt", "injured", "wounded", "damaged"], "answer": "damaged" }, // [cite: 67]
+          { "id": "u2_mc_003", "type": "MCQ", "question": "Though the job was extremely difficult, they were ________ to finish it on time.", "options": ["determined", "decided", "attempted", "considered"], "answer": "determined" }, // [cite: 68]
+          { "id": "u2_mc_004", "type": "MCQ", "question": "Tom invented a ________ to make the door shut by itself.", "options": ["cape", "gale", "device", "sword"], "answer": "device" }, // [cite: 69]
+          { "id": "u2_mc_005", "type": "MCQ", "question": "He gave up his seat on the bus to an old woman ________ nearby.", "options": ["stand", "stood", "stands", "standing"], "answer": "standing" }, // [cite: 70]
+          { "id": "u2_mc_006", "type": "MCQ", "question": "Though she is nearly 65, Mary doesn't want to ________.", "options": ["work", "accomplish", "retire", "conquer"], "answer": "retire" }, // [cite: 71]
+          { "id": "u2_mc_007", "type": "MCQ", "question": "He flew from Europe to Tokyo by the ________ across the Pole.", "options": ["course", "route", "way", "routine"], "answer": "route" }, // [cite: 72]
+          { "id": "u2_mc_008", "type": "MCQ", "question": "All the crew ________ saved in the end.", "options": ["were", "was", "has been", "have"], "answer": "were" }, // [cite: 72]
+          { "id": "u2_mc_009", "type": "MCQ", "question": "The football team ________ organized last week.", "options": ["were", "was", "has been", "have"], "answer": "was" }, // [cite: 73]
+          { "id": "u2_mc_010", "type": "MCQ", "question": "The Red Army ________ 25,000 Li on their long march.", "options": ["recovered", "discovered", "covered", "uncovered"], "answer": "covered" }, // [cite: 74]
+          { "id": "u2_mc_011", "type": "MCQ", "question": "________, the fire was discovered soon after it had started.", "options": ["Fortunately", "Previously", "Undoubtedly", "Calmly"], "answer": "Fortunately" }, // [cite: 75]
+          { "id": "u2_mc_012", "type": "MCQ", "question": "Mary asked her mother to ________ her at 8 next morning.", "options": ["wake", "awaken", "waken", "awake"], "answer": "waken" }, // [cite: 76]
+          { "id": "u2_mc_013", "type": "MCQ", "question": "The uninteresting film ________ on for more than two hours.", "options": ["pulled", "pushed", "drew", "dragged"], "answer": "dragged" }, // [cite: 77]
+          { "id": "u2_mc_014", "type": "MCQ", "question": "It is dangerous for a girl to make a ________ trip.", "options": ["single-hand", "singly-hand", "single-handed", "singly-handed"], "answer": "single-handed" }, // [cite: 78]
+          { "id": "u2_mc_015", "type": "MCQ", "question": "He says you are ________ the best candidate.", "options": ["by far", "as far", "too far", "much far"], "answer": "by far" }, // [cite: 78]
+          { "id": "u2_mc_016", "type": "MCQ", "question": "The boat ________, throwing the boys into the water.", "options": ["turned up", "turned over", "turned down", "turned away"], "answer": "turned over" }, // [cite: 79]
+          { "id": "u2_mc_017", "type": "MCQ", "question": "The accident was not serious at all --- it did ________ to either car.", "options": ["a few damages", "few damage", "a little damage", "little damage"], "answer": "little damage" }, // [cite: 80]
+          { "id": "u2_mc_018", "type": "MCQ", "question": "What he has done can be praised as a real ________.", "options": ["adventure", "venture", "risk", "torture"], "answer": "adventure" }, // [cite: 81]
+          { "id": "u2_mc_019", "type": "MCQ", "question": "Poor Susan got a serious seasick during the ________.", "options": ["journey", "tour", "voyage", "trip"], "answer": "voyage" }, // [cite: 82]
+          { "id": "u2_mc_020", "type": "MCQ", "question": "He has been ill for a week so he has to _______ the test tomorrow.", "options": ["give in", "give up", "give back", "give away"], "answer": "give up" }, // [cite: 83]
+          { "id": "u2_mc_021", "type": "MCQ", "question": "The pilot tried to ________ the controlling station, but failed.", "options": ["contact", "connect", "contract", "contrast"], "answer": "contact" }, // [cite: 84]
+          { "id": "u2_mc_022", "type": "MCQ", "question": "________ all American cities, San Francisco is considered to be the most beautiful.", "options": ["In", "For", "Of", "With"], "answer": "Of" }, // [cite: 85]
+          { "id": "u2_mc_023", "type": "MCQ", "question": "Bill Clinton ________ George Bush for the presidency in 1992.", "options": ["defeated", "won", "beat", "hit"], "answer": "defeated" }, // [cite: 85]
+          { "id": "u2_mc_024", "type": "MCQ", "question": "After studying Unit One, we all ________ to improve our study habits.", "options": ["set down", "set in", "set up", "set off"], "answer": "set off" }, // [cite: 86]
+          { "id": "u2_mc_025", "type": "MCQ", "question": "I can't help ________ that it was a mistake to let him go.", "options": ["to think", "thinking", "thought", "think"], "answer": "thinking" } // [cite: 87]
+      ]
+    },
+    "unit3": {
+      "name": "Unit 3: The Present", // [cite: 88]
+      "wordTranslationCtoE": [
+        { "id": "u3_w_001", "type": "CtoE_word", "question": "作安排，筹划", "answer": "arrange", "options": [] }, // [cite: 89]
+        { "id": "u3_w_002", "type": "CtoE_word", "question": "（一）束，（一）串", "answer": "bunch", "options": [] }, // [cite: 89]
+        { "id": "u3_w_003", "type": "CtoE_word", "question": "满意的；高兴的", "answer": "content", "options": [] }, // [cite: 89]
+        { "id": "u3_w_004", "type": "CtoE_word", "question": "十年，十年期", "answer": "decade", "options": [] }, // [cite: 89]
+        { "id": "u3_w_005", "type": "CtoE_word", "question": "高效的", "answer": "efficient", "options": [] }, // [cite: 89]
+        { "id": "u3_w_006", "type": "CtoE_word", "question": "忍受，忍耐", "answer": "endure", "options": [] }, // [cite: 89]
+        { "id": "u3_w_007", "type": "CtoE_word", "question": "奖章", "answer": "medal", "options": [] }, // [cite: 89]
+        { "id": "u3_w_008", "type": "CtoE_word", "question": "较小的；次要的", "answer": "minor", "options": [] }, // [cite: 89]
+        { "id": "u3_w_009", "type": "CtoE_word", "question": "时刻，时机；场合", "answer": "occasion", "options": [] }, // [cite: 89]
+        { "id": "u3_w_010", "type": "CtoE_word", "question": "开刀，动手术", "answer": "operate", "options": [] }, // [cite: 89, 90]
+        { "id": "u3_w_011", "type": "CtoE_word", "question": "包裹,小包", "answer": "parcel", "options": [] }, // [cite: 90]
+        { "id": "u3_w_012", "type": "CtoE_word", "question": "邮递员", "answer": "postman", "options": [] }, // [cite: 90]
+        { "id": "u3_w_013", "type": "CtoE_word", "question": "最初的；首要的；根本的", "answer": "primary", "options": [] }, // [cite: 90]
+        { "id": "u3_w_014", "type": "CtoE_word", "question": "罕见的；不常发生的", "answer": "rare", "options": [] }, // [cite: 90]
+        { "id": "u3_w_015", "type": "CtoE_word", "question": "不情愿的；勉强的", "answer": "reluctantly", "options": [] }, // [cite: 90]
+        { "id": "u3_w_016", "type": "CtoE_word", "question": "点，斑点", "answer": "spot", "options": [] }, // [cite: 90, 91]
+        { "id": "u3_w_017", "type": "CtoE_word", "question": "颤抖", "answer": "tremble", "options": [] } // [cite: 91]
+      ],
+      "phraseTranslationEtoC": [
+        { "id": "u3_p_001", "type": "EtoC_phrase", "question": "after all", "answer": "毕竟，终究", "options": [] }, // [cite: 92]
+        { "id": "u3_p_002", "type": "EtoC_phrase", "question": "at other times", "answer": "在别的时候；平时", "options": [] }, // [cite: 92]
+        { "id": "u3_p_003", "type": "EtoC_phrase", "question": "be sure of", "answer": "对…有把握", "options": [] }, // [cite: 92]
+        { "id": "u3_p_004", "type": "EtoC_phrase", "question": "look after", "answer": "照料，照顾", "options": [] }, // [cite: 92]
+        { "id": "u3_p_005", "type": "EtoC_phrase", "question": "pick up", "answer": "拿起，捡起", "options": [] }, // [cite: 92]
+        { "id": "u3_p_006", "type": "EtoC_phrase", "question": "round/around the corner", "answer": "在附近的；即将来临的", "options": [] } // [cite: 92]
+      ],
+      "sentenceTranslationCtoE": [
+        { "id": "u3_s_001", "type": "CtoE_sentence", "question": "那位名演员似乎很乐意在剧中扮演一个次要角色。", "answer": "That famous actor seemed content to play a minor part in the play.", "options": [] }, // [cite: 93]
+        { "id": "u3_s_002", "type": "CtoE_sentence", "question": "她十分勉强地同意让一位年轻医生为她动手术。", "answer": "She agreed, very reluctantly, to be operated on by a young doctor.", "options": [] }, // [cite: 94]
+        { "id": "u3_s_003", "type": "CtoE_sentence", "question": "老人读完信后失望之极，竟用颤抖的手把它撕得粉碎。", "answer": "After reading the letter the old man was so disappointed that he tore it into little bits with trembling fingers.", "options": [] }, // [cite: 95]
+        { "id": "u3_s_004", "type": "CtoE_sentence", "question": "即使他的祖母不能来参加他的生日宴会，她也会寄给他一件可爱的礼物。", "answer": "Even if his grandmother could not come to his birthday party, she would send him a lovely present.", "options": [] }, // [cite: 96]
+        { "id": "u3_s_005", "type": "CtoE_sentence", "question": "他们已安排好让我们明天去游览长城，我相信我们在那儿一定会玩的很开心。", "answer": "They’ve arranged for us to visit the Great Wall tomorrow, I’m sure we’ll have a good time / enjoy ourselves there.", "options": [] } // [cite: 97]
+      ],
+      "passageTranslationEtoC": [
+        {
+          "id": "u3_psg_001",
+          "type": "EtoC_passage",
+          "question": "He gave her four envelopes. Three were unsealed cards from old friends. The fourth was sealed, in Myra’s writing. The old lady felt a pang of disappointment. Almost reluctantly she tore the envelop open. Folded in the card was a piece of paper. Written on the card was a massage under the printed Happy Birthday—Buy yourself something nice with the cheque, Myra and Harold. The cheque fluttered to the floor like a bird with a broken wing. Slowly the old lady stooped to pick it up. Her present, her lovely present. With trembling fingers she tore it into little bits.", // [cite: 98, 99, 100, 101, 102, 103, 104]
+          "answer": "他交给他四封信。三封没封口，是老朋友寄来的生日卡。第四封是封口的，上面的字迹出自于迈拉之手。失望的痛楚攫住了老太太的心。她几乎是带几分勉强之意撕开了信封。只见生日卡里夹着一张叠起来的纸。卡上印有“生日快乐”字样，下面写着一句附言 – 拿这张支票给自己买样称心的东西吧 -- 迈拉和哈罗德。支票像只断了翅膀的小鸟似地飘落到地板上。老太太慢慢地弯下腰，把支票从地上捡了起来。她的礼物，她的可爱的礼物！她用颤抖的手指把支票撕了个粉碎。", // [cite: 104]
+          "options": []
+        }
+      ],
+      "multipleChoice": [
+        { "id": "u3_mc_001", "type": "MCQ", "question": "This new expressway ________ the trip from this city to the capital.", "options": ["shortens", "widens", "broadens", "quickens"], "answer": "shortens" }, // [cite: 105]
+        { "id": "u3_mc_002", "type": "MCQ", "question": "Prof. Smith is not a stranger to us. We've met him on several ________.", "options": ["situations", "cases", "places", "occasions"], "answer": "occasions" }, // [cite: 106]
+        { "id": "u3_mc_003", "type": "MCQ", "question": "I like wearing ________ at home, for they are comfortable.", "options": ["boots", "slippers", "stockings", "high heels"], "answer": "slippers" }, // [cite: 107]
+        { "id": "u3_mc_004", "type": "MCQ", "question": "That hard-working boy got a gold ________ in the mathematics competition.", "options": ["mental", "metal", "medal", "model"], "answer": "medal" }, // [cite: 108]
+        { "id": "u3_mc_005", "type": "MCQ", "question": "It is ________ to find him absent from school.", "options": ["rare", "seldom", "never", "few"], "answer": "rare" }, // [cite: 109]
+        { "id": "u3_mc_006", "type": "MCQ", "question": "Jim had a ________ problem with his car, and he fixed it quickly all by himself.", "options": ["serious", "major", "severe", "minor"], "answer": "minor" }, // [cite: 110]
+        { "id": "u3_mc_007", "type": "MCQ", "question": "He hasn't got enough clothes on --- look, he's ________ with cold.", "options": ["trembling", "trembled", "tremble", "tremble"], "answer": "trembling" }, // [cite: 111]
+        { "id": "u3_mc_008", "type": "MCQ", "question": "After much thought, we ________ agreed to let him go.", "options": ["immediately", "efficiently", "excitedly", "reluctantly"], "answer": "reluctantly" }, // [cite: 112]
+        { "id": "u3_mc_009", "type": "MCQ", "question": "The city's transport system is one of the most ________ in Europe.", "options": ["enough", "sufficient", "efficient", "effective"], "answer": "efficient" }, // [cite: 113]
+        { "id": "u3_mc_010", "type": "MCQ", "question": "He was caught spitting in the public and fined ten Yuan on the ________.", "options": ["spot", "place", "ground", "occasion"], "answer": "spot" }, // [cite: 114]
+        { "id": "u3_mc_011", "type": "MCQ", "question": "If you have worked hard ________, you won't have to sit up before the exams.", "options": ["for the time being", "from time to time", "once in a while", "at other times"], "answer": "at other times" }, // [cite: 115]
+        { "id": "u3_mc_012", "type": "MCQ", "question": "To my great ________, my mother's post didn't come to me on time.", "options": ["happiness", "satisfaction", "disappointment", "pleasure"], "answer": "disappointment" }, // [cite: 116]
+        { "id": "u3_mc_013", "type": "MCQ", "question": "I was so careless that I threw the ________ letter into the mailbox.", "options": ["unprepared", "unsealed", "unread", "unpacked"], "answer": "unsealed" }, // [cite: 117]
+        { "id": "u3_mc_014", "type": "MCQ", "question": "They were ________ to move house, but they had no choice.", "options": ["reluctant", "relieved", "relaxed", "reliable"], "answer": "reluctant" }, // [cite: 118]
+        { "id": "u3_mc_015", "type": "MCQ", "question": "After having sat down on the chair, he took out a ________ of cigarettes.", "options": ["parcel", "package", "packet", "pack"], "answer": "packet" }, // [cite: 119]
+        { "id": "u3_mc_016", "type": "MCQ", "question": "He is worried a lot now, for he has lost a ________ of keys today.", "options": ["mass", "pile", "piece", "bunch"], "answer": "bunch" }, // [cite: 120]
+        { "id": "u3_mc_017", "type": "MCQ", "question": "I think you should let Mary go camping. ________, she is a big girl now.", "options": ["Moreover", "In addition", "After all", "Nevertheless"], "answer": "After all" }, // [cite: 121]
+        { "id": "u3_mc_018", "type": "MCQ", "question": "As a fireman, you must be ready to ________ hardships and even suffer death.", "options": ["endure", "escape", "arrange", "flutter"], "answer": "endure" }, // [cite: 122]
+        { "id": "u3_mc_019", "type": "MCQ", "question": "They did more work than others but refused to take any ________ pay.", "options": ["regular", "extra", "unusual", "primary"], "answer": "extra" }, // [cite: 123]
+        { "id": "u3_mc_020", "type": "MCQ", "question": "We should respect the ________ and take good care of the children.", "options": ["aging", "age", "ageless", "aged"], "answer": "aged" }, // [cite: 124]
+        { "id": "u3_mc_021", "type": "MCQ", "question": "He is perfectly ________ to live alone and paint pictures all day.", "options": ["content", "contract", "context", "contrast"], "answer": "content" }, // [cite: 125]
+        { "id": "u3_mc_022", "type": "MCQ", "question": "The tourist guide has ________ for us to visit the Great Wall tomorrow.", "options": ["prepared", "arranged", "planned", "scheduled"], "answer": "arranged" }, // [cite: 126]
+        { "id": "u3_mc_023", "type": "MCQ", "question": "The old lady dropped her spoon and bent to ________.", "options": ["take it up", "put it up", "pick it up", "give it up"], "answer": "pick it up" }, // [cite: 127]
+        { "id": "u3_mc_024", "type": "MCQ", "question": "We say, even the king will have some poor ________.", "options": ["relations", "relatives", "relationships", "relativities"], "answer": "relatives" }, // [cite: 128]
+        { "id": "u3_mc_025", "type": "MCQ", "question": "________ with life in his hometown, the young man moved away to the city.", "options": ["Being not content", "Not being content", "Be not content", "Don't content"], "answer": "Not being content" } // [cite: 129]
+      ]
+    },
+    "unit4": {
+      "name": "Unit 4: Turning off TV: A Quiet Hour", // [cite: 130]
+      "wordTranslationCtoE": [
+        { "id": "u4_w_001", "type": "CtoE_word", "question": "活动", "answer": "activity", "options": [] }, // [cite: 131]
+        { "id": "u4_w_002", "type": "CtoE_word", "question": "真实地；实际上", "answer": "actually", "options": [] }, // [cite: 131]
+        { "id": "u4_w_003", "type": "CtoE_word", "question": "仅仅，勉强；几乎没有", "answer": "barely", "options": [] }, // [cite: 131]
+        { "id": "u4_w_004", "type": "CtoE_word", "question": "当前的", "answer": "current", "options": [] }, // [cite: 131]
+        { "id": "u4_w_005", "type": "CtoE_word", "question": "使烦恼", "answer": "disturb", "options": [] }, // [cite: 131]
+        { "id": "u4_w_006", "type": "CtoE_word", "question": "感情的", "answer": "emotional", "options": [] }, // [cite: 131]
+        { "id": "u4_w_007", "type": "CtoE_word", "question": "快乐；乐趣；娱乐", "answer": "entertainment", "options": [] }, // [cite: 131]
+        { "id": "u4_w_008", "type": "CtoE_word", "question": "缺口，间隙；分歧，隔阂", "answer": "gap", "options": [] }, // [cite: 131]
+        { "id": "u4_w_009", "type": "CtoE_word", "question": "发明", "answer": "invent", "options": [] }, // [cite: 131]
+        { "id": "u4_w_010", "type": "CtoE_word", "question": "（必须）包括", "answer": "involve", "options": [] }, // [cite: 131]
+        { "id": "u4_w_011", "type": "CtoE_word", "question": "邻近地区；地段", "answer": "neighborhood", "options": [] }, // [cite: 132]
+        { "id": "u4_w_012", "type": "CtoE_word", "question": "广播（或电视）联播公司；广播（或电视）网", "answer": "network", "options": [] }, // [cite: 132]
+        { "id": "u4_w_013", "type": "CtoE_word", "question": "禁止", "answer": "prohibit", "options": [] }, // [cite: 132]
+        { "id": "u4_w_014", "type": "CtoE_word", "question": "提议，建议", "answer": "proposal", "options": [] }, // [cite: 132]
+        { "id": "u4_w_015", "type": "CtoE_word", "question": "率", "answer": "rate", "options": [] }, // [cite: 132]
+        { "id": "u4_w_016", "type": "CtoE_word", "question": "社会的", "answer": "social", "options": [] }, // [cite: 132]
+        { "id": "u4_w_017", "type": "CtoE_word", "question": "典型的", "answer": "typical", "options": [] }, // [cite: 132, 133]
+        { "id": "u4_w_018", "type": "CtoE_word", "question": "值得花时间（或精力）的；有价值的", "answer": "worthwhile", "options": [] } // [cite: 133]
+      ],
+      "phraseTranslationEtoC": [
+        { "id": "u4_p_001", "type": "EtoC_phrase", "question": "at first glance", "answer": "乍一看；最初考虑时", "options": [] }, // [cite: 134]
+        { "id": "u4_p_002", "type": "EtoC_phrase", "question": "bring together", "answer": "使相聚", "options": [] }, // [cite: 134]
+        { "id": "u4_p_003", "type": "EtoC_phrase", "question": "come up with", "answer": "想出；提出", "options": [] }, // [cite: 134]
+        { "id": "u4_p_004", "type": "EtoC_phrase", "question": "grow up", "answer": "成长，长大", "options": [] }, // [cite: 134]
+        { "id": "u4_p_005", "type": "EtoC_phrase", "question": "have a ball", "answer": "玩得开心", "options": [] }, // [cite: 134]
+        { "id": "u4_p_006", "type": "EtoC_phrase", "question": "in part", "answer": "在一定程度上；部分地", "options": [] } // [cite: 134, 135]
+      ],
+      "sentenceTranslationCtoE": [
+        { "id": "u4_s_001", "type": "CtoE_sentence", "question": "我真希望你能拿出一个比这更好的解决办法来。", "answer": "I do hope that you can come up with a better solution than this one.", "options": [] }, // [cite: 135]
+        { "id": "u4_s_002", "type": "CtoE_sentence", "question": "众所周知，肺癌至少部分地是由于吸烟过多而引起的。", "answer": "It is well known that lung cancer is caused at least in part by smoking too much.", "options": [] }, // [cite: 136]
+        { "id": "u4_s_003", "type": "CtoE_sentence", "question": "接受这份工作就得经常在周末上班，但约翰并不在意。", "answer": "To take this job would involve working on weekends frequently, but John didn’t mind.", "options": [] }, // [cite: 137]
+        { "id": "u4_s_004", "type": "CtoE_sentence", "question": "我提议咱们会后马上去办公室找史密斯教授，邀请他参加我们的英语晚会。", "answer": "I propose that we go to find Prof. Smith in his office right after the meeting and invite him to our English evening.", "options": [] }, // [cite: 138]
+        { "id": "u4_s_005", "type": "CtoE_sentence", "question": "乍一看，这幅画并不好，但经过仔细观察，我们才发现它的确是一幅杰作。", "answer": "At first glance the picture didn’t look very good, but after examining it carefully, we found that it was indeed a masterpiece.", "options": [] } // [cite: 139]
+      ],
+      "passageTranslationEtoC": [
+        {
+          "id": "u4_psg_001",
+          "type": "EtoC_passage",
+          "question": "Let us take a serious, reasonable look at what the results might be if such a proposal were accepted. Families might use the time for a real family hour. Without the distraction of TV, they might sit around together after dinner and actually talk to one another. It is well known that many of our problems—everything, in fact, from the generation gap to the high divorce rate to some forms of mental illness — are caused at least in part by failure to communicate. By using the quiet family hour to discuss our problems, we might get to know each other better, and to like each other better.", // [cite: 140, 141, 142, 143, 144]
+          "answer": "让我们认真而通情达理地看一下， 如果这一建议被采纳的话，会有什么样的结果。千家万户也许会利用这段时间真正地团聚一番。没有电视机的干扰，他们晚饭后也许会围坐在一起，当真交谈起来。众所周知，我们的许多问题 – 事实上是所有的问题，从代沟、高离婚率到某些精神病 – 至少部分地是由于没能交流思想而引起的。利用这安静的、全家聚在一起的时刻来讨论我们的各种问题， 我们相互之间也许会更加了解、更加相爱。", // [cite: 145]
+          "options": []
+        }
+      ],
+      "multipleChoice": [
+        { "id": "u4_mc_001", "type": "MCQ", "question": "The crop failure was due ________ to the drought.", "options": ["at most", "in part", "after all", "by far"], "answer": "in part" }, // [cite: 146]
+        { "id": "u4_mc_002", "type": "MCQ", "question": "Noise is a ________ when you are trying to study.", "options": ["disconnection", "distraction", "distribution", "distinction"], "answer": "distraction" }, // [cite: 147]
+        { "id": "u4_mc_003", "type": "MCQ", "question": "To be quite ________ about it, your plan is utterly impractical.", "options": ["honest", "honesty", "honestly", "dishonest"], "answer": "honest" }, // [cite: 148]
+        { "id": "u4_mc_004", "type": "MCQ", "question": "Although she was born in the old society, she managed to become a ________ woman.", "options": ["literal", "literary", "literature", "literate"], "answer": "literate" }, // [cite: 149]
+        { "id": "u4_mc_005", "type": "MCQ", "question": "Some TV ________ will surely do good to children.", "options": ["procedures", "prospects", "programs", "projects"], "answer": "programs" }, // [cite: 150]
+        { "id": "u4_mc_006", "type": "MCQ", "question": "By using the instrument, you can produce wonderful ________ music.", "options": ["electric", "electrical", "electronic", "elective"], "answer": "electronic" }, // [cite: 151]
+        { "id": "u4_mc_007", "type": "MCQ", "question": "________ the essay looked quite good, but actually it was full of mistakes.", "options": ["At a time", "At other times", "As a result", "At first glance"], "answer": "At first glance" }, // [cite: 152]
+        { "id": "u4_mc_008", "type": "MCQ", "question": "Mr. Smith kept thinking hard, but failed to ________ a workable plan.", "options": ["come up with", "bring together", "grow up", "look after"], "answer": "come up with" }, // [cite: 153, 154]
+        { "id": "u4_mc_009", "type": "MCQ", "question": "The government is taking ________ measures to overcome current difficulties.", "options": ["enough", "effective", "efficient", "determined"], "answer": "effective" }, // [cite: 155]
+        { "id": "u4_mc_010", "type": "MCQ", "question": "We should always remember that truth is the ________ of practice.", "options": ["product", "production", "produce", "productivity"], "answer": "product" }, // [cite: 156]
+        { "id": "u4_mc_011", "type": "MCQ", "question": "He took a ________ at his watch and saw that it was already lunch time.", "options": ["stare", "gaze", "watch", "glance"], "answer": "glance" }, // [cite: 157]
+        { "id": "u4_mc_012", "type": "MCQ", "question": "Don't ________ yourself in unnecessary expense.", "options": ["include", "contain", "involve", "join"], "answer": "involve" }, // [cite: 157]
+        { "id": "u4_mc_013", "type": "MCQ", "question": "The old lady spoke of her dead daughter with ________.", "options": ["emotional", "emotion", "emotionally", "unemotional"], "answer": "emotion" }, // [cite: 158]
+        { "id": "u4_mc_014", "type": "MCQ", "question": "A person's real age sometimes doesn't correspond to his or her ________ age.", "options": ["moral", "metal", "medal", "mental"], "answer": "mental" }, // [cite: 159]
+        { "id": "u4_mc_015", "type": "MCQ", "question": "Unfortunately, the survival ________ of this species is still declining.", "options": ["rate", "speed", "percent", "ability"], "answer": "rate" }, // [cite: 160]
+        { "id": "u4_mc_016", "type": "MCQ", "question": "I have spent all my pocket money on ________ books this year.", "options": ["worth", "worthwhile", "worthy", "worthless"], "answer": "worthwhile" }, // [cite: 161]
+        { "id": "u4_mc_017", "type": "MCQ", "question": "The mayor put forward a ________ to improve public transportation.", "options": ["activity", "distraction", "proposal", "network"], "answer": "proposal" }, // [cite: 162]
+        { "id": "u4_mc_018", "type": "MCQ", "question": "Both parents should take responsibility for the ________ needs of their children.", "options": ["social", "current", "emotional", "typical"], "answer": "emotional" }, // [cite: 163]
+        { "id": "u4_mc_019", "type": "MCQ", "question": "After I had finished eating, he ________ to set off immediately.", "options": ["suggested", "raised", "advised", "proposed"], "answer": "proposed" }, // [cite: 164]
+        { "id": "u4_mc_020", "type": "MCQ", "question": "Students from middle school should be ________ from smoking.", "options": ["prohibited", "persuaded", "permitted", "performed"], "answer": "prohibited" }, // [cite: 164]
+        { "id": "u4_mc_021", "type": "MCQ", "question": "Don't be surprised. It was ________ of her to say that.", "options": ["usual", "typical", "common", "normal"], "answer": "typical" }, // [cite: 165]
+        { "id": "u4_mc_022", "type": "MCQ", "question": "I am afraid that the ________ between rich and poor is still widening in our country.", "options": ["distance", "range", "crack", "gap"], "answer": "gap" }, // [cite: 166]
+        { "id": "u4_mc_023", "type": "MCQ", "question": "I ________ my whole vacation in preparing for the coming Band Four exam.", "options": ["spent", "paid", "cost", "took"], "answer": "spent" }, // [cite: 167]
+        { "id": "u4_mc_024", "type": "MCQ", "question": "The main task of the committee was organizing cultural ________.", "options": ["acts", "actions", "activities", "activeness"], "answer": "activities" }, // [cite: 168]
+        { "id": "u4_mc_025", "type": "MCQ", "question": "I don't wish to be ________ in my work, so please come tomorrow.", "options": ["bored", "disturbed", "requested", "destroyed"], "answer": "disturbed" } // [cite: 169]
+      ]
+    },
+    "unit5": {
+      "name": "Unit 5: I Never Write Right", // [cite: 171]
+      "wordTranslationCtoE": [
+        { "id": "u5_w_001", "type": "CtoE_word", "question": "很旧的；古代的", "answer": "ancient", "options": [] }, // [cite: 172]
+        { "id": "u5_w_002", "type": "CtoE_word", "question": "背景；底色", "answer": "background", "options": [] }, // [cite: 172, 173]
+        { "id": "u5_w_003", "type": "CtoE_word", "question": "合同", "answer": "contract", "options": [] }, // [cite: 173, 174]
+        { "id": "u5_w_004", "type": "CtoE_word", "question": "回声，反响", "answer": "echo", "options": [] }, // [cite: 174, 175]
+        { "id": "u5_w_005", "type": "CtoE_word", "question": "使窘迫；使尴尬", "answer": "embarrass", "options": [] }, // [cite: 175]
+        { "id": "u5_w_006", "type": "CtoE_word", "question": "附上；围住", "answer": "enclose", "options": [] }, // [cite: 175]
+        { "id": "u5_w_007", "type": "CtoE_word", "question": "最喜欢的人（或物）", "answer": "favorite", "options": [] }, // [cite: 175, 176]
+        { "id": "u5_w_008", "type": "CtoE_word", "question": "天才(人物)；天赋", "answer": "genius", "options": [] }, // [cite: 176, 177]
+        { "id": "u5_w_009", "type": "CtoE_word", "question": "（大学）毕业", "answer": "graduate", "options": [] }, // [cite: 177, 178]
+        { "id": "u5_w_010", "type": "CtoE_word", "question": "给…画插图；举例说明", "answer": "illustrate", "options": [] }, // [cite: 178]
+        { "id": "u5_w_011", "type": "CtoE_word", "question": "笑（声）", "answer": "laughter", "options": [] }, // [cite: 178, 179]
+        { "id": "u5_w_012", "type": "CtoE_word", "question": "待洗（或已洗的）衣物；洗衣店", "answer": "laundry", "options": [] }, // [cite: 179, 180]
+        { "id": "u5_w_013", "type": "CtoE_word", "question": "减去；零以下", "answer": "minus", "options": [] }, // [cite: 180, 181]
+        { "id": "u5_w_014", "type": "CtoE_word", "question": "胡说，废话；荒谬的想法", "answer": "nonsense", "options": [] }, // [cite: 181, 182]
+        { "id": "u5_w_015", "type": "CtoE_word", "question": "极大的困难；可能性", "answer": "odds", "options": [] }, // [cite: 182, 183]
+        { "id": "u5_w_016", "type": "CtoE_word", "question": "包装袋，包装盒；包；袋；盒", "answer": "package", "options": [] }, // [cite: 183, 184]
+        { "id": "u5_w_017", "type": "CtoE_word", "question": "出版，发行；发布", "answer": "publish", "options": [] }, // [cite: 184]
+        { "id": "u5_w_018", "type": "CtoE_word", "question": "资格", "answer": "qualification", "options": [] }, // [cite: 184, 185]
+        { "id": "u5_w_019", "type": "CtoE_word", "question": "使可胜任；使具有资格，使合格", "answer": "qualify", "options": [] }, // [cite: 185]
+        { "id": "u5_w_020", "type": "CtoE_word", "question": "学期", "answer": "semester", "options": [] }, // [cite: 185, 186]
+        { "id": "u5_w_021", "type": "CtoE_word", "question": "线，细绳", "answer": "string", "options": [] }, // [cite: 186, 187]
+        { "id": "u5_w_022", "type": "CtoE_word", "question": "在世界各地", "answer": "worldwide", "options": [] } // [cite: 187, 188]
+      ],
+      "phraseTranslationEtoC": [
+        { "id": "u5_p_001", "type": "EtoC_phrase", "question": "at random", "answer": "任意地，胡乱地", "options": [] }, // [cite: 188]
+        { "id": "u5_p_002", "type": "EtoC_phrase", "question": "burst into", "answer": "突然…起来", "options": [] }, // [cite: 188]
+        { "id": "u5_p_003", "type": "EtoC_phrase", "question": "fit in", "answer": "安排时间做（某事）或见（某人）", "options": [] }, // [cite: 188]
+        { "id": "u5_p_004", "type": "EtoC_phrase", "question": "here and there", "answer": "这儿那儿，各处", "options": [] }, // [cite: 188]
+        { "id": "u5_p_005", "type": "EtoC_phrase", "question": "set one's mind on/to", "answer": "决心要，一心想", "options": [] }, // [cite: 188]
+        { "id": "u5_p_006", "type": "EtoC_phrase", "question": "to sb.'s astonishment", "answer": "令某人惊讶的是", "options": [] }, // [cite: 188]
+        { "id": "u5_p_007", "type": "EtoC_phrase", "question": "work on", "answer": "从事于，致力于", "options": [] } // [cite: 188]
+      ],
+      "sentenceTranslationCtoE": [
+        { "id": "u5_s_001", "type": "CtoE_sentence", "question": "简从书架上拿了一本杂志，开始东一页西一页地随便翻阅。", "answer": "Jane picked up a magazine from the bookshelf and started reading here and there at random.", "options": [] }, // [cite: 189]
+        { "id": "u5_s_002", "type": "CtoE_sentence", "question": "他们老是对她说她有数学天才，她感到很不好意思。", "answer": "She was embarrassed when they kept telling her she had a genius for mathematics.", "options": [] }, // [cite: 190]
+        { "id": "u5_s_003", "type": "CtoE_sentence", "question": "我随信附上这篇故事的几张插图。", "answer": "With this letter I enclose some illustrations for the story.", "options": [] }, // [cite: 191]
+        { "id": "u5_s_004", "type": "CtoE_sentence", "question": "他讲了个故事来说明为什么在详细查看条款之前决不要在任何合同上签字。", "answer": "He told a story to illustrate why you should never sign any contract before you have examined its provisions in detail.", "options": [] }, // [cite: 192]
+        { "id": "u5_s_005", "type": "CtoE_sentence", "question": "格林大夫忙着研制一种治艾滋病的药物，但从下月起他能安排时间在星期一上午看二十个左右的病人了。", "answer": "Dr. Green is busy working on a cure for AIDS, but from next month on he’ll be able to fit in twenty patients or so on Monday morning.", "options": [] } // [cite: 193]
+      ],
+      "passageTranslationEtoC": [
+        {
+          "id": "u5_psg_001",
+          "type": "EtoC_passage",
+          "question": "People ask what college I attended, what degree I have, and what qualifications I have to be a writer. The answer is none. I just write. I’m not a genius, I’m not gifted and don’t write right. I’m not disciplined, either, and spend more time with my children and friends than I do writing. I didn’t own a thesaurus until four years ago and I use a small Webster’s dictionary that I bought for 89 cents. I use an electric typewriter that I paid $129 for six years ago. I have never used a word processor. I do all the cooking, cleaning and laundry for a family of six and fit my writing in a few minutes here and there. I write everything in longhand while sitting on the sofa with my four kids, eating pizza and watching TV. When the book is finished, I type it and mail it to the publisher.", // [cite: 194, 195, 196, 197, 198, 199, 200, 201]
+          "answer": "人们问我读过什么大学，有什么学位，有什么资历成为一个作家。我的回答是什么都没有。我只是写。我不是天才，我没有天赋，写作是野路子。我也没受过什么训练，而且在孩子和朋友们身上花的时间比写作还多。直到四年前我才有了一本同类词汇编，我一直用一本89美分买的韦氏小词典。我用的电动打字机是六年前花129美元买的。我从未用过文字处理机。我们一家六口，烧饭、洗衣、打扫卫生全是我一个人做，只能见缝插针地抽空写那么几分钟。我是跟四个孩子坐在沙发上边吃匹萨饼边看电视时以手写的方式写东西的。书写完后，再把它打出来寄给出版商。", // [cite: 202]
+          "options": []
+        }
+      ],
+      "multipleChoice": [
+        { "id": "u5_mc_001", "type": "MCQ", "question": "Once she's set her ________ on something, there's no stopping her.", "options": ["heart", "soul", "mind", "head"], "answer": "mind" }, // [cite: 202, 203]
+        { "id": "u5_mc_002", "type": "MCQ", "question": "To ________ sure of getting a seat you should arrive early at the cinema.", "options": ["be", "get", "make", "feel"], "answer": "make" }, // [cite: 203, 204]
+        { "id": "u5_mc_003", "type": "MCQ", "question": "If you drive a car all your life, the ________ are that you'll have an accident at some point.", "options": ["odds", "rates", "means", "tones"], "answer": "odds" }, // [cite: 204, 205]
+        { "id": "u5_mc_004", "type": "MCQ", "question": "If you want to have some improvements in your study, there ________ to be some changes in your studying habits.", "options": ["should", "must", "need", "ought"], "answer": "ought" }, // [cite: 205, 206]
+        { "id": "u5_mc_005", "type": "MCQ", "question": "There was a time, and not so long ago ________, when she walked twenty miles a day.", "options": ["too", "either", "as well", "neither"], "answer": "either" }, // [cite: 206, 207]
+        { "id": "u5_mc_006", "type": "MCQ", "question": "Since I ________ up early yesterday morning, I saw the whole course of the murder.", "options": ["woke", "wakened", "awoke", "awakened"], "answer": "woke" }, // [cite: 207, 208]
+        { "id": "u5_mc_007", "type": "MCQ", "question": "Every morning he gets up early and goes into the ________ to feel his pony.", "options": ["barn", "garden", "stable", "cabin"], "answer": "stable" }, // [cite: 208, 209]
+        { "id": "u5_mc_008", "type": "MCQ", "question": "I think there is a train at 6, but you had better make ________.", "options": ["real", "true", "right", "sure"], "answer": "sure" }, // [cite: 209, 210]
+        { "id": "u5_mc_009", "type": "MCQ", "question": "He could not help walking to and fro, for he was ________ at the false accusation.", "options": ["indifferent", "indignant", "inevitable", "irrelevant"], "answer": "indignant" }, // [cite: 210, 211]
+        { "id": "u5_mc_010", "type": "MCQ", "question": "She was ________ to find that no one admired her performance.", "options": ["damaged", "wounded", "hurt", "injured"], "answer": "hurt" }, // [cite: 211]
+        { "id": "u5_mc_011", "type": "MCQ", "question": "Eggs are ________ and expensive this month.", "options": ["scarce", "rare", "little", "short"], "answer": "scarce" }, // [cite: 211, 212]
+        { "id": "u5_mc_012", "type": "MCQ", "question": "Turn round the corner and you will ________ sight of the railway station.", "options": ["lose", "keep", "get", "catch"], "answer": "catch" }, // [cite: 212, 213]
+        { "id": "u5_mc_013", "type": "MCQ", "question": "During the fancy dress ball (化装舞会), John ________ himself up as a pirate.", "options": ["wore", "dressed", "put", "covered"], "answer": "dressed" }, // [cite: 213, 214]
+        { "id": "u5_mc_014", "type": "MCQ", "question": "We should learn to ________ those who are in trouble.", "options": ["relax", "persuade", "comfort", "handle"], "answer": "comfort" }, // [cite: 214, 215]
+        { "id": "u5_mc_015", "type": "MCQ", "question": "The mother waited with great ________ for news of her son's safe arrival.", "options": ["anger", "pleasure", "pity", "anxiety"], "answer": "anxiety" }, // [cite: 215, 216]
+        { "id": "u5_mc_016", "type": "MCQ", "question": "The patient's wound began to ________ after the operation.", "options": ["ache", "pain", "reject", "relieve"], "answer": "ache" }, // [cite: 216, 217]
+        { "id": "u5_mc_017", "type": "MCQ", "question": "The story is beautifully ________ and is sure to attract children of all ages.", "options": ["published", "illustrated", "enclosed", "wrapped"], "answer": "illustrated" }, // [cite: 217, 218]
+        { "id": "u5_mc_018", "type": "MCQ", "question": "There are plastic and wooden garden chairs but ________ are more expensive.", "options": ["the next", "the latter", "the second", "the later"], "answer": "the latter" }, // [cite: 218, 219]
+        { "id": "u5_mc_019", "type": "MCQ", "question": "Henry listened and heard nothing but the ________ of his own voice.", "options": ["sounds", "words", "exclamations", "echoes"], "answer": "echoes" }, // [cite: 219, 220]
+        { "id": "u5_mc_020", "type": "MCQ", "question": "Let Susan have the chocolate biscuits because they are her ________.", "options": ["favorites", "foods", "recipes", "privileges"], "answer": "favorites" }, // [cite: 220]
+        { "id": "u5_mc_021", "type": "MCQ", "question": "I'm improving! I got a B for last week's composition and an A ________ for this.", "options": ["under", "below", "minus", "less"], "answer": "minus" }, // [cite: 221, 222]
+        { "id": "u5_mc_022", "type": "MCQ", "question": "The poor girl was so frightened that she could do ________ but stand there weeping.", "options": ["nothing", "something", "anything", "everything"], "answer": "nothing" }, // [cite: 222, 223]
+        { "id": "u5_mc_023", "type": "MCQ", "question": "Much to my surprise Alan suddenly ________ song.", "options": ["focus on", "turn out", "bring about", "burst into"], "answer": "burst into" }, // [cite: 223]
+        { "id": "u5_mc_024", "type": "MCQ", "question": "Twenty students were chosen ________ to take part in the experiment.", "options": ["after all", "at random", "for instance", "in a row"], "answer": "at random" }, // [cite: 224]
+        { "id": "u5_mc_025", "type": "MCQ", "question": "That big ________ desk takes up too much space in my small office.", "options": ["written", "write", "wrote", "writing"], "answer": "writing" } // [cite: 225]
+      ]
+    },
+    "unit6": {
+      "name": "Unit 6: Sam Adams, Industrial Engineer", // [cite: 227]
+      "wordTranslationCtoE": [
+        { "id": "u6_w_001", "type": "CtoE_word", "question": "使大为惊讶，使惊愕", "answer": "amaze", "options": [] }, // [cite: 228]
+        { "id": "u6_w_002", "type": "CtoE_word", "question": "申请，请求", "answer": "apply", "options": [] }, // [cite: 228]
+        { "id": "u6_w_003", "type": "CtoE_word", "question": "职业；生涯", "answer": "career", "options": [] }, // [cite: 228, 229]
+        { "id": "u6_w_004", "type": "CtoE_word", "question": "减少", "answer": "decrease", "options": [] }, // [cite: 229]
+        { "id": "u6_w_005", "type": "CtoE_word", "question": "效率", "answer": "efficiency", "options": [] }, // [cite: 229, 230]
+        { "id": "u6_w_006", "type": "CtoE_word", "question": "专家，能手", "answer": "expert", "options": [] }, // [cite: 230, 231]
+        { "id": "u6_w_007", "type": "CtoE_word", "question": "调查（或研究）的结果", "answer": "findings", "options": [] }, // [cite: 231, 232]
+        { "id": "u6_w_008", "type": "CtoE_word", "question": "基础", "answer": "foundation", "options": [] }, // [cite: 232, 233]
+        { "id": "u6_w_009", "type": "CtoE_word", "question": "此外；而且", "answer": "furthermore", "options": [] }, // [cite: 233, 234]
+        { "id": "u6_w_010", "type": "CtoE_word", "question": "检查", "answer": "inspect", "options": [] }, // [cite: 234]
+        { "id": "u6_w_011", "type": "CtoE_word", "question": "资方；管理（部门）", "answer": "management", "options": [] }, // [cite: 234, 235]
+        { "id": "u6_w_012", "type": "CtoE_word", "question": "观察", "answer": "observation", "options": [] }, // [cite: 235, 236]
+        { "id": "u6_w_013", "type": "CtoE_word", "question": "项目；方案", "answer": "project", "options": [] }, // [cite: 236, 237]
+        { "id": "u6_w_014", "type": "CtoE_word", "question": "晋升；促销", "answer": "promote", "options": [] }, // [cite: 237]
+        { "id": "u6_w_015", "type": "CtoE_word", "question": "认出；识别", "answer": "recognize", "options": [] }, // [cite: 237]
+        { "id": "u6_w_016", "type": "CtoE_word", "question": "减轻", "answer": "relieve", "options": [] }, // [cite: 237]
+        { "id": "u6_w_017", "type": "CtoE_word", "question": "班；轮班", "answer": "shift", "options": [] }, // [cite: 237, 238]
+        { "id": "u6_w_018", "type": "CtoE_word", "question": "不幸的是；遗憾的是", "answer": "unfortunately", "options": [] } // [cite: 238]
+      ],
+      "phraseTranslationEtoC": [
+        { "id": "u6_p_001", "type": "EtoC_phrase", "question": "as a result", "answer": "结果；因此", "options": [] }, // [cite: 239]
+        { "id": "u6_p_002", "type": "EtoC_phrase", "question": "except for", "answer": "除了…外", "options": [] }, // [cite: 239]
+        { "id": "u6_p_003", "type": "EtoC_phrase", "question": "find out", "answer": "查明；发现", "options": [] }, // [cite: 239]
+        { "id": "u6_p_004", "type": "EtoC_phrase", "question": "hold up", "answer": "延迟，耽搁；阻碍", "options": [] }, // [cite: 239]
+        { "id": "u6_p_005", "type": "EtoC_phrase", "question": "keep up with", "answer": "跟上", "options": [] }, // [cite: 239]
+        { "id": "u6_p_006", "type": "EtoC_phrase", "question": "productive", "answer": "多产的；富有成效的", "options": [] }, // [cite: 239]
+        { "id": "u6_p_007", "type": "EtoC_phrase", "question": "quality control", "answer": "质量控制（管理）", "options": [] }, // [cite: 239, 240]
+        { "id": "u6_p_008", "type": "EtoC_phrase", "question": "result in", "answer": "结果是；导致", "options": [] }, // [cite: 240]
+        { "id": "u6_p_009", "type": "EtoC_phrase", "question": "turn out", "answer": "结果是", "options": [] } // [cite: 240]
+      ],
+      "sentenceTranslationCtoE": [
+        { "id": "u6_s_001", "type": "CtoE_sentence", "question": "据报道，那条铁路曾因洪水而停止修建。", "answer": "It was reported that the building of the railway had been held up by a flood.", "options": [] }, // [cite: 241]
+        { "id": "u6_s_002", "type": "CtoE_sentence", "question": "那位外国专家希望在三年内达到所有的目标。", "answer": "The foreign expert hopes to achieve all his aims in three years.", "options": [] }, // [cite: 242]
+        { "id": "u6_s_003", "type": "CtoE_sentence", "question": "我很想买这本英文词典，遗憾的是我身上带的钱不够。", "answer": "I’d like very much to buy the English dictionary. Unfortunately, I haven’t got enough money on me.", "options": [] }, // [cite: 243]
+        { "id": "u6_s_004", "type": "CtoE_sentence", "question": "一个科学家要跟上本领域的发展，你认为必须做些什么？", "answer": "What do you think a scientist must do in order to keep up with the developments in his field?", "options": [] }, // [cite: 244]
+        { "id": "u6_s_005", "type": "CtoE_sentence", "question": "如果优秀工人经常得到加薪和提拔，他们就会有更大的生产积极性。", "answer": "If excellent workers get frequent pay increases and promotions, they will have greater incentive to produce.", "options": [] } // [cite: 245]
+      ],
+      "passageTranslationEtoC": [
+        {
+          "id": "u6_psg_001",
+          "type": "EtoC_passage",
+          "question": "I went to the plant and spent about a week looking around and making notes. I was really amazed at what I saw. Most curious of all, there was no quality control whatsoever. No one inspected the final products of the factory. As a result some of the shirts that were put in boxes for shipment were missing one or two buttons, the collar, even a sleeve sometimes! The working conditions were poor. The tables where the workers sat were very high and uncomfortable. Except for a half hour at lunchtime, there were no breaks in the day to relieve the boring work. I was amazed that the workers hadn’t gone on strike.", // [cite: 246, 247, 248, 249, 250, 251]
+          "answer": "我来到厂里，花了一个星期左右的时间一边到处查看，一边做些笔记。说真的，我对看到的情况不胜惊讶。最为奇怪的是，厂里竟然没有任何质量控制。没有人检验工厂生产的产品。结果，有些装箱待运的衬衫不是缺了一两粒纽扣，就是少了衣领，有时甚至还会少只袖子。工厂的生产条件很差。工作台很高，工人坐在旁边很不舒服。 除了吃中饭的半个小时外，全天没有别的休息时间来调剂一下令人厌倦的工作。使我感到惊奇的是，工人们竟然没有罢工。", // [cite: 251]
+          "options": []
+        }
+      ],
+      "multipleChoice": [
+        { "id": "u6_mc_001", "type": "MCQ", "question": "Life was hard then. She had no chance to go to school, even ________ school.", "options": ["basic", "introductory", "elementary", "famous"], "answer": "elementary" }, // [cite: 252, 253]
+        { "id": "u6_mc_002", "type": "MCQ", "question": "Whenever he found himself in difficulty, Joe would ________ his workmates.", "options": ["turn over", "watch out for", "look after", "consult with"], "answer": "consult with" }, // [cite: 253, 254]
+        { "id": "u6_mc_003", "type": "MCQ", "question": "Workers' incomes are not ________ up with inflation (通货膨胀).", "options": ["putting", "keeping", "holding", "working"], "answer": "keeping" }, // [cite: 254, 255]
+        { "id": "u6_mc_004", "type": "MCQ", "question": "Let's ________ the arrangement with the others before we make a decision.", "options": ["talk over", "find out", "turn out", "burst into"], "answer": "talk over" }, // [cite: 255, 256]
+        { "id": "u6_mc_005", "type": "MCQ", "question": "Though an outstanding scientist, the professor was often ________ in his personal life.", "options": ["absent-mind", "absent-minding", "absent-minded", "absent-minds"], "answer": "absent-minded" }, // [cite: 256, 257]
+        { "id": "u6_mc_006", "type": "MCQ", "question": "Jack has flown to New York, but will be back soon, because he went there ________ short-term business.", "options": ["in", "on", "to", "for"], "answer": "on" }, // [cite: 257, 258]
+        { "id": "u6_mc_007", "type": "MCQ", "question": "________ nonsense the newspapers print, some people always believe it.", "options": ["Whatsoever", "Wherever", "Whomever", "Whichever"], "answer": "Whatsoever" }, // [cite: 258, 259]
+        { "id": "u6_mc_008", "type": "MCQ", "question": "She could not help weeping after she had found her favorite watch ________.", "options": ["missed", "miss", "to be missed", "missing"], "answer": "missing" }, // [cite: 259, 260]
+        { "id": "u6_mc_009", "type": "MCQ", "question": "The ________ audience left the cinema one after another before the ________ film drew to the end.", "options": ["boring … bored", "boring … boring", "bored … boring", "bored … bored"], "answer": "bored … boring" }, // [cite: 260, 261]
+        { "id": "u6_mc_010", "type": "MCQ", "question": "“Child” has an ________ plural form (复数形式) “children”.", "options": ["irregular", "unregular", "disregular", "inregular"], "answer": "irregular" }, // [cite: 261, 262]
+        { "id": "u6_mc_011", "type": "MCQ", "question": "His job is rather simple and dull. Every day he stands by the ________ and put products into boxes.", "options": ["assembling line", "assembly line", "assemble line", "assembled line"], "answer": "assembly line" }, // [cite: 262, 263]
+        { "id": "u6_mc_012", "type": "MCQ", "question": "She often sleeps during the day time, because her work is on night ________.", "options": ["change", "turn", "shift", "move"], "answer": "shift" }, // [cite: 263, 264]
+        { "id": "u6_mc_013", "type": "MCQ", "question": "It is true that these herbs (药草) can be used to ________ pain.", "options": ["release", "relax", "remove", "relieve"], "answer": "relieve" }, // [cite: 264]
+        { "id": "u6_mc_014", "type": "MCQ", "question": "John is very capable. You see, although the problem was very difficult, he ________ to solve it at last.", "options": ["tried", "promised", "managed", "decided"], "answer": "managed" }, // [cite: 264, 265, 266]
+        { "id": "u6_mc_015", "type": "MCQ", "question": "The little fox was not clever enough to miss ________ by the hunter.", "options": ["catching", "caught", "been caught", "being caught"], "answer": "being caught" }, // [cite: 266, 267]
+        { "id": "u6_mc_016", "type": "MCQ", "question": "An expert is ________ who has special knowledge, skill or training.", "options": ["one", "that", "such", "what"], "answer": "one" }, // [cite: 267, 268]
+        { "id": "u6_mc_017", "type": "MCQ", "question": "They are making ________ efforts to decrease the cost of production.", "options": ["farther", "further", "father", "furthermore"], "answer": "further" }, // [cite: 268, 269]
+        { "id": "u6_mc_018", "type": "MCQ", "question": "Sam believes that beautification of the dull setting ________ greater productivity.", "options": ["results from", "hold up", "take over", "results in"], "answer": "results in" }, // [cite: 269, 270]
+        { "id": "u6_mc_019", "type": "MCQ", "question": "I couldn't hear what they were saying on the tape --- there was too much ________ noise.", "options": ["environment", "surrounding", "background", "setting"], "answer": "background" }, // [cite: 270, 271]
+        { "id": "u6_mc_020", "type": "MCQ", "question": "I hadn't seen him for 16 years, but I ________ him immediately.", "options": ["recognized", "recalled", "reminded", "reflected"], "answer": "recognized" }, // [cite: 271, 272]
+        { "id": "u6_mc_021", "type": "MCQ", "question": "Being a manager, he has paid a lot of attention to the ________ in his factory.", "options": ["sufficiency", "efficiency", "influence", "endurance"], "answer": "efficiency" }, // [cite: 272, 273]
+        { "id": "u6_mc_022", "type": "MCQ", "question": "In the past twenty years our country has got great achievement in ________ field.", "options": ["industrial", "industrious", "industrialist", "industrialism"], "answer": "industrial" }, // [cite: 273, 274]
+        { "id": "u6_mc_023", "type": "MCQ", "question": "Noise is unpleasant, ________ when you're trying to sleep.", "options": ["specially", "physically", "especially", "naturally"], "answer": "especially" }, // [cite: 274, 275]
+        { "id": "u6_mc_024", "type": "MCQ", "question": "As neither ________ nor labor would give in, the union organized a strike.", "options": ["manager", "management", "managing", "manage"], "answer": "management" }, // [cite: 275]
+        { "id": "u6_mc_025", "type": "MCQ", "question": "Don't be so serious! This is only a story that has no ________ in fact.", "options": ["concentration", "illustration", "explanation", "foundation"], "answer": "foundation" } // [cite: 276, 277]
+      ]
+    },
+    "unit7": {
+      "name": "Unit 7: The Sampler", // [cite: 279]
+      "wordTranslationCtoE": [
+        { "id": "u7_w_001", "type": "CtoE_word", "question": "利益，好处；优点", "answer": "advantage", "options": [] }, // [cite: 280]
+        { "id": "u7_w_002", "type": "CtoE_word", "question": "外表", "answer": "appearance", "options": [] }, // [cite: 280, 281]
+        { "id": "u7_w_003", "type": "CtoE_word", "question": "欺骗", "answer": "cheat", "options": [] }, // [cite: 281]
+        { "id": "u7_w_004", "type": "CtoE_word", "question": "尊严", "answer": "dignity", "options": [] }, // [cite: 281, 282]
+        { "id": "u7_w_005", "type": "CtoE_word", "question": "上了年纪的", "answer": "elderly", "options": [] }, // [cite: 282, 283]
+        { "id": "u7_w_006", "type": "CtoE_word", "question": "终于，最终", "answer": "eventually", "options": [] }, // [cite: 283, 284]
+        { "id": "u7_w_007", "type": "CtoE_word", "question": "明显的，明白的", "answer": "evident", "options": [] }, // [cite: 284, 285]
+        { "id": "u7_w_008", "type": "CtoE_word", "question": "意图；打算；目的", "answer": "intention", "options": [] }, // [cite: 285, 286]
+        { "id": "u7_w_009", "type": "CtoE_word", "question": "偶尔；间或", "answer": "occasionally", "options": [] }, // [cite: 286, 287]
+        { "id": "u7_w_010", "type": "CtoE_word", "question": "有把握的，确信的", "answer": "positive", "options": [] }, // [cite: 287, 288]
+        { "id": "u7_w_011", "type": "CtoE_word", "question": "特权", "answer": "privilege", "options": [] }, // [cite: 288, 289]
+        { "id": "u7_w_012", "type": "CtoE_word", "question": "富裕的；成功的；昌盛的", "answer": "prosperous", "options": [] }, // [cite: 289, 290]
+        { "id": "u7_w_013", "type": "CtoE_word", "question": "样品检验员；品尝者", "answer": "sample", "options": [] }, // [cite: 290, 291]
+        { "id": "u7_w_014", "type": "CtoE_word", "question": "挑选", "answer": "select", "options": [] }, // [cite: 291]
+        { "id": "u7_w_015", "type": "CtoE_word", "question": "诚恳的", "answer": "sincere", "options": [] }, // [cite: 291, 292]
+        { "id": "u7_w_016", "type": "CtoE_word", "question": "怀疑；猜测", "answer": "suspect", "options": [] } // [cite: 292]
+      ],
+      "phraseTranslationEtoC": [
+        { "id": "u7_p_001", "type": "EtoC_phrase", "question": "and what’s more", "answer": "而且，更重要的是", "options": [] }, // [cite: 293]
+        { "id": "u7_p_002", "type": "EtoC_phrase", "question": "break off", "answer": "中止；中断", "options": [] }, // [cite: 293]
+        { "id": "u7_p_003", "type": "EtoC_phrase", "question": "do sb. a favo(u)r", "answer": "给某人以恩惠；帮某人忙", "options": [] }, // [cite: 293, 294]
+        { "id": "u7_p_004", "type": "EtoC_phrase", "question": "lay out", "answer": "陈列", "options": [] }, // [cite: 294]
+        { "id": "u7_p_005", "type": "EtoC_phrase", "question": "long for", "answer": "渴望", "options": [] }, // [cite: 294]
+        { "id": "u7_p_006", "type": "EtoC_phrase", "question": "mistake … for", "answer": "把…错认为", "options": [] }, // [cite: 294]
+        { "id": "u7_p_007", "type": "EtoC_phrase", "question": "out of place", "answer": "不适当的；不相称的", "options": [] }, // [cite: 294]
+        { "id": "u7_p_008", "type": "EtoC_phrase", "question": "pull out", "answer": "抽出，取出", "options": [] }, // [cite: 294, 295]
+        { "id": "u7_p_009", "type": "EtoC_phrase", "question": "take advantage of", "answer": "利用", "options": [] }, // [cite: 295]
+        { "id": "u7_p_010", "type": "EtoC_phrase", "question": "to sb.’s taste", "answer": "合某人的口味；称某人的心", "options": [] } // [cite: 295]
+      ],
+      "sentenceTranslationCtoE": [
+        { "id": "u7_s_001", "type": "CtoE_sentence", "question": "他常利用她缺乏生意头脑而欺骗她。", "answer": "He often took advantage of her lack of business sense to cheat her.", "options": [] }, // [cite: 296]
+        { "id": "u7_s_002", "type": "CtoE_sentence", "question": "萨姆买不起他想要的那种照相机，因为那相机太贵了。", "answer": "Sam could not afford the camera he longed for because it was too expensive.", "options": [] }, // [cite: 297]
+        { "id": "u7_s_003", "type": "CtoE_sentence", "question": "整个上午他都在忙于写那篇故事，只是偶尔停下来喝杯茶。", "answer": "He was busy writing the story all the morning, only breaking off occasionally to have a cup of tea.", "options": [] }, // [cite: 298]
+        { "id": "u7_s_004", "type": "CtoE_sentence", "question": "他们肯定没有打算把他培养成一名工程师，我猜想他们永远也不会这样做。", "answer": "Undoubtedly they do not have the intention of making an engineer of him, and I suspect they never will.", "options": [] }, // [cite: 299]
+        { "id": "u7_s_005", "type": "CtoE_sentence", "question": "我怀疑这家工厂什么质量控制都没有。经过一周的观察，我发现情况果真如此。", "answer": "I suspected there was no quality control whatsoever in the factory. After making observations for a week I found this was indeed the case.", "options": [] } // [cite: 300, 301]
+      ],
+      "passageTranslationEtoC": [
+        {
+          "id": "u7_psg_001",
+          "type": "EtoC_passage",
+          "question": "The elderly gentleman, who was poorly but neatly dressed, accepted the spoon and began eagerly to sample one after another of the puddings, only breaking off occasionally to wipe his red eyes with a large torn handkerchief. All the time it was evident that he sincerely believed that he might eventually buy one of these puddings, and I am positive that he did not for a moment feel that he was in any way cheating the store. Poor old chap! Probably he had come down in the world and this sampling was all that was left him from the time when he could afford to come and select his favorite pudding.", // [cite: 302, 303, 304]
+          "answer": "这位老先生衣着虽然破旧，但却十分整洁。他接过调羹，便开始急切地一只接一只地品尝起来，只是偶尔停下来，用一方大的破手绢擦擦他的红眼睛。有一点至始至终很明显：他真诚地相信自己最终也许会买一只布丁；而我也确信，他一点也不觉得自己是在欺骗商店。可怜的老头儿！很可能他已经家道败落。从前他是有钱来选购他最喜爱的布丁的，而今却只能这样来品尝一下布丁的味道了。", // [cite: 305]
+          "options": []
+        }
+      ],
+      "multipleChoice": [
+        { "id": "u7_mc_001", "type": "MCQ", "question": "Standing on the stage, in front of so many people, I felt quite ________.", "options": ["out of order", "out of place", "out of question", "out of work"], "answer": "out of place" }, // [cite: 306]
+        { "id": "u7_mc_002", "type": "MCQ", "question": "People are always mistaking him ________ his twin brother.", "options": ["as", "from", "with", "for"], "answer": "for" }, // [cite: 307]
+        { "id": "u7_mc_003", "type": "MCQ", "question": "As a senior executive, you can enjoy certain ________, such as free health insurance and the right to buy shares in the company.", "options": ["advantages", "privileges", "profits", "interests"], "answer": "privileges" }, // [cite: 308]
+        { "id": "u7_mc_004", "type": "MCQ", "question": "Poor old George has ________ down in the world since his business failed.", "options": ["come", "fallen", "broken", "gone"], "answer": "come" }, // [cite: 309]
+        { "id": "u7_mc_005", "type": "MCQ", "question": "We can't ________ a holiday to go away this summer.", "options": ["spend", "pay", "afford", "cost"], "answer": "afford" }, // [cite: 310]
+        { "id": "u7_mc_006", "type": "MCQ", "question": "She has tried on one after ________ of the skirts, but still has not decided which one to buy.", "options": ["the other", "another", "other", "each other"], "answer": "another" }, // [cite: 311]
+        { "id": "u7_mc_007", "type": "MCQ", "question": "The foreigner ________ the moon cake and found it very delicious.", "options": ["sampled", "stung", "scraped", "spoiled"], "answer": "sampled" }, // [cite: 311]
+        { "id": "u7_mc_008", "type": "MCQ", "question": "How strange it is! He looks as if he ________ all about it.", "options": ["knows", "know", "knew", "has known"], "answer": "knew" }, // [cite: 312]
+        { "id": "u7_mc_009", "type": "MCQ", "question": "He is full of good ________, but can do nothing to help.", "options": ["attentions", "inventions", "attractions", "intentions"], "answer": "intentions" }, // [cite: 313]
+        { "id": "u7_mc_010", "type": "MCQ", "question": "He must be very poor, for he is wearing old and ________ clothes.", "options": ["torn", "tore", "teared", "tearing"], "answer": "torn" }, // [cite: 314]
+        { "id": "u7_mc_011", "type": "MCQ", "question": "He ________ the old woman out of her money by selling her a house that did not exist.", "options": ["tricked", "cheated", "deceived", "persuaded"], "answer": "cheated" }, // [cite: 315]
+        { "id": "u7_mc_012", "type": "MCQ", "question": "Would you please ________ me a favour by lending me your bicycle for a few days?", "options": ["make", "give", "do", "help"], "answer": "do" }, // [cite: 316]
+        { "id": "u7_mc_013", "type": "MCQ", "question": "The shop assistant ________ out the food on the counter.", "options": ["displayed", "spread", "arranged", "laid"], "answer": "laid" }, // [cite: 317]
+        { "id": "u7_mc_014", "type": "MCQ", "question": "They were arguing but ________ off when someone suddenly came into the room.", "options": ["took", "turned", "broke", "came"], "answer": "broke" }, // [cite: 318]
+        { "id": "u7_mc_015", "type": "MCQ", "question": "He is ________ of having a hand in the recently happened affair.", "options": ["suspected", "inspected", "doubted", "expected"], "answer": "suspected" }, // [cite: 319]
+        { "id": "u7_mc_016", "type": "MCQ", "question": "Chinese people on both sides of the Taiwan Strait ________ for reunification.", "options": ["dream", "desire", "think", "long"], "answer": "long" }, // [cite: 320]
+        { "id": "u7_mc_017", "type": "MCQ", "question": "After failing four times, I ________ passed my driving test.", "options": ["permanently", "eventually", "occasionally", "accidentally"], "answer": "eventually" }, // [cite: 320]
+        { "id": "u7_mc_018", "type": "MCQ", "question": "There must have happened something special. They are all ________ in white.", "options": ["put", "worn", "covered", "dressed"], "answer": "dressed" }, // [cite: 321]
+        { "id": "u7_mc_019", "type": "MCQ", "question": "The soldiers stood ________ for the officer's inspection.", "options": ["in a row", "out of place", "in advance", "in vain"], "answer": "in a row" }, // [cite: 322]
+        { "id": "u7_mc_020", "type": "MCQ", "question": "As soon as the man ________ his gun, I knew he was a robber.", "options": ["counted out", "broke off", "pulled out", "held up"], "answer": "pulled out" }, // [cite: 323]
+        { "id": "u7_mc_021", "type": "MCQ", "question": "From the pictures you can select the one which is most to your ________.", "options": ["desire", "taste", "flavor", "favor"], "answer": "taste" }, // [cite: 324]
+        { "id": "u7_mc_022", "type": "MCQ", "question": "Flowers were slowly ________ out by the old lady before the tomb of her husband.", "options": ["laid", "lied", "layed", "lain"], "answer": "laid" }, // [cite: 325]
+        { "id": "u7_mc_023", "type": "MCQ", "question": "The narrator sincerely wished that he could ________ his tactless words.", "options": ["take apart", "take out", "take back", "take off"], "answer": "take back" }, // [cite: 326]
+        { "id": "u7_mc_024", "type": "MCQ", "question": "We had fine weather all through July ________ an occasional thunderstorm.", "options": ["apart from", "except for", "in addition to", "as well as"], "answer": "except for" }, // [cite: 327]
+        { "id": "u7_mc_025", "type": "MCQ", "question": "He always takes full ________ of the mistakes made by his rivals (对手).", "options": ["interest", "benefit", "profit", "advantage"], "answer": "advantage" } // [cite: 328]
+      ]
+    },
+    "unit8": {
+      "name": "Unit 8: A Magician at Stretching a Dollar", // [cite: 330]
+      "wordTranslationCtoE": [
+        { "id": "u8_w_001", "type": "CtoE_word", "question": "完全的，绝对的", "answer": "absolute", "options": [] }, // [cite: 331]
+        { "id": "u8_w_002", "type": "CtoE_word", "question": "习得；获得", "answer": "acquire", "options": [] }, // [cite: 331]
+        { "id": "u8_w_003", "type": "CtoE_word", "question": "接近；临近", "answer": "approach", "options": [] }, // [cite: 331]
+        { "id": "u8_w_004", "type": "CtoE_word", "question": "使大为惊讶", "answer": "astonish", "options": [] }, // [cite: 331]
+        { "id": "u8_w_005", "type": "CtoE_word", "question": "防止；避免", "answer": "avoid", "options": [] }, // [cite: 331]
+        { "id": "u8_w_006", "type": "CtoE_word", "question": "社区", "answer": "community", "options": [] }, // [cite: 331, 332]
+        { "id": "u8_w_007", "type": "CtoE_word", "question": "撰写；创作", "answer": "compose", "options": [] }, // [cite: 332]
+        { "id": "u8_w_008", "type": "CtoE_word", "question": "信心，把握；自信", "answer": "confidence", "options": [] }, // [cite: 332, 333]
+        { "id": "u8_w_009", "type": "CtoE_word", "question": "危急的；决定性的，关键的", "answer": "critical", "options": [] }, // [cite: 333, 334]
+        { "id": "u8_w_010", "type": "CtoE_word", "question": "拒绝给予；否认", "answer": "deny", "options": [] }, // [cite: 334]
+        { "id": "u8_w_011", "type": "CtoE_word", "question": "暴露；使无遮盖（或保护）", "answer": "expose", "options": [] }, // [cite: 334]
+        { "id": "u8_w_012", "type": "CtoE_word", "question": "感激之情，感恩之心", "answer": "gratitude", "options": [] }, // [cite: 334, 335]
+        { "id": "u8_w_013", "type": "CtoE_word", "question": "表明；表示；显示", "answer": "indicate", "options": [] }, // [cite: 335]
+        { "id": "u8_w_014", "type": "CtoE_word", "question": "立即的，立刻的", "answer": "instant", "options": [] }, // [cite: 335, 336]
+        { "id": "u8_w_015", "type": "CtoE_word", "question": "立即", "answer": "instantly", "options": [] }, // [cite: 336, 337]
+        { "id": "u8_w_016", "type": "CtoE_word", "question": "幸运的", "answer": "lucky", "options": [] }, // [cite: 337, 338]
+        { "id": "u8_w_017", "type": "CtoE_word", "question": "支付，付款；支付的款项", "answer": "payment", "options": [] }, // [cite: 338, 339]
+        { "id": "u8_w_018", "type": "CtoE_word", "question": "私人的，个人的", "answer": "private", "options": [] }, // [cite: 339, 340]
+        { "id": "u8_w_019", "type": "CtoE_word", "question": "一系列，一排；范围", "answer": "range", "options": [] }, // [cite: 340, 341]
+        { "id": "u8_w_020", "type": "CtoE_word", "question": "泄露；使显露", "answer": "reveal", "options": [] }, // [cite: 341]
+        { "id": "u8_w_021", "type": "CtoE_word", "question": "以某种方式；不知为什么", "answer": "somehow", "options": [] }, // [cite: 341, 342]
+        { "id": "u8_w_022", "type": "CtoE_word", "question": "节俭地使用；（使）变长（或宽），拉长", "answer": "stretch", "options": [] } // [cite: 342]
+      ],
+      "phraseTranslationEtoC": [
+        { "id": "u8_p_001", "type": "EtoC_phrase", "question": "come true", "answer": "实现，成真", "options": [] }, // [cite: 343]
+        { "id": "u8_p_002", "type": "EtoC_phrase", "question": "come upon", "answer": "偶然遇见（或发现）", "options": [] }, // [cite: 343]
+        { "id": "u8_p_003", "type": "EtoC_phrase", "question": "do well by", "answer": "对（某人）好", "options": [] }, // [cite: 343]
+        { "id": "u8_p_004", "type": "EtoC_phrase", "question": "hold back", "answer": "抑制，控制", "options": [] }, // [cite: 343]
+        { "id": "u8_p_005", "type": "EtoC_phrase", "question": "in search of", "answer": "寻找", "options": [] }, // [cite: 343]
+        { "id": "u8_p_006", "type": "EtoC_phrase", "question": "rob (sb.) of (sth.)", "answer": "剥夺；抢劫", "options": [] }, // [cite: 343]
+        { "id": "u8_p_007", "type": "EtoC_phrase", "question": "think over", "answer": "认真考虑", "options": [] } // [cite: 343]
+      ],
+      "sentenceTranslationCtoE": [
+        { "id": "u8_s_001", "type": "CtoE_sentence", "question": "我很幸运，在我年轻的时候就学会了许多不同的技能。", "answer": "I am lucky to have acquired a wide range of skills when I was young.", "options": [] }, // [cite: 344]
+        { "id": "u8_s_002", "type": "CtoE_sentence", "question": "这些画价值在五千万美元左右，绝不能直接暴露在阳光之下。", "answer": "These drawings, which are worth something like 50 million dollars, must not be exposed to direct sunlight.", "options": [] }, // [cite: 345]
+        { "id": "u8_s_003", "type": "CtoE_sentence", "question": "由于流感在社区传播，她用暖和的冬衣将自己裹起来，以防传染上这种疾病。", "answer": "As the flu was spreading in the community, she wrapped herself in warm winter clothing to avoid catching the disease.", "options": [] }, // [cite: 346]
+        { "id": "u8_s_004", "type": "CtoE_sentence", "question": "被告否认他曾经向政府官员付钱以获得合同。", "answer": "The defendant denied that he had ever made any payment to the government official to get a contract.", "options": [] }, // [cite: 347]
+        { "id": "u8_s_005", "type": "CtoE_sentence", "question": "当他渐渐获得了信心的时候，他的语调变得自然了，说起话来也就自然脱口而出了。", "answer": "As he gradually acquired confidence, his tone became natural and his words came out spontaneously.", "options": [] } // [cite: 348]
+      ],
+      "passageTranslationEtoC": [
+        {
+          "id": "u8_psg_001",
+          "type": "EtoC_passage",
+          "question": "I was deeply moved by the discovery and yet sickened by the knowledge that, bursting into her room like this, I had robbed her of the pleasure of seeing me astonished and delighted on Christmas day. I hadn’t wanted to know her lovely secret; still coming upon it like this made me feel as though I’d struck a blow against her happiness. I backed out, put the key back in its hiding place, and thought over what to do. I decided that between now and Christmas I must do nothing, absolutely nothing, to reveal the slightest hint of my terrible knowledge. I must avoid the least word that might reveal my possession of her secret. Nothing must deny her the happiness of seeing me completely amazed on Christmas day.", // [cite: 349, 350, 351, 352, 353, 354]
+          "answer": "这一发现让我深为感动，然而想到这样闯进她的卧室，从而剥夺了她在圣诞节那天见到我又惊又喜时的欢乐，我又感到厌恶。我本不想知道她这个可爱的秘密；但像这样偶然地发现了它竟然使我觉得好像重重地打击了她的欢乐一样。我从她的卧室退了出来，把钥匙放回原处，认真考虑着该怎么办才好。\n\n我决定，在现在和圣诞节之间这段时间里，我必须不动声色，绝对不可露出一点蛛丝马迹暗示我已令人讨厌地知道了此事。我必须谨言慎行，不能让她知道我已掌握了她的秘密。必须想尽一切办法让她在圣诞节那天享受到看见我极为惊讶时的快乐。", // [cite: 354]
+          "options": []
+        }
+      ],
+      "multipleChoice": [
+        { "id": "u8_mc_001", "type": "MCQ", "question": "Mr. Smith was a little nervous this morning. It was natural, for it was the first time for him to ________ a lecture.", "options": ["provide", "speak", "manage", "deliver"], "answer": "deliver" }, // [cite: 355, 356]
+        { "id": "u8_mc_002", "type": "MCQ", "question": "You'll soon find it isn't an easy job to try and ________ everybody in the office.", "options": ["pleasure", "please", "plead", "pledge"], "answer": "please" }, // [cite: 356, 357]
+        { "id": "u8_mc_003", "type": "MCQ", "question": "Only yesterday did I see him jogging in the park, so I am ________ at the news of his death.", "options": ["shocked", "interested", "touched", "moved"], "answer": "shocked" }, // [cite: 357, 358]
+        { "id": "u8_mc_004", "type": "MCQ", "question": "The enemy camps ________ for ten miles.", "options": ["spread", "extended", "stretched", "expanded"], "answer": "stretched" }, // [cite: 358]
+        { "id": "u8_mc_005", "type": "MCQ", "question": "Many immigrants came to the US ________ the American Dream.", "options": ["in search of", "something like", "in spite of", "in addition to"], "answer": "in search of" }, // [cite: 359]
+        { "id": "u8_mc_006", "type": "MCQ", "question": "A doctor should be ________ for the lives of patients.", "options": ["suitable", "famous", "responsible", "critical"], "answer": "responsible" }, // [cite: 360]
+        { "id": "u8_mc_007", "type": "MCQ", "question": "It was so quiet in this village. We ________ carefully but ________ nothing.", "options": ["listened to … heard", "listened … heard", "heard … listened to", "heard … listened"], "answer": "listened … heard" }, // [cite: 361]
+        { "id": "u8_mc_008", "type": "MCQ", "question": "Jack found a piece of paper on the ground and ________ to pick it up.", "options": ["stood", "stopped", "stayed", "stooped"], "answer": "stooped" }, // [cite: 362]
+        { "id": "u8_mc_009", "type": "MCQ", "question": "In the report, names have been changed to protect the ________ of those involved.", "options": ["privacy", "private", "privilege", "priority"], "answer": "privacy" }, // [cite: 363]
+        { "id": "u8_mc_010", "type": "MCQ", "question": "Confidence in your own abilities is ________ to your success in the job of a team leader.", "options": ["of important first", "of first importance", "importance of first", "first of importance"], "answer": "of first importance" }, // [cite: 364]
+        { "id": "u8_mc_011", "type": "MCQ", "question": "Susan hoped John would take the ________ and leave her alone.", "options": ["words", "speech", "hint", "element"], "answer": "hint" }, // [cite: 365]
+        { "id": "u8_mc_012", "type": "MCQ", "question": "________one thousand people attended the conference.", "options": ["Like something", "Anything like", "Like anything", "Something like"], "answer": "Something like" }, // [cite: 365]
+        { "id": "u8_mc_013", "type": "MCQ", "question": "Mary's mother managed to ________ the money for her tuition and fees.", "options": ["hold back", "think over", "scrape together", "count out"], "answer": "scrape together" }, // [cite: 366]
+        { "id": "u8_mc_014", "type": "MCQ", "question": "About three weeks after I started looking, I ________ an advertisement for a math teacher.", "options": ["made out", "came upon", "pulled out", "decided on"], "answer": "came upon" }, // [cite: 367]
+        { "id": "u8_mc_015", "type": "MCQ", "question": "My uncle's generous contributions helped make my wish to visit Europe ________.", "options": ["come true", "come through", "come about", "come down"], "answer": "come true" }, // [cite: 368]
+        { "id": "u8_mc_016", "type": "MCQ", "question": "Don't worry; we'll get the lost money back ________.", "options": ["anywhere", "anyhow", "somewhere", "somehow"], "answer": "somehow" }, // [cite: 369]
+        { "id": "u8_mc_017", "type": "MCQ", "question": "What he told you the other day is ________ impossible.", "options": ["completely", "absolutely", "fully", "wholly"], "answer": "absolutely" }, // [cite: 370]
+        { "id": "u8_mc_018", "type": "MCQ", "question": "Workers ________ to the press that they were going on strike.", "options": ["revealed", "relieved", "reflected", "recommended"], "answer": "revealed" }, // [cite: 371]
+        { "id": "u8_mc_019", "type": "MCQ", "question": "It is a pity that disease has ________ her of her memory.", "options": ["denied", "rejected", "robbed", "declined"], "answer": "robbed" }, // [cite: 372]
+        { "id": "u8_mc_020", "type": "MCQ", "question": "There's no ________ that this will be a serious blow to the government.", "options": ["denial", "deny", "denies", "denying"], "answer": "denying" }, // [cite: 373]
+        { "id": "u8_mc_021", "type": "MCQ", "question": "Several cars have caught fire ________ while parked.", "options": ["personally", "instinctively", "spontaneously", "moderately"], "answer": "spontaneously" }, // [cite: 373]
+        { "id": "u8_mc_022", "type": "MCQ", "question": "A look of ________ came into his eyes as he read the telegram.", "options": ["surprising", "surprisingly", "surprised", "surprise"], "answer": "surprise" }, // [cite: 374]
+        { "id": "u8_mc_023", "type": "MCQ", "question": "Professor Johnson has agreed to ________ the time limit for our term paper.", "options": ["spread", "extend", "lengthen", "widen"], "answer": "extend" }, // [cite: 375]
+        { "id": "u8_mc_024", "type": "MCQ", "question": "For twenty years, he was the most active and ________ scholar in the world.", "options": ["admired", "admiring", "admiral", "admitting"], "answer": "admired" }, // [cite: 376]
+        { "id": "u8_mc_025", "type": "MCQ", "question": "The rescuers searched in the rubble (瓦砾) once again but did not expect to find ________.", "options": ["anyone alive else", "alive anyone else", "anyone else alive", "else alive anyone"], "answer": "anyone else alive" } // [cite: 377]
+      ]
+    }
+  };

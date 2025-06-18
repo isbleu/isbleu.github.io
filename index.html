@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英语练习与考试系统</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>英语练习与考试系统</h1>
+    </header>
+
+    <main id="app-container">
+        <section id="mode-selection">
+            <h2>选择模式</h2>
+            <button id="btn-practice-mode">练习模式 (Practice)</button>
+            <button id="btn-exam-mode">考试模式 (Exam)</button>
+        </section>
+
+        <section id="unit-selection" class="hidden">
+            <h2>选择单元 (Select Unit)</h2>
+            <div id="unit-buttons-container">
+                </div>
+            <button id="btn-back-to-mode">返回模式选择</button>
+        </section>
+
+        <section id="exercise-area" class="hidden">
+            <h2 id="current-task-title"></h2>
+            <div id="question-container">
+                </div>
+            <div id="answer-input-area">
+                </div>
+            <div id="feedback-area">
+                </div>
+            <div id="navigation-controls">
+                <div id="left-nav-buttons">
+                    <button id="btn-prev-question">上一题 (Prev)</button>
+
+                
+                </div>
+                <div>
+                    <button id="btn-check-answer" >检查答案 (Check)</button>
+                    <button id="btn-next-question">下一题 (Next)</button>
+                </div>
+                
+            </div>
+            <button id="btn-back-to-unit">返回单元选择</button> 
+            <button id="btn-finish-exam" >完成考试 </button>
+        </section>
+
+        <section id="results-area" class="hidden">
+            <h2>考试结果 (Exam Results)</h2>
+            <p>总分: <span id="total-score"></span></p>
+            <div id="detailed-results"></div>
+            <button id="btn-restart">重新开始</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 英语学习系统</p>
+    </footer>
+
+    <script src="questions.js"></script> <script src="app.js"></script>     </body>
+</html>
