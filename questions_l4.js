@@ -330,5 +330,212 @@ const allUnitsData = {
       { "id": "u3_mc_025", "type": "MCQ", "question": "The ages of the students in my class ________ from seventeen to twenty.", "options": ["range", "change", "divide", "grow"], "answer": "range" }
     ]
   },
-
+"unit4_book2": {
+    "name": "Unit 4 (Book 2): The Professor and the Yo-Yo",
+    "wordTranslationCtoE": [
+      { "id": "u4_w_001", "type": "CtoE_word", "question": "野心；抱负", "answer": "ambition", "options": [] },
+      { "id": "u4_w_002", "type": "CtoE_word", "question": "（处理问题的）方式，方法", "answer": "approach", "options": [] },
+      { "id": "u4_w_003", "type": "CtoE_word", "question": "把…弄糊涂；使迷惑", "answer": "bewilder", "options": [] },
+      { "id": "u4_w_004", "type": "CtoE_word", "question": "通信", "answer": "correspond", "options": [] },
+      { "id": "u4_w_005", "type": "CtoE_word", "question": "好奇心", "answer": "curiosity", "options": [] },
+      { "id": "u4_w_006", "type": "CtoE_word", "question": "展示", "answer": "display", "options": [] },
+      { "id": "u4_w_007", "type": "CtoE_word", "question": "专门地；排除其他地", "answer": "exclusively", "options": [] },
+      { "id": "u4_w_008", "type": "CtoE_word", "question": "使沮丧；挫败", "answer": "frustrate", "options": [] },
+      { "id": "u4_w_009", "type": "CtoE_word", "question": "有免疫力的；不受影响的", "answer": "immune", "options": [] },
+      { "id": "u4_w_010", "type": "CtoE_word", "question": "给…深刻的印象", "answer": "impress", "options": [] },
+      { "id": "u4_w_011", "type": "CtoE_word", "question": "谦虚的", "answer": "modest", "options": [] },
+      { "id": "u4_w_012", "type": "CtoE_word", "question": "个性", "answer": "personality", "options": [] },
+      { "id": "u4_w_013", "type": "CtoE_word", "question": "原理；原则", "answer": "principle", "options": [] }
+    ],
+    "phraseTranslationEtoC": [
+      { "id": "u4_p_001", "type": "EtoC_phrase", "question": "off balance", "answer": "失去平衡的", "options": [] },
+      { "id": "u4_p_002", "type": "EtoC_phrase", "question": "come to terms with", "answer": "与…达成协议", "options": [] },
+      { "id": "u4_p_003", "type": "EtoC_phrase", "question": "a series of", "answer": "一系列；一连串", "options": [] },
+      { "id": "u4_p_004", "type": "EtoC_phrase", "question": "take apart", "answer": "拆开", "options": [] },
+      { "id": "u4_p_005", "type": "EtoC_phrase", "question": "work out", "answer": "解决；算出；想出", "options": [] },
+      { "id": "u4_p_006", "type": "EtoC_phrase", "question": "single out", "answer": "选出；挑出", "options": [] }
+    ],
+    "sentenceTranslationCtoE": [
+      { "id": "u4_s_001", "type": "CtoE_sentence", "question": "那小女孩跑得太快，身体一下失去平衡，跌倒了。", "answer": "The little girl ran so fast that she was thrown off balance and fell over / down.", "options": [] },
+      { "id": "u4_s_002", "type": "CtoE_sentence", "question": "我被他们互相矛盾的意见搞糊涂了，不知如何去做才是。", "answer": "I was so bewildered by their conflicting advice that I did not know how to act / what to do.", "options": [] },
+      { "id": "u4_s_003", "type": "CtoE_sentence", "question": "体育代表团团长在少先队员向他献上一束鲜花时愉快地笑了。", "answer": "The head of the sports delegation beamed with delight when a young pioneer presented him with a bunch of flowers.", "options": [] },
+      { "id": "u4_s_004", "type": "CtoE_sentence", "question": "这学期我们都学习得不错，我真不明白为什么我们的英语老师单单表扬了班长一个人。", "answer": "I really don’t see why our English teacher should single out our monitor for praise since we have all done quite well this term.", "options": [] },
+      { "id": "u4_s_005", "type": "CtoE_sentence", "question": "我相信比较高级的动物是由比较低级的动物进化而来的这一学说。", "answer": "I believe in the theory that the higher animals developed from the lower ones.", "options": [] }
+    ],
+    "passageTranslationEtoC": [
+      {
+        "id": "u4_psg_001",
+        "type": "EtoC_passage",
+        "question": "As a boy and then as an adult, I never lost my wonder at the personality that was Einstein. He was the only person I knew who had come to terms with himself and the world around him. He knew what he wanted and he wanted only this: to understand within his limits as a human being the nature of the universe and the logic and simplicity in its functioning. He knew there were answers beyond his intellectual reach. But this did not frustrate him. He was content to go as far as he could.\n\nIn the 23 years of our friendship, I never saw him show jealousy, vanity, bitterness, anger, resentment, or personal ambition. He seemed immune to these emotions. He was beyond any pretension. Although he corresponded with many of the world’s most important people, his stationery carried only a watermark --- W --- for Woolworth’s.",
+        "answer": "作为一个孩子，以后又作为一个成年人，我一直催爱因斯坦的个性惊叹不已。他是我所认识的人中唯一能跟自己及周围世界达成妥协的人。他知道自己想要什么，而他想要的只是：在他作为一个人的能力范围之内理解宇宙的性质以及宇宙运行的逻辑和单纯。他知道有许多问题的答案超出了他智力所及的范围。但这并不使他感到灰心丧气。只要在能力许可的范围内取得最大的成功他就心满意足了。\n\n在我们二十三年的友谊中，我从未见他表现出嫉妒、虚荣、痛苦、愤怒、怨恨或个人野心。他好像对这些感情具有免疫能力似的。他毫无矫饰之心，虚荣之道。虽然他与世界上的许多要人通信，他用的却是有W水印字母的信笺，水印字母W——五分钱商店伍尔沃思的缩写。",
+        "options": []
+      }
+    ],
+    "multipleChoice": [
+      { "id": "u4_mc_001", "type": "MCQ", "question": "Henry is very talkative, while his twin brother is a man of ________ words.", "options": ["little", "a few", "a little", "few"], "answer": "few" },
+      { "id": "u4_mc_002", "type": "MCQ", "question": "A little more care ________ such an accident.", "options": ["would prevent", "would have prevented", "prevented", "had prevented"], "answer": "would have prevented" },
+      { "id": "u4_mc_003", "type": "MCQ", "question": "David was ________ the few who really understood the new theory.", "options": ["among", "between", "over", "under"], "answer": "among" },
+      { "id": "u4_mc_004", "type": "MCQ", "question": "If that is the case, there is no ________ in arguing further.", "options": ["meaning", "words", "point", "significance"], "answer": "point" },
+      { "id": "u4_mc_005", "type": "MCQ", "question": "While my family have caught the flu, I seem to be ________ it.", "options": ["immune to", "capable of", "anxious about", "sorry for"], "answer": "immune to" },
+      { "id": "u4_mc_006", "type": "MCQ", "question": "Now that your children have arrived ________, you can set your mind at ease.", "options": ["safely and soundly", "safe and sound", "safely and sound", "safe and soundly"], "answer": "safe and sound" },
+      { "id": "u4_mc_007", "type": "MCQ", "question": "The exact cause of this disease is a puzzle ________ we have yet to find an answer.", "options": ["from which", "to that", "to which", "from that"], "answer": "to which" },
+      { "id": "u4_mc_008", "type": "MCQ", "question": "George himself believed in freedom, ________ he would rather die than live without it.", "options": ["so much that", "too much so that", "very much so that", "so much so that"], "answer": "so much so that" },
+      { "id": "u4_mc_009", "type": "MCQ", "question": "Columbus’ discovery of America in 1492 has made his name a ________.", "options": ["family word", "household word", "family name", "household name"], "answer": "household word" },
+      { "id": "u4_mc_010", "type": "MCQ", "question": "Many educators are giving up traditional methods of teaching ________ more modern approaches.", "options": ["in favor of", "in search of", "in front of", "in spite of"], "answer": "in favor of" },
+      { "id": "u4_mc_011", "type": "MCQ", "question": "Bob’s effort to raise money for the hungry people of Africa brought him worldwide ________.", "options": ["jewel", "ease", "ambition", "fame"], "answer": "fame" },
+      { "id": "u4_mc_012", "type": "MCQ", "question": "I consider it proper to leave it to the committee to ________ the details of the plan.", "options": ["work with", "work off", "work out", "work away"], "answer": "work out" },
+      { "id": "u4_mc_013", "type": "MCQ", "question": "Philip is good at writing. Last week his composition was once again ________ for praise.", "options": ["singled out", "written off", "taken down", "taken apart"], "answer": "singled out" },
+      { "id": "u4_mc_014", "type": "MCQ", "question": "Childhood experiences have a strong influence ________ forming personality.", "options": ["in", "at", "with", "on"], "answer": "on" },
+      { "id": "u4_mc_015", "type": "MCQ", "question": "He was a modest person ________ his great success.", "options": ["in case of", "in spite of", "by means of", "because of"], "answer": "in spite of" },
+      { "id": "u4_mc_016", "type": "MCQ", "question": "Our chief engineer has the ability to work out simple, effective ________ to practical problems.", "options": ["answers", "methods", "solutions", "techniques"], "answer": "solutions" },
+      { "id": "u4_mc_017", "type": "MCQ", "question": "________ population most American cities are not as large as Chinese cities like Shanghai and Beijing.", "options": ["In terms of", "In the course of", "In addition to", "In contrast with"], "answer": "In terms of" },
+      { "id": "u4_mc_018", "type": "MCQ", "question": "The doctor advised Mike to stay in hospital until he was fully ________.", "options": ["uncovered", "recovered", "covered", "discovered"], "answer": "recovered" },
+      { "id": "u4_mc_019", "type": "MCQ", "question": "Be modest, ________ you will lag behind.", "options": ["then", "thus", "otherwise", "besides"], "answer": "otherwise" },
+      { "id": "u4_mc_020", "type": "MCQ", "question": "Father ________ to the son that the basic skill in riding a bicycle is to keep balance.", "options": ["made out", "found out", "picked out", "pointed out"], "answer": "pointed out" },
+      { "id": "u4_mc_021", "type": "MCQ", "question": "I tried to ________ my new boss with my diligence but in vain.", "options": ["affect", "impress", "influence", "relate"], "answer": "impress" },
+      { "id": "u4_mc_022", "type": "MCQ", "question": "In his ________ to escape, the prisoner was frustrated by a watchful guard.", "options": ["endeavors", "experiences", "attempts", "experiments"], "answer": "attempts" },
+      { "id": "u4_mc_023", "type": "MCQ", "question": "Marry and Peter ________ for many years before they met.", "options": ["corresponded", "communicated", "complained", "concentrated"], "answer": "corresponded" },
+      { "id": "u4_mc_024", "type": "MCQ", "question": "I don’t like English. I do it ________ because I have to learn something to work with in the future.", "options": ["simple", "simplify", "similar", "simply"], "answer": "simply" },
+      { "id": "u4_mc_025", "type": "MCQ", "question": "About the recent affair, the minister gave a highly ________ remark.", "options": ["personal", "person", "personnel", "personality"], "answer": "personal" }
+    ]
+  },
+  "unit5_book2": {
+    "name": "Unit 5 (Book 2): The Villain in the Atmosphere",
+    "wordTranslationCtoE": [
+      { "id": "u5_w_001", "type": "CtoE_word", "question": "选择", "answer": "alternative", "options": [] },
+      { "id": "u5_w_002", "type": "CtoE_word", "question": "倒塌；崩溃；彻底失败", "answer": "collapse", "options": [] },
+      { "id": "u5_w_003", "type": "CtoE_word", "question": "竞争；对抗", "answer": "compete", "options": [] },
+      { "id": "u5_w_004", "type": "CtoE_word", "question": "吃，喝，消费；耗尽", "answer": "consume", "options": [] },
+      { "id": "u5_w_005", "type": "CtoE_word", "question": "（使） 转变；（使）变成", "answer": "convert", "options": [] },
+      { "id": "u5_w_006", "type": "CtoE_word", "question": "必不可少的；非常重要的", "answer": "essential", "options": [] },
+      { "id": "u5_w_007", "type": "CtoE_word", "question": "估计；估算", "answer": "estimate", "options": [] },
+      { "id": "u5_w_008", "type": "CtoE_word", "question": "视角；观点", "answer": "perspective", "options": [] },
+      { "id": "u5_w_009", "type": "CtoE_word", "question": "压力；精神负担", "answer": "pressure", "options": [] },
+      { "id": "u5_w_010", "type": "CtoE_word", "question": "溅落；拍打", "answer": "splash", "options": [] },
+      { "id": "u5_w_011", "type": "CtoE_word", "question": "机构，组织；结构", "answer": "structure", "options": [] },
+      { "id": "u5_w_012", "type": "CtoE_word", "question": "透明的", "answer": "transparent", "options": [] },
+      { "id": "u5_w_013", "type": "CtoE_word", "question": "分布广的；流传广的", "answer": "widespread", "options": [] }
+    ],
+    "phraseTranslationEtoC": [
+      { "id": "u5_p_001", "type": "EtoC_phrase", "question": "do (sb) harm", "answer": "对（某人）造成损害（或伤害）", "options": [] },
+      { "id": "u5_p_002", "type": "EtoC_phrase", "question": "serve as", "answer": "起…的作用；被用作", "options": [] },
+      { "id": "u5_p_003", "type": "EtoC_phrase", "question": "in all likelihood", "answer": "十之八九；极有可能", "options": [] },
+      { "id": "u5_p_004", "type": "EtoC_phrase", "question": "come about", "answer": "发生", "options": [] },
+      { "id": "u5_p_005", "type": "EtoC_phrase", "question": "to make matters worse", "answer": "使情况（更糟糕的是）", "options": [] }
+    ],
+    "sentenceTranslationCtoE": [
+      { "id": "u5_s_001", "type": "CtoE_sentence", "question": "烧煤的时候，不仅消耗房子里面的氧气，而且还散发出有毒的气体。", "answer": "The burning of coal not only consumes the oxygen in the house but also gives out poisonous gases.", "options": [] },
+      { "id": "u5_s_002", "type": "CtoE_sentence", "question": "显然，找到替代能源对我们经济的稳定发展是至关重要的。", "answer": "Apparently, finding alternative energy sources is essential to the steady development of our economy.", "options": [] },
+      { "id": "u5_s_003", "type": "CtoE_sentence", "question": "如果地球上的温度继续年复一年地上升，极地的冰帽将会开始融化，沿海城市中一半的建筑物很可能会消失在劈啪飞溅的海浪下面。", "answer": "If the temperature on the Earth continues to go up from year to year, the polar ice caps will begin to melt and, in all likelihood, half of the buildings in coastal cities will disappear beneath splashing sea waves.", "options": [] },
+      { "id": "u5_s_004", "type": "CtoE_sentence", "question": "因为这些生物很小并且常常躲在叶子茂密的植物下面，肉眼并不都可以看见。", "answer": "Because these creatures are small and tend to hide beneath leafy plants, they are not always visible to the naked eye.", "options": [] },
+      { "id": "u5_s_005", "type": "CtoE_sentence", "question": "由于受到原子辐射，他最终在工作时倒下了。", "answer": "As a result of exposure to atomic radiation, he finally collapsed at work.", "options": [] },
+      { "id": "u5_s_006", "type": "CtoE_sentence", "question": "有明显的证据表明工作上的重压与身体的某些毛病有联系。", "answer": "There is distinct evidence of the connection between heavy pressure of work and some disorders of the body.", "options": [] }
+    ],
+    "passageTranslationEtoC": [
+      {
+        "id": "u5_psg_001",
+        "type": "EtoC_passage",
+        "question": "The sea level is rising very slowly from year to year. In all likelihood, it will continue to rise and do so at a greater rate in the course of the next hundred years. Where there are low-lying coastal areas (where a large fraction of the world’s population lives) the water will advance steadily, forcing people to retreat inland.\n\nEventually the sea will reach two hundred feet above its present level, and will be splashing against the windows along the twentieth floors of Manhattan’s skyscrapers. Florida will disappear beneath the waves, as will much of the British Isles, the crowded Nile valley, and the low-lying areas of China, India, and Russia.\n\nNot only will many cities be drowned, but much of the most productive farming areas of the world will be lost. As the food supply drops, starvation will be widespread and the structure of society may collapse under the pressure.",
+        "answer": "年复一年，海平面正在慢慢上升。它很可能继续上升，而在今后数百年间，会以更快的速度上升。在那些低洼的沿海地区（在这些地区居住着世界上很大一部分人口），海水会稳步向前推进，迫使人们向内陆退居。\n\n最后，海水将会高出目前海平面两百英尺，一阵阵海浪将会拍打曼哈顿摩天大楼二十层楼的窗户。佛罗里达将会沉没在海浪之下，英伦三岛的大部分，人口稠密的尼罗河流域，还有中国、印度河俄罗斯的低洼地区也都将遭到同样的命运。\n\n不仅许多城市将被淹没，而且世界上大部分盛产粮食的地区也将会失去。由于食品供应下降，到处都会出现饥荒，在这种压力下，社会结构有可能崩溃。",
+        "options": []
+      }
+    ],
+    "multipleChoice": [
+      { "id": "u5_mc_001", "type": "MCQ", "question": "Make sure you ________ the same story when you’re questioned a second time.", "options": ["follow up", "draw on", "stick to", "make up"], "answer": "stick to" },
+      { "id": "u5_mc_002", "type": "MCQ", "question": "He is very thin and sick. ________, he eats very little every day.", "options": ["To make matters worse", "To be honest", "To tell you the truth", "To be frank"], "answer": "To make matters worse" },
+      { "id": "u5_mc_003", "type": "MCQ", "question": "At present nuclear power ________ only a small fraction of the energy we consume.", "options": ["serves as", "comes about", "pulls out", "makes up"], "answer": "makes up" },
+      { "id": "u5_mc_004", "type": "MCQ", "question": "If you shop around, you can probably buy the same product elsewhere ________ a fraction of those prices.", "options": ["in", "for", "by", "at"], "answer": "for" },
+      { "id": "u5_mc_005", "type": "MCQ", "question": "If you bring children to the wildlife garden, remember that many plants are poisonous and can ________ to their health.", "options": ["do harm", "put harm", "make harm", "have harm"], "answer": "do harm" },
+      { "id": "u5_mc_006", "type": "MCQ", "question": "In brainstorming, you liberate your mind, allowing ________ for any and every idea that comes up to its surface.", "options": ["a room", "room", "rooms", "rooming"], "answer": "room" },
+      { "id": "u5_mc_007", "type": "MCQ", "question": "It is five o’clock in the morning, but the sun has already crept ________ the horizon.", "options": ["on", "under", "over", "beneath"], "answer": "over" },
+      { "id": "u5_mc_008", "type": "MCQ", "question": "He drew out a ________ plastic bag and held it up to the light to show me the golden fishes inside.", "options": ["transport", "transit", "transmit", "transparent"], "answer": "transparent" },
+      { "id": "u5_mc_009", "type": "MCQ", "question": "There are not yet any visible signs to indicate that creative thinking can be ________ by computers.", "options": ["placed", "replaced", "positioned", "reported"], "answer": "replaced" },
+      { "id": "u5_mc_010", "type": "MCQ", "question": "The house is built of red brick but its ________ walls are all painted white.", "options": ["exterior", "inferior", "superior", "interior"], "answer": "interior" },
+      { "id": "u5_mc_011", "type": "MCQ", "question": "Many a player who had been highly thought of ______ disappeared from the tennis scene.", "options": ["has", "have", "had", "are"], "answer": "has" },
+      { "id": "u5_mc_012", "type": "MCQ", "question": "The author tells us in very ________ language how global warming came about.", "options": ["easy", "popular", "simple", "modern"], "answer": "simple" },
+      { "id": "u5_mc_013", "type": "MCQ", "question": "This course offered by the professor has ________ a bridge between the two cultures.", "options": ["served as", "regarded as", "considered", "thought as"], "answer": "served as" },
+      { "id": "u5_mc_014", "type": "MCQ", "question": "Fossil fuels, in all ________, will be used up in a few hundred years.", "options": ["likeness", "likelihood", "likely", "liking"], "answer": "likelihood" },
+      { "id": "u5_mc_015", "type": "MCQ", "question": "Active co-operation to ________ common problems is essential to environmental security for every country.", "options": ["splash", "operate", "combat", "convert"], "answer": "combat" },
+      { "id": "u5_mc_016", "type": "MCQ", "question": "Singapore was then a ________ city-state of more than two million inhabitants.", "options": ["everlasting", "far-reaching", "fast-moving", "fast-growing"], "answer": "fast-growing" },
+      { "id": "u5_mc_017", "type": "MCQ", "question": "Despite the ________ words with which the Bill was presented to Parliament it is a complete sham (骗局).", "options": ["outstanding", "high-sounding", "ill-fitting", "good-looking"], "answer": "high-sounding" },
+      { "id": "u5_mc_018", "type": "MCQ", "question": "In our country, universities demand good results and ________ jobs need degrees.", "options": ["far-fetched", "well-designed", "well-paid", "widespread"], "answer": "well-paid" },
+      { "id": "u5_mc_019", "type": "MCQ", "question": "When the meeting began, the Party secretary spoke ________.", "options": ["At first", "Firstly", "First of all", "First"], "answer": "First" },
+      { "id": "u5_mc_020", "type": "MCQ", "question": "It is estimated that by 2020 the concentration will be nearly twice ________ it is now.", "options": ["what", "that", "as", "which"], "answer": "what" },
+      { "id": "u5_mc_021", "type": "MCQ", "question": "He’s either a hero or a villain, ________ your point of view.", "options": ["acting on", "insisting on", "keeping on", "depending on"], "answer": "depending on" },
+      { "id": "u5_mc_022", "type": "MCQ", "question": "Can you tell the ________ between poisonous mushrooms and edible varieties?", "options": ["similarity", "relationship", "difference", "progress"], "answer": "difference" },
+      { "id": "u5_mc_023", "type": "MCQ", "question": "Because I live in a ________ village, I regard my car as an essential.", "options": ["nearby", "remote", "local", "great"], "answer": "remote" },
+      { "id": "u5_mc_024", "type": "MCQ", "question": "The defeated army had to ________ hastily from the field of battle.", "options": ["retreat", "respond", "remove", "retire"], "answer": "retreat" },
+      { "id": "u5_mc_025", "type": "MCQ", "question": "He traveled a great deal ________ most of his friends.", "options": ["as were", "as was", "as did", "did as"], "answer": "as did" }
+    ]
+  },
+  "unit6_book2": {
+    "name": "Unit 6 (Book 2): The Making of a Surgeon",
+    "wordTranslationCtoE": [
+      { "id": "u6_w_001", "type": "CtoE_word", "question": "预期", "answer": "anticipate", "options": [] },
+      { "id": "u6_w_002", "type": "CtoE_word", "question": "复合的", "answer": "compound", "options": [] },
+      { "id": "u6_w_003", "type": "CtoE_word", "question": "得出结论", "answer": "conclude", "options": [] },
+      { "id": "u6_w_004", "type": "CtoE_word", "question": "自信的", "answer": "confident", "options": [] },
+      { "id": "u6_w_005", "type": "CtoE_word", "question": "紧急情况；急诊", "answer": "emergency", "options": [] },
+      { "id": "u6_w_006", "type": "CtoE_word", "question": "遭到；意外地遇见", "answer": "encounter", "options": [] },
+      { "id": "u6_w_007", "type": "CtoE_word", "question": "放松", "answer": "relax", "options": [] },
+      { "id": "u6_w_008", "type": "CtoE_word", "question": "解决", "answer": "resolve", "options": [] },
+      { "id": "u6_w_009", "type": "CtoE_word", "question": "责任，责任心", "answer": "responsibility", "options": [] },
+      { "id": "u6_w_010", "type": "CtoE_word", "question": "单独的；唯一的", "answer": "sole", "options": [] },
+      { "id": "u6_w_011", "type": "CtoE_word", "question": "外科；外科手术", "answer": "surgery", "options": [] },
+      { "id": "u6_w_012", "type": "CtoE_word", "question": "流汗", "answer": "sweat", "options": [] }
+    ],
+    "phraseTranslationEtoC": [
+      { "id": "u6_p_001", "type": "EtoC_phrase", "question": "draw to a close", "answer": "结束", "options": [] },
+      { "id": "u6_p_002", "type": "EtoC_phrase", "question": "live with", "answer": "学会适应；容忍", "options": [] },
+      { "id": "u6_p_003", "type": "EtoC_phrase", "question": "dwell on", "answer": "老是想着；详述；强调", "options": [] },
+      { "id": "u6_p_004", "type": "EtoC_phrase", "question": "in practice", "answer": "（医师、律师等）在开业中；在实践中", "options": [] },
+      { "id": "u6_p_005", "type": "EtoC_phrase", "question": "butterflies in the stomach", "answer": "忐忑不安", "options": [] },
+      { "id": "u6_p_006", "type": "EtoC_phrase", "question": "in advance", "answer": "预先，事前", "options": [] },
+      { "id": "u6_p_007", "type": "EtoC_phrase", "question": "at one time or another", "answer": "在不同的场合（或时期）", "options": [] }
+    ],
+    "sentenceTranslationCtoE": [
+      { "id": "u6_s_001", "type": "CtoE_sentence", "question": "只要你不断努力，你迟早会解决这个难题的。", "answer": "If / As long as you keep (on) trying, you will be able to resolve this difficult problem sooner or later.", "options": [] },
+      { "id": "u6_s_002", "type": "CtoE_sentence", "question": "吉姆的朋友说，他们那个城市的噪音污染十分严重，但是他们只好忍着。", "answer": "Jim’s friends said that the noise pollution in their city was terrible, but they had to live with it.", "options": [] },
+      { "id": "u6_s_003", "type": "CtoE_sentence", "question": "汤姆起初认为，凭他的知识、技术和经验，一定能够找到一份称心如意的工作。", "answer": "At first Tom thought that with his knowledge, skill and experience he was bound to find a satisfactory job.", "options": [] },
+      { "id": "u6_s_004", "type": "CtoE_sentence", "question": "迪克认为，如果他拆不开那台机器，那么很可能厂里别的工人也拆不开。", "answer": "Dick though that if he wasn’t able to take the machine apart, chances were that no other worker in the plant could, either.", "options": [] },
+      { "id": "u6_s_005", "type": "CtoE_sentence", "question": "你是否认为公共汽车司机应对乘客的安全负完全的责任？", "answer": "Do you think bus drivers should take full responsibility for the passengers’ safety?", "options": [] },
+      { "id": "u6_s_006", "type": "CtoE_sentence", "question": "你不必再去多想判断上的那些失误了。重要的是尽量避免再犯。", "answer": "You needn’t dwell on your mistakes in judgment any more. What’s important is to try your best to avoid repeating them.", "options": [] }
+    ],
+    "passageTranslationEtoC": [
+      {
+        "id": "u6_psg_001",
+        "type": "EtoC_passage",
+        "question": "Now in the last month of my residency, sleeping was no longer a problem. There were still situations in which I couldn’t be certain my decision had been the right one; but I had learned to accept this as a constant problem for a surgeon, one that could never be completely resolved -- and I could live with it. So, once I had made a considered decision, I no longer dwelt on it. Reviewing it wasn’t going to help and I knew that with my knowledge and experience, any decision I’d made was bound to be a sound one. It was a nice feeling.",
+        "answer": "然而，在我做住院医生的最后一个月，睡眠已不再是个问题了。在有些情况下我仍然不能确定自己的决定是否正确，但我已学会把这看作一个外科医生经常会遇到的问题，一个永远也不能完全解决的问题——我已能适应它了。所以，我一旦经过深思熟虑作出某个决定，就不再去多想它了。多想也不会有什么帮助，而且我知道，凭我的知识和经验，我作出的任何决定肯定都是稳妥的。这是一种令人愉快的感觉。",
+        "options": []
+      }
+    ],
+    "multipleChoice": [
+      { "id": "u6_mc_001", "type": "MCQ", "question": "You must ________ the fact that you are no longer as strong as you were.", "options": ["live for", "live through", "live with", "live on"], "answer": "live with" },
+      { "id": "u6_mc_002", "type": "MCQ", "question": "We never ________ when we meet with difficulties in our work.", "options": ["lose heart", "lose our heart", "lose our hearts", "lose hearts"], "answer": "lose heart" },
+      { "id": "u6_mc_003", "type": "MCQ", "question": "________, her only purpose in saying all that is to help you help yourself.", "options": ["To believe it or not to", "Believe it or not", "To believe it or not", "Believe it or not to"], "answer": "Believe it or not" },
+      { "id": "u6_mc_004", "type": "MCQ", "question": "The strike organizers anticipated strong opposition from the management to the workers’ ________ for a pay raise.", "options": ["inquest", "inquiry", "instruction", "request"], "answer": "request" },
+      { "id": "u6_mc_005", "type": "MCQ", "question": "Before taking time to consider it, the president ________ our proposal for several months.", "options": ["sat on", "sat out", "sat through", "sat up"], "answer": "sat on" },
+      { "id": "u6_mc_006", "type": "MCQ", "question": "The doctor decided to open up Tom’s stomach to ________ the tumor.", "options": ["kill", "remove", "cut", "move"], "answer": "remove" },
+      { "id": "u6_mc_007", "type": "MCQ", "question": "The restless young patient relaxed after being told there was ________ with him.", "options": ["nothing wrong seriously", "seriously nothing wrong", "nothing seriously wrong", "seriously wrong nothing"], "answer": "nothing seriously wrong" },
+      { "id": "u6_mc_008", "type": "MCQ", "question": "It is advisable to place important telephone numbers next to the phone in case of an (a) ________.", "options": ["urgency", "extremity", "pressure", "emergency"], "answer": "emergency" },
+      { "id": "u6_mc_009", "type": "MCQ", "question": "From what I heard I concluded Miss Nobel must be very popular ________ her pupils.", "options": ["by", "at", "with", "for"], "answer": "with" },
+      { "id": "u6_mc_010", "type": "MCQ", "question": "The doctor who ________ the surgery gave Bob an 85 percent chance of full recovery by September.", "options": ["managed", "made", "produced", "performed"], "answer": "performed" },
+      { "id": "u6_mc_011", "type": "MCQ", "question": "We should make our reservations as far ________ as possible to get the flight we want.", "options": ["in advance", "in time", "on line", "on board"], "answer": "in advance" },
+      { "id": "u6_mc_012", "type": "MCQ", "question": "In theory, this sounds like a good idea; however, I doubt that it will work ________.", "options": ["in fact", "in practice", "in turn", "in principle"], "answer": "in practice" },
+      { "id": "u6_mc_013", "type": "MCQ", "question": "It is certain that with determination and hard work you will succeed ________.", "options": ["eventually", "lastly", "exclusively", "obviously"], "answer": "eventually" },
+      { "id": "u6_mc_014", "type": "MCQ", "question": "The young businessman thought ________ of himself because he had achieved great success at such an early age.", "options": ["high", "highly", "great", "greatly"], "answer": "highly" },
+      { "id": "u6_mc_015", "type": "MCQ", "question": "While George hadn’t much experience in business, he ________ it with confidence.", "options": ["went for", "came about", "went at", "came under"], "answer": "went at" },
+      { "id": "u6_mc_016", "type": "MCQ", "question": "Bill was doing a lot of physical exercise to build up his_______.", "options": ["mind", "force", "spirit", "strength"], "answer": "strength" },
+      { "id": "u6_mc_017", "type": "MCQ", "question": "--Brad was Jane’s brother!\n\n--_______he reminded me so much of Jane!", "options": ["No doubt", "Above all", "No wonder", "Of course"], "answer": "No wonder" },
+      { "id": "u6_mc_018", "type": "MCQ", "question": "How to ________ the contradictions correctly among the people is the key to develop steadily.", "options": ["deal", "handle", "hang", "combat"], "answer": "handle" },
+      { "id": "u6_mc_019", "type": "MCQ", "question": "He ________ to work hard until the final examination.", "options": ["detested", "thought", "considered", "resolved"], "answer": "resolved" },
+      { "id": "u6_mc_020", "type": "MCQ", "question": "She became a ________ customer of the bookshop.", "options": ["continuous", "constant", "content", "consent"], "answer": "constant" },
+      { "id": "u6_mc_021", "type": "MCQ", "question": "Chinese arts have won the _______ of a lot of people outside China.", "options": ["enjoyment", "appreciation", "entertainment", "reputation"], "answer": "appreciation" },
+      { "id": "u6_mc_022", "type": "MCQ", "question": "The head office of the bank is in Beijing but it has ________ all over the country.", "options": ["branches", "businesses", "companies", "organizations"], "answer": "branches" },
+      { "id": "u6_mc_023", "type": "MCQ", "question": "This ________ was highly appreciated by the patient for his successful operation.", "options": ["doctor", "physician", "surgeon", "dentist"], "answer": "surgeon" },
+      { "id": "u6_mc_024", "type": "MCQ", "question": "The peace negotiations were successfully ________.", "options": ["condemned", "concluded", "conducted", "confessed"], "answer": "concluded" },
+      { "id": "u6_mc_025", "type": "MCQ", "question": "Your frank ________ of his attempts annoyed him.", "options": ["critic", "conclusions", "comments", "criticism"], "answer": "criticism" }
+    ]
+  },
   };
