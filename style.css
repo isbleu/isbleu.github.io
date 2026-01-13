@@ -1,0 +1,174 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+button {
+    display: inline-block;
+    background: #4167e4;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 1em;
+}
+
+button:hover {
+    background: #737adf;
+}
+
+#btn-exam-mode {
+    background: #f0ad4e;
+}
+#btn-exam-mode:hover {
+    background: #eea236;
+}
+
+#btn-back-to-mode, #btn-back-to-unit, #btn-restart {
+    background: #6c757d;
+}
+#btn-back-to-mode:hover, #btn-back-to-unit:hover, #btn-restart:hover {
+    background: #5a6268;
+}
+#btn-check-answer{
+    background: #4cae4c;
+}
+#btn-check-answer:hover{
+    background: #4ed14e;
+}
+#btn-finish-exam {
+    background: #f0ad4e;
+}
+#btn-finish-exam:hover {
+    background: #ffd191;
+}
+#navigation-controls {
+    display: flex;
+    justify-content: space-between; /* Puts space between left group and prev button */
+    align-items: center; /* Vertically align buttons if they have different heights */
+    margin-top: 20px; /* Add some space above the buttons */
+}
+
+#left-nav-buttons button {
+    margin-right: 10px; /* Space between buttons in the left group */
+}
+#left-nav-buttons button:last-child {
+    margin-right: 0;
+}
+
+
+/* Style for disabled buttons */
+button:disabled {
+    background-color: #cccccc; /* Grey background */
+    color: #666666;          /* Darker grey text */
+    cursor: not-allowed;     /* Show 'not-allowed' cursor */
+    border-color: #aaaaaa;   /* Optional: lighter border for disabled state */
+}
+
+button:disabled:hover {
+    background-color: #cccccc; /* Ensure hover doesn't change background of disabled button */
+}
+
+.hidden {
+    display: none;
+}
+
+#question-container p, #question-container div {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+#answer-input-area input[type="text"],
+#answer-input-area textarea {
+    width: calc(100% - 22px); /* Account for padding and border */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#answer-input-area textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+#feedback-area {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.feedback-correct {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+}
+
+.feedback-incorrect {
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+}
+
+#navigation-controls button {
+    margin-top: 10px;
+}
+
+/* Multiple Choice Options */
+.mcq-option {
+    margin-bottom: 8px;
+}
+.mcq-option input[type="radio"] {
+    margin-right: 8px;
+}
+.mcq-option label {
+    cursor: pointer;
+}
+
+.text-success  {
+    background-color: #dff0d8;
+    color: #2e792f;
+    border: 2px solid #d6e9c6;
+}
+
+.text-danger {
+    background-color: #f2dede;
+    color: #a52f2d;
+    border: 2px solid #ebccd1;
+}
