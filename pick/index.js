@@ -202,9 +202,10 @@ document.addEventListener("DOMContentLoaded", () => {
     stockDetailContent.innerHTML = `
       <div class="stock-detail-grid fade-in">
         <div class="stock-main-info">
-          <div class="stock-title-row">
+          <div class="stock-title-row" style="display: flex; align-items: center; gap: 10px;">
             <span class="stock-name-title">${stock.name}</span>
             <span class="stock-code-title">${stock.code}</span>
+            ${stock.direction ? `<span class="badge" style="background:var(--accent-glow); color:var(--accent-color); font-size: 11px; padding: 2px 6px; border-radius: 4px; font-weight: 500;">${stock.direction}</span>` : ''}
           </div>
           
           <div class="info-block">
