@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentDecisionData = null;
 
   // 1. 初始化拉取日期列表（改为拉取静态的 data/list.json）
-  fetch("data/list.json")
+  fetch(`data/list.json?t=${new Date().getTime()}`)
     .then(res => res.json())
     .then(datesArray => {
       // 封装为与原版后端 API 一致的响应结构
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
     mainContent.style.display = "none";
     emptyState.style.display = "none";
 
-    fetch(`data/${dateStr}.json`)
+    fetch(`data/${dateStr}.json?t=${new Date().getTime()}`)
       .then(res => res.json())
       .then(detailObj => {
         const resData = { success: true, data: detailObj };
