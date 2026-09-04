@@ -833,11 +833,18 @@ body {
   background: rgba(255, 255, 255, 0.3);
 }
 
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .tracker-table th {
   white-space: nowrap;
   font-size: 12px;
   padding: 10px 8px;
   text-align: center;
+  vertical-align: middle;
 }
 
 .tracker-table td {
@@ -845,6 +852,7 @@ body {
   padding: 10px 8px;
   white-space: nowrap;
   text-align: center;
+  vertical-align: middle;
 }
 
 /* 股票名称与主线列靠左对齐，视觉更舒适 */
@@ -852,6 +860,18 @@ body {
 .tracker-table td:nth-child(4),
 .tracker-table th:nth-child(5),
 .tracker-table td:nth-child(5) {
+  text-align: left;
+}
+
+/* 所属主线 / 方向列专属排版：支持自然多行换行，绝不横向重叠遮挡 */
+.tracker-table th.col-direction,
+.tracker-table td.col-direction {
+  white-space: normal !important;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.4;
+  min-width: 150px;
+  max-width: 200px;
   text-align: left;
 }
 
