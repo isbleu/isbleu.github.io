@@ -68,9 +68,9 @@ body {
 
 /* --- App 容器排版 --- */
 .app-container {
-  max-width: 1440px;
+  max-width: 1560px;
   margin: 0 auto;
-  padding: 24px;
+  padding: 20px 24px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -811,22 +811,66 @@ body {
   box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
 }
 
+.tracker-table-card .card-body {
+  padding: 18px 20px;
+}
+
+.table-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.4);
+  border-radius: 3px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 3px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
 .tracker-table th {
   white-space: nowrap;
-  font-size: 13px;
+  font-size: 12px;
+  padding: 10px 8px;
+  text-align: center;
 }
 
 .tracker-table td {
-  font-size: 13.5px;
+  font-size: 12.5px;
+  padding: 10px 8px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* 股票名称与主线列靠左对齐，视觉更舒适 */
+.tracker-table th:nth-child(4),
+.tracker-table td:nth-child(4),
+.tracker-table th:nth-child(5),
+.tracker-table td:nth-child(5) {
+  text-align: left;
+}
+
+/* 最后一列【实盘走势状态】宽度保护与留白 */
+.tracker-table th:last-child,
+.tracker-table td:last-child {
+  padding-right: 14px;
+  min-width: 116px;
+  text-align: center;
 }
 
 .status-pill {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
-  padding: 4px 10px;
-  border-radius: 20px;
-  font-size: 12px;
+  justify-content: center;
+  gap: 4px;
+  padding: 3px 8px;
+  border-radius: 16px;
+  font-size: 11.5px;
   font-weight: 600;
   white-space: nowrap;
 }

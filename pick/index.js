@@ -422,7 +422,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <td><span class="badge badge-rank">Top ${r.rank}</span></td>
         <td class="font-mono">${r.code}</td>
         <td class="bold">${r.name}</td>
-        <td style="max-width: 160px;" class="ellipsis" title="${r.direction || ''}">${r.direction || '--'}</td>
+        <td style="max-width: 140px;" class="ellipsis" title="${r.direction || ''}">${r.direction || '--'}</td>
         <td class="bold">${r.score ? r.score + '分' : '--'}</td>
         <td class="font-mono">${r.buy_price ? r.buy_price.toFixed(2) + '元' : '--'}</td>
         <td>${formatPct(r.t0_return)}</td>
