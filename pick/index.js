@@ -361,7 +361,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderTrackerTable(rows) {
     trackerTableBody.innerHTML = "";
     if (!rows || rows.length === 0) {
-      trackerTableBody.innerHTML = `<tr><td colspan="13" class="text-center text-muted">暂无历史跟踪数据</td></tr>`;
+      trackerTableBody.innerHTML = `<tr><td colspan="15" class="text-center text-muted">暂无历史跟踪数据</td></tr>`;
       return;
     }
 
@@ -379,7 +379,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     if (filtered.length === 0) {
-      trackerTableBody.innerHTML = `<tr><td colspan="13" class="text-center text-muted">没有符合筛选条件的记录</td></tr>`;
+      trackerTableBody.innerHTML = `<tr><td colspan="15" class="text-center text-muted">没有符合筛选条件的记录</td></tr>`;
       return;
     }
 
@@ -393,6 +393,19 @@ document.addEventListener("DOMContentLoaded", () => {
         const cls = num > 0 ? 'text-color-red font-bold' : (num < 0 ? 'text-color-green font-bold' : 'text-muted');
         const sign = num > 0 ? '+' : '';
         return `<span class="${cls}">${sign}${num.toFixed(2)}%</span>`;
+      };
+
+      const formatGain = (val) => {
+        if (val === null || val === undefined) return '<span class="text-muted">--</span>';
+        const num = parseFloat(val);
+        const sign = num > 0 ? '+' : '';
+        return `<span class="text-color-red bold">${sign}${num.toFixed(2)}%</span>`;
+      };
+
+      const formatLoss = (val) => {
+        if (val === null || val === undefined) return '<span class="text-muted">--</span>';
+        const num = parseFloat(val);
+        return `<span class="text-color-green bold">${num.toFixed(2)}%</span>`;
       };
 
       let pillHtml = '<span class="status-pill pill-pending">⏳ 跟踪中</span>';
@@ -415,8 +428,10 @@ document.addEventListener("DOMContentLoaded", () => {
         <td>${formatPct(r.t0_return)}</td>
         <td>${formatPct(r.t1_return)}</td>
         <td>${formatPct(r.t3_return)}</td>
-        <td><span class="text-color-red bold">+${r.max_gain_5d ? r.max_gain_5d.toFixed(2) : '0.00'}%</span></td>
-        <td><span class="text-color-green bold">${r.max_loss_5d ? r.max_loss_5d.toFixed(2) : '0.00'}%</span></td>
+        <td>${formatGain(r.max_gain_3d)}</td>
+        <td>${formatLoss(r.max_loss_3d)}</td>
+        <td>${formatGain(r.max_gain_5d)}</td>
+        <td>${formatLoss(r.max_loss_5d)}</td>
         <td>${pillHtml}</td>
       `;
       trackerTableBody.appendChild(tr);
