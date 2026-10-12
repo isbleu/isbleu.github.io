@@ -6,13 +6,13 @@
   "draw_count": 26,
   "pending_count": 6,
   "win_rate": 57.4,
-  "avg_max_gain": 5.38,
-  "avg_max_loss": -8.4,
+  "avg_max_gain": 5.46,
+  "avg_max_loss": -8.59,
   "rank_stats": {
     "Top_1": {
       "total": 32,
-      "wins": 18,
-      "win_rate": 56.2
+      "wins": 19,
+      "win_rate": 59.4
     },
     "Top_2": {
       "total": 31,
@@ -21,8 +21,8 @@
     },
     "Top_3": {
       "total": 31,
-      "wins": 19,
-      "win_rate": 61.3
+      "wins": 18,
+      "win_rate": 58.1
     }
   }
 }
