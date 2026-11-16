@@ -1,18 +1,18 @@
 {
   "total": 100,
   "valid_total": 94,
-  "win_count": 69,
-  "loss_count": 8,
-  "draw_count": 17,
+  "win_count": 71,
+  "loss_count": 7,
+  "draw_count": 16,
   "pending_count": 6,
-  "win_rate": 73.4,
-  "avg_max_gain": 8.72,
-  "avg_max_loss": -9.04,
+  "win_rate": 75.5,
+  "avg_max_gain": 8.61,
+  "avg_max_loss": -9.24,
   "rank_stats": {
     "Top_1": {
       "total": 32,
-      "wins": 23,
-      "win_rate": 71.9
+      "wins": 24,
+      "win_rate": 75.0
     },
     "Top_2": {
       "total": 31,
@@ -21,8 +21,8 @@
     },
     "Top_3": {
       "total": 31,
-      "wins": 24,
-      "win_rate": 77.4
+      "wins": 25,
+      "win_rate": 80.6
     }
   }
 }
