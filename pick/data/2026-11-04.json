@@ -61,7 +61,26 @@
       "price_condition": "竞价高开0-3%可轻仓试，量比>1.2；若低开-2%以内且分时快速翻红、承接有力则右侧低吸（回踩5日线附近）；高开超5%不追、防冲高回落；跌破前低67元止损。属硬催化回踩低吸型，不追涨。",
       "k_features": "处年内高点132.87回撤约48%的低位区间，10月由83元回落至68.53，5日均线下方缩量回踩，底部区域夯实中，需放量企稳确认右侧信号。",
       "market_cap": "约 447.5 亿(流通) / 447.6 亿(总)",
-      "pct_change_5d": "近5日 -7.25%"
+      "pct_change_5d": "近5日 -7.25%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "8号高波档",
+        "atr_pct": 8.46,
+        "sl_pct": -5.0,
+        "act_pct": 8.0,
+        "cb_pct": 2.0,
+        "lock_pct": 1.2,
+        "ref_price": 74.0,
+        "ref_price_type": "开盘价",
+        "sl_price": 70.3,
+        "act_price": 79.92,
+        "lock_price": 74.89,
+        "buy_date": "2026-11-04",
+        "monitor_start_date": "2026-11-05",
+        "monitor_end_date": "2026-11-06",
+        "expire_date": "2026-11-09",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -73,7 +92,26 @@
       "price_condition": "因11/2已放量大涨，需防高位兑现；竞价若高开2%以内且不破5日线可小仓低吸；低开-2%至0%缩量企稳为较优介入点，量比>1.5配合；高开超4%坚决不追；跌破5日线放弃。",
       "k_features": "11/2放量中阳后短期均线乖离偏大、量能放大，回踩5/10日线是低吸位，注意追高风险。",
       "market_cap": "约 168.4 亿(流通) / 222.9 亿(总)",
-      "pct_change_5d": "近5日 -6.47%"
+      "pct_change_5d": "近5日 -6.47%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-11-04",
+        "monitor_start_date": "2026-11-05",
+        "monitor_end_date": "2026-11-06",
+        "expire_date": "2026-11-09",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -85,7 +123,26 @@
       "price_condition": "属超跌修复博弈，仅做隔日；竞价平开或小幅低开（-2%至0%）后分时放量翻红可轻仓博修复；严禁追高（高开超3%不参与）；结合美股光模块反弹情绪做右侧；跌破480元当日低点止损；反弹至500-520区间逢高减仓。",
       "k_features": "6月1416元→11/3 480元跌66%极致超跌，11/3放量长阴（成交293亿全场第一），筹码仍在出清、属左侧超跌，反弹需缩量止跌确认，快进快出。",
       "market_cap": "约 5329.9 亿(流通) / 5656.3 亿(总)",
-      "pct_change_5d": "近5日 -16.78%"
+      "pct_change_5d": "近5日 -16.78%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "8号高波档",
+        "atr_pct": 9.56,
+        "sl_pct": -5.0,
+        "act_pct": 8.0,
+        "cb_pct": 2.0,
+        "lock_pct": 1.2,
+        "ref_price": 489.89,
+        "ref_price_type": "开盘价",
+        "sl_price": 465.4,
+        "act_price": 529.08,
+        "lock_price": 495.77,
+        "buy_date": "2026-11-04",
+        "monitor_start_date": "2026-11-05",
+        "monitor_end_date": "2026-11-06",
+        "expire_date": "2026-11-09",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

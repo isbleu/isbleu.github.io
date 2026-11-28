@@ -65,7 +65,26 @@
       "price_condition": "竞价开盘幅度控制在-2%至+3%区间内，量比>1.5且分时承接有力可介入；若高开超4%则不建议追高，等回踩至37.5元（前平台）附近右侧低吸；若竞价低开且不能快速翻红则放弃，等站稳38元上方再考虑。",
       "k_features": "10/9收38.57元(-2.48%)、成交21.17亿元、换手率5.33%，日内高39.28/低36.01，属业绩公告前的高位小幅回踩；总股本40.03亿、流通股本39.72亿，估值对应2026年预测PE约19-20倍，均线呈多头排列、业绩催化后有望重新放量。",
       "market_cap": "约 1531.8 亿(流通) / 1544.0 亿(总)",
-      "pct_change_5d": "近5日 -10.43%"
+      "pct_change_5d": "近5日 -10.43%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 7.22,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 39.0,
+        "ref_price_type": "开盘价",
+        "sl_price": 37.63,
+        "act_price": 40.95,
+        "lock_price": 39.31,
+        "buy_date": "2026-10-12",
+        "monitor_start_date": "2026-10-13",
+        "monitor_end_date": "2026-10-14",
+        "expire_date": "2026-10-15",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -77,7 +96,26 @@
       "price_condition": "竞价开盘幅度在-2%至+4%之间、量比>2.5，分时回踩不破均价线可参与；若高开超6%或一字板则放弃不追（20CM一字追高风险大），等次日分歧回调至5日均线附近再低吸；若竞价低开超3%则观察是否快速回封、回封无望则放弃。",
       "k_features": "10/9放量20CM涨停收17.15元(+20.01%)、成交24.88亿元、换手12.56%、封单14.32亿元、量比5.18，全天一字封死、主力净流入6.39亿元；流通股本约12亿股、总市值206亿（全流通），属创业板周期弹性标的，形态极强但需防一字后分歧。",
       "market_cap": "约 205.8 亿(流通) / 205.8 亿(总)",
-      "pct_change_5d": "近5日 +10.57%"
+      "pct_change_5d": "近5日 +10.57%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-10-12",
+        "monitor_start_date": "2026-10-13",
+        "monitor_end_date": "2026-10-14",
+        "expire_date": "2026-10-15",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -89,7 +127,26 @@
       "price_condition": "竞价开盘幅度控制在-3%至+2%之间，量比>1.8且分时不破23元可参与；站稳23元看前高26.5元，若低开不破22元可右侧低吸；若高开超4%或快速冲高不封则等分歧回踩22.5元附近再介入，破22元减配。",
       "k_features": "10/9放量20CM涨停收23.00元(+19.98%)、成交23.85亿元、换手11.17%、量比1.52；总市值430亿、流通市值235亿、PE(TTM)64.66倍；5日均价20.35元、5日涨幅+4.00%，但机构席位与深股通为净卖出，属情绪驱动下的资金分歧形态。",
       "market_cap": "约 235.0 亿(流通) / 430.3 亿(总)",
-      "pct_change_5d": "近5日 +21.05%"
+      "pct_change_5d": "近5日 +21.05%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-10-12",
+        "monitor_start_date": "2026-10-13",
+        "monitor_end_date": "2026-10-14",
+        "expire_date": "2026-10-15",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

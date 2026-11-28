@@ -61,7 +61,26 @@
       "price_condition": "竞价开盘幅度在-2%至+2%之间、量比>1.5、分时不破昨日低点（约108元）则介入；若高开>4%不追，等回踩5日线（约110元）企稳再低吸；右侧放量突破111元可加仓。",
       "k_features": "9/1收109.22元（-5.03%），近期从117-123高位回撤约15%，跌破21日线（约115），量能温和未放巨量，处108-110一带潜在支撑区，若企稳则构成低吸窗口。",
       "market_cap": "约 2042.2 亿(流通) / 2180.8 亿(总)",
-      "pct_change_5d": "近5日 +0.11%"
+      "pct_change_5d": "近5日 +0.11%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.65,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 107.14,
+        "ref_price_type": "开盘价",
+        "sl_price": 103.39,
+        "act_price": 112.5,
+        "lock_price": 108.0,
+        "buy_date": "2026-09-02",
+        "monitor_start_date": "2026-09-03",
+        "monitor_end_date": "2026-09-04",
+        "expire_date": "2026-09-07",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -73,7 +92,26 @@
       "price_condition": "竞价开盘幅度在-1%至+3%之间、量比>2、分时承接有力（回踩不破前低）则介入；若低开>3%先观察能否翻红，翻红后右侧低吸；高开>5%不追。",
       "k_features": "近期自156高位回撤至119-130区间、5日约-15%，深度回调至前低支撑区，筹码有所沉淀，量能萎缩后有望反弹，处低位蓄势形态。",
       "market_cap": "约 611.0 亿(流通) / 726.9 亿(总)",
-      "pct_change_5d": "近5日 +2.42%"
+      "pct_change_5d": "近5日 +2.42%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-09-02",
+        "monitor_start_date": "2026-09-03",
+        "monitor_end_date": "2026-09-04",
+        "expire_date": "2026-09-07",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -85,7 +123,26 @@
       "price_condition": "竞价开盘幅度在0%至+3%、量比>1.8则介入；高开>5%追高风险大不追；若低开-2%以内且苹果链情绪延续，等分时翻红后右侧低吸。",
       "k_features": "8/20放量冲高（涨超10%）后回落，9/1收113元（-3.64%），处113-118箱体震荡，量能温和，均线粘合待方向选择，苹果折叠屏催化临近。",
       "market_cap": "约 310.0 亿(流通) / 310.0 亿(总)",
-      "pct_change_5d": "近5日 +6.74%"
+      "pct_change_5d": "近5日 +6.74%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-09-02",
+        "monitor_start_date": "2026-09-03",
+        "monitor_end_date": "2026-09-04",
+        "expire_date": "2026-09-07",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

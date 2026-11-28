@@ -52,7 +52,26 @@
       "price_condition": "竞价开盘幅度在-2%至1%之间、量比>0.8即为正常开盘。鉴于今日大盘可能继续承压，最佳介入方式为分时二次探底不破昨日低点14.05元后右侧低吸，或等待大盘杀跌企稳信号出现后的共振低吸。不追高，若高开超3%则放弃，等待回调至14元附近再考虑。",
       "k_features": "近期从16-17元区间回落至14元附近，连续缩量调整，今日若能在14元上方企稳收阳，则有望形成短期底部形态。年线上方运行，中长期趋势未破。",
       "market_cap": "约 362.8 亿(流通) / 368.1 亿(总)",
-      "pct_change_5d": "近5日 -9.47%"
+      "pct_change_5d": "近5日 -9.47%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 5.64,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 14.11,
+        "ref_price_type": "开盘价",
+        "sl_price": 13.62,
+        "act_price": 14.82,
+        "lock_price": 14.22,
+        "buy_date": "2026-07-17",
+        "monitor_start_date": "2026-07-20",
+        "monitor_end_date": "2026-07-21",
+        "expire_date": "2026-07-22",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -64,7 +83,26 @@
       "price_condition": "连续两日跌停后，今日若再大幅低开（-5%以上），则属于恐慌情绪的极端释放，反而可能触发超跌反弹。介入条件：竞价低开不超过-7%，等待开盘后分时快速杀跌放量后的V型反转信号确认（5分钟内翻红或自低点反弹超3%），届时右侧跟随。若直接高开则说明情绪修复，可轻仓在0%-2%区间介入。切忌在跌停板上接飞刀，必须等右侧信号。",
       "k_features": "连续两日跌停，股价从23.11元快速下杀至20.80元，短期跌幅已超25%，放量（换手15.43%）说明恐慌盘正在出清。25日线和60日线均已被跌破，短期严重超卖，技术上存在超跌反弹需求。",
       "market_cap": "约 622.0 亿(流通) / 622.1 亿(总)",
-      "pct_change_5d": "近5日 -26.04%"
+      "pct_change_5d": "近5日 -26.04%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "8号高波档",
+        "atr_pct": 11.05,
+        "sl_pct": -5.0,
+        "act_pct": 8.0,
+        "cb_pct": 2.0,
+        "lock_pct": 1.2,
+        "ref_price": 19.5,
+        "ref_price_type": "开盘价",
+        "sl_price": 18.52,
+        "act_price": 21.06,
+        "lock_price": 19.73,
+        "buy_date": "2026-07-17",
+        "monitor_start_date": "2026-07-20",
+        "monitor_end_date": "2026-07-21",
+        "expire_date": "2026-07-22",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -76,7 +114,26 @@
       "price_condition": "当前股价处于历史中高位区间，今日大盘承压环境下不宜追高。介入条件：若竞价低开2%-5%，且量比>0.8，可等待分时二次回踩不破开盘价后右侧低吸；若平开或高开，则等待盘中大盘恐慌杀跌时该股出现的被动回调机会，在分时均线附近布局。",
       "k_features": "近期股价在240-260元区间震荡，处于25日线上方运行，均线多头排列，量价配合健康。属于趋势多头但短期高位的品种，以回调低吸而非追高为主。",
       "market_cap": "约 1218.0 亿(流通) / 1218.0 亿(总)",
-      "pct_change_5d": "近5日 -20.68%"
+      "pct_change_5d": "近5日 -20.68%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-07-17",
+        "monitor_start_date": "2026-07-20",
+        "monitor_end_date": "2026-07-21",
+        "expire_date": "2026-07-22",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

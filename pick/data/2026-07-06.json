@@ -47,7 +47,26 @@
       "price_condition": "竞价开盘幅度在-2%至3%之间，量比>1.5。若平开或小幅高开，分时企稳后沿均价线右侧低吸；若低开则需等待盘中翻红且放量承接有力再介入，切忌追高大高开。",
       "k_features": "K线呈三连阳，量价温和，均线多头排列，底部阳多阴少，筹码高度集中。",
       "market_cap": "约 180 亿",
-      "pct_change_5d": "+15%"
+      "pct_change_5d": "+15%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.53,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 138.68,
+        "ref_price_type": "开盘价",
+        "sl_price": 133.83,
+        "act_price": 145.61,
+        "lock_price": 139.79,
+        "buy_date": "2026-07-06",
+        "monitor_start_date": "2026-07-07",
+        "monitor_end_date": "2026-07-08",
+        "expire_date": "2026-07-09",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -59,7 +78,26 @@
       "price_condition": "竞价平开至高开2%以内，开盘后若量比>2且分时承接有力，可在均价线上方果断介入；若大幅高开超4%则追高风险大，放弃追高，等待回踩5日线附近再做右侧低吸。",
       "k_features": "底部温和放量企稳，K线在21日均线附近获得支撑，阳多阴少，筹码处于低位密集区。",
       "market_cap": "约 11 亿（注：龙虎榜过滤流通市值数据）",
-      "pct_change_5d": "+10%"
+      "pct_change_5d": "+10%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-07-06",
+        "monitor_start_date": "2026-07-07",
+        "monitor_end_date": "2026-07-08",
+        "expire_date": "2026-07-09",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -71,7 +109,26 @@
       "price_condition": "竞价低开1%-3%是最佳右侧低吸机会，要求量比>1.2；若平开则观察前15分钟分时能否放量突破开盘价；若直接高开超5%，不追高，等待盘中回踩不破均价线再考虑。",
       "k_features": "前期缩量回调后，近期在21日均线附近企稳，底部筹码峰稳固，有温和放量迹象。",
       "market_cap": "约 80 亿",
-      "pct_change_5d": "-2%"
+      "pct_change_5d": "-2%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-07-06",
+        "monitor_start_date": "2026-07-07",
+        "monitor_end_date": "2026-07-08",
+        "expire_date": "2026-07-09",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

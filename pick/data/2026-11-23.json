@@ -61,7 +61,26 @@
       "price_condition": "竞价或盘中回踩17.3-17.5元区间（约-1%至+1%）分批低吸，量比温和放大（>1）即可；若大幅低开超2%则不急于接、等企稳翻红右侧介入；作为底仓压舱石不追高，中期目标参考华泰20.4元，严守高股息防御纪律，破17元整数关减仓。",
       "k_features": "股价17.73元，沿均线稳步上行，底部阳多阴少、筹码结构稳定，换手率仅约0.8%属低换手锁仓型，量比1.03温和，PE约7.7-9.4倍低估值、股息率约5%构成防御性安全垫。",
       "market_cap": "约 2217.4 亿(流通) / 2698.2 亿(总)",
-      "pct_change_5d": "近5日 +4.11%"
+      "pct_change_5d": "近5日 +4.11%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 2.29,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 17.56,
+        "ref_price_type": "开盘价",
+        "sl_price": 16.95,
+        "act_price": 18.44,
+        "lock_price": 17.7,
+        "buy_date": "2026-11-23",
+        "monitor_start_date": "2026-11-24",
+        "monitor_end_date": "2026-11-25",
+        "expire_date": "2026-11-26",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -73,7 +92,26 @@
       "price_condition": "竞价-2%至+2%区间，量比>1.2，回踩不破前低企稳可分批低吸；若高开超4%则观望、等回踩5日线再介入，不追涨；中期量价齐升逻辑，止损设于回调前低下方3%。",
       "k_features": "股价自180元高位回调约-22%至66-70元区间后进入估值消化，PE-TTM约29倍，换手率约1.68%偏低、筹码沉淀，业绩+97%高增形成支撑，K线底部逐步企稳、阳多阴少，待放量确认右侧。",
       "market_cap": "约 1177.6 亿(流通) / 1257.5 亿(总)",
-      "pct_change_5d": "近5日 -11.62%"
+      "pct_change_5d": "近5日 -11.62%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "8号高波档",
+        "atr_pct": 10.16,
+        "sl_pct": -5.0,
+        "act_pct": 8.0,
+        "cb_pct": 2.0,
+        "lock_pct": 1.2,
+        "ref_price": 72.89,
+        "ref_price_type": "昨收参考",
+        "sl_price": 69.25,
+        "act_price": 78.72,
+        "lock_price": 73.76,
+        "buy_date": "2026-11-23",
+        "monitor_start_date": "2026-11-24",
+        "monitor_end_date": "2026-11-25",
+        "expire_date": "2026-11-26",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -85,7 +123,26 @@
       "price_condition": "竞价-3%至+2%，量比>1.5，属攻击性试错仓、总仓位≤5%；因股价在5日均线（约92元）下方且PE约200倍、3Q业绩承压，必须右侧确认——站上5日线并放量再介入，跌破82元严格止损；不追高、不满仓，仅作国产算力脱钩后的弹性仓。",
       "k_features": "股价86.04元，自228元历史高点大幅回落（回撤超60%），当前位于5日均价92.32元下方、技术偏弱需企稳，量能3400万股温和，PE约200倍偏高、3Q净利同比-32%承压，需等站上5日线放量的右侧信号。",
       "market_cap": "约 396.6 亿(流通) / 402.9 亿(总)",
-      "pct_change_5d": "近5日 +1.67%"
+      "pct_change_5d": "近5日 +1.67%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 7.85,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 69.1,
+        "ref_price_type": "昨收参考",
+        "sl_price": 66.68,
+        "act_price": 72.55,
+        "lock_price": 69.65,
+        "buy_date": "2026-11-23",
+        "monitor_start_date": "2026-11-24",
+        "monitor_end_date": "2026-11-25",
+        "expire_date": "2026-11-26",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

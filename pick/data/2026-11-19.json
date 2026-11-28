@@ -47,7 +47,26 @@
       "price_condition": "涨停次日切忌高开追涨。竞价高开幅度在-1%至+2%区间、量比>1.2且分时回落至均价线附近获得承接则低吸介入；若竞价高开>4%则放弃不追，等待日内回踩5日均线的右侧机会；若低开则观察能否快速翻红站稳均价再介入。",
       "k_features": "13:19封板后全天零炸板、封单1.85亿元居PCB链最大、换手率仅2.07%属典型锁筹型封板，均线呈多头排列雏形，量价配合健康。[部分实时数据待二次校验]",
       "market_cap": "约 1337.6 亿(流通) / 1370.4 亿(总)",
-      "pct_change_5d": "近5日 -12.15%"
+      "pct_change_5d": "近5日 -12.15%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "8号高波档",
+        "atr_pct": 9.22,
+        "sl_pct": -5.0,
+        "act_pct": 8.0,
+        "cb_pct": 2.0,
+        "lock_pct": 1.2,
+        "ref_price": 204.0,
+        "ref_price_type": "开盘价",
+        "sl_price": 193.8,
+        "act_price": 220.32,
+        "lock_price": 206.45,
+        "buy_date": "2026-11-19",
+        "monitor_start_date": "2026-11-20",
+        "monitor_end_date": "2026-11-23",
+        "expire_date": "2026-11-24",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -59,7 +78,26 @@
       "price_condition": "封板质量偏弱、涨停次日追高风险大。竞价高开幅度须在-2%至+1%区间，缩量回踩不破昨日涨停启动位（均价附近）方可低吸；量比要求>1.0，若高开>3%或分时冲高回落立即放弃，切忌开盘追直线；优先日内回踩5日均线的右侧确认。",
       "k_features": "近60日跌幅-39.12%属深度超跌，昨日涨停突破但炸板3次封成比仅0.04为弱确认，换手5.42%，需缩量回踩企稳信号。[部分实时数据待二次校验]",
       "market_cap": "约 1549.7 亿(流通) / 1551.2 亿(总)",
-      "pct_change_5d": "近5日 -10.33%"
+      "pct_change_5d": "近5日 -10.33%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "8号高波档",
+        "atr_pct": 10.59,
+        "sl_pct": -5.0,
+        "act_pct": 8.0,
+        "cb_pct": 2.0,
+        "lock_pct": 1.2,
+        "ref_price": 73.21,
+        "ref_price_type": "昨收参考",
+        "sl_price": 69.55,
+        "act_price": 79.07,
+        "lock_price": 74.09,
+        "buy_date": "2026-11-19",
+        "monitor_start_date": "2026-11-20",
+        "monitor_end_date": "2026-11-23",
+        "expire_date": "2026-11-24",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -71,7 +109,26 @@
       "price_condition": "算力租赁高位弹性票，严禁盲目追高。竞价高开幅度0%至+2%区间、量比>2.5，且开盘分时强势翻红站稳均价则右侧介入；若低开-2%以内并能快速回补翻红亦可视承接介入；若高开>4%或竞价冲高回落则放弃，等待板块第二日验证（承接力决定方向持续性）。",
       "k_features": "昨日算力租赁涨停潮中封板后回封、换手活跃、弹性最大，但估值偏高、位置已抬升，属高弹性高波动标的。[部分实时数据待二次校验]",
       "market_cap": "约 116.5 亿(流通) / 153.9 亿(总)",
-      "pct_change_5d": "近5日 -10.47%"
+      "pct_change_5d": "近5日 -10.47%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-11-19",
+        "monitor_start_date": "2026-11-20",
+        "monitor_end_date": "2026-11-23",
+        "expire_date": "2026-11-24",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

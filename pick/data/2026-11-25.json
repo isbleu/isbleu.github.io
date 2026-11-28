@@ -52,7 +52,26 @@
       "price_condition": "竞价高开>3%不追；高开0%~3%且量比>1.5、分时承接有力可轻仓试；低开0~-2%等回踩10日均线右侧低吸、站稳分时均价翻红再加；低开>4%一律观望不接。严禁竞价追高。",
       "k_features": "3日涨14.03%温和接力，均线多头，主力控盘度约65%，现价76.01元，未破关键均线（[市值/涨幅待二次校验]）",
       "market_cap": "约 79.6 亿(流通) / 80.2 亿(总)",
-      "pct_change_5d": "近5日 +23.84%"
+      "pct_change_5d": "近5日 +23.84%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.74,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 75.8,
+        "ref_price_type": "开盘价",
+        "sl_price": 73.15,
+        "act_price": 79.59,
+        "lock_price": 76.41,
+        "buy_date": "2026-11-25",
+        "monitor_start_date": "2026-11-26",
+        "monitor_end_date": "2026-11-27",
+        "expire_date": "2026-11-30",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -64,7 +83,26 @@
       "price_condition": "平开或小幅高开<2%可分批参与、回踩5日均线低吸；大幅高开>4%等回踩不追；低开跌破昨日启动价且放量下杀则观望。因大市值弹性有限，只作稳健配置小仓。",
       "k_features": "有色龙头、底部区域企稳待右侧确认，钴价现货暴涨提供基本面催化（[市值/涨幅待二次校验]）",
       "market_cap": "约 596.5 亿(流通) / 598.4 亿(总)",
-      "pct_change_5d": "近5日 +2.93%"
+      "pct_change_5d": "近5日 +2.93%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-11-25",
+        "monitor_start_date": "2026-11-26",
+        "monitor_end_date": "2026-11-27",
+        "expire_date": "2026-11-30",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -76,7 +114,26 @@
       "price_condition": "已2连板，高开>5%坚决不追；平开或低开-2%~+2%且早盘放量翻红可轻仓试；低开>5%等分时企稳、右侧确认后再介入；须严格止损，属高弹性博弈仓。",
       "k_features": "20cm两连板、现价42.48元处高位，换手活跃，量化博弈特征明显（[待二次校验]）",
       "market_cap": "约 57.6 亿(流通) / 71.9 亿(总)",
-      "pct_change_5d": "近5日 +19.90%"
+      "pct_change_5d": "近5日 +19.90%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-11-25",
+        "monitor_start_date": "2026-11-26",
+        "monitor_end_date": "2026-11-27",
+        "expire_date": "2026-11-30",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

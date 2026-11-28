@@ -52,7 +52,26 @@
       "price_condition": "竞价开盘幅度在-3%至+2%之间，量比>1.5，分时回踩不破前低可分批低吸。若高开超3%则放弃追高，等待盘中回踩至昨日收盘价附近企稳后再考虑。止损位设在近5日最低价下方2%。整体仓位不超过总资金的8%。",
       "k_features": "前期经历大幅上涨后自6月下旬持续回调，回调幅度约20-30%，短期均线趋于收敛。若在55日或89日均线附近获得支撑且缩量企稳，则为较理想的低吸形态。底部需出现阳线放量确认信号。",
       "market_cap": "约 146.1 亿(流通) / 146.1 亿(总)",
-      "pct_change_5d": "近5日 -14.01%"
+      "pct_change_5d": "近5日 -14.01%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "8号高波档",
+        "atr_pct": 15.38,
+        "sl_pct": -5.0,
+        "act_pct": 8.0,
+        "cb_pct": 2.0,
+        "lock_pct": 1.2,
+        "ref_price": 92.09,
+        "ref_price_type": "开盘价",
+        "sl_price": 87.49,
+        "act_price": 99.46,
+        "lock_price": 93.2,
+        "buy_date": "2026-07-27",
+        "monitor_start_date": "2026-07-28",
+        "monitor_end_date": "2026-07-29",
+        "expire_date": "2026-07-30",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -64,7 +83,26 @@
       "price_condition": "【严格低吸条件，严禁追高】竞价低开-5%至平开区间方可考虑，且需满足量比>3.0、分时出现放量拉升翻红信号。若高开超2%坚决放弃——二连板后高开极易形成短期高点。若低开超5%，观察是否能在-7%以内企稳且不破前日涨停价（10.47元），否则放弃。总仓位不超过总资金的5%，严格止损-5%。",
       "k_features": "二连板（7月23日+7月24日），股价从9.30元快速拉升至11.52元。短期乖离率偏大，5日均线在10元附近，若回调至5日线附近企稳则为较安全的二次介入点。MACD金叉放量，但KDJ已进入超买区。上方无明显套牢盘，但积累大量短线获利盘。",
       "market_cap": "约 109.0 亿(流通) / 109.0 亿(总)",
-      "pct_change_5d": "近5日 +12.28%"
+      "pct_change_5d": "近5日 +12.28%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-07-27",
+        "monitor_start_date": "2026-07-28",
+        "monitor_end_date": "2026-07-29",
+        "expire_date": "2026-07-30",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -76,7 +114,26 @@
       "price_condition": "【左侧低吸，严格控仓】竞价开盘幅度在-2%至+2%之间，量比>1.2。最佳介入方式为盘中回踩20元整数关口不破后出现放量反弹信号。若跌破19.5元（前低附近）则止损离场。总仓位不超过总资金的5%。由于处于左侧，建议分2-3批建仓，第一批不超过2%。",
       "k_features": "自7月初35.45元高点持续回调至21.16元，跌幅约40%，MACD绿柱开始缩短，日线级别有底背离迹象。当前在20-22元区间震荡筑底，若不再创新低且伴随缩量，则为底部区域。上方压力位在25元和28元（前期平台）。流通市值约43亿，小盘弹性标的。",
       "market_cap": "约 31.1 亿(流通) / 49.7 亿(总)",
-      "pct_change_5d": "近5日 +7.51%"
+      "pct_change_5d": "近5日 +7.51%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-07-27",
+        "monitor_start_date": "2026-07-28",
+        "monitor_end_date": "2026-07-29",
+        "expire_date": "2026-07-30",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

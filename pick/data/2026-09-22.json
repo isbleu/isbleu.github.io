@@ -61,7 +61,26 @@
       "price_condition": "竞价开盘幅度在-1%至+3%之间、量比>1.5、分时承接有力（开盘半小时不破均价线）则介入；若小幅高开（+3%以内）优先右侧跟进，若低开-1%至-3%可在回踩企稳、翻红时低吸；若高开超过+4%则等盘中回踩5日均线再评估，切忌直接追高。跌破近期低点或量能萎缩则放弃。",
       "k_features": "9/16、9/18两根放量阳线修复，底部阳多阴少，处21日均线附近企稳、量价温和放大，自7月高点回撤近39%后低位蓄势，筹码结构健康。",
       "market_cap": "约 5728.3 亿(流通) / 5728.3 亿(总)",
-      "pct_change_5d": "近5日 +10.17%"
+      "pct_change_5d": "近5日 +10.17%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 3.82,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 265.0,
+        "ref_price_type": "开盘价",
+        "sl_price": 255.72,
+        "act_price": 278.25,
+        "lock_price": 267.12,
+        "buy_date": "2026-09-22",
+        "monitor_start_date": "2026-09-23",
+        "monitor_end_date": "2026-09-24",
+        "expire_date": "2026-09-28",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -73,7 +92,26 @@
       "price_condition": "竞价开盘幅度在-2%至+4%之间、量比>1.2，分时站稳均价线则介入；若平开或小幅低开（-2%以内）可回踩低吸，若高开超+5%则不追、待回踩日内均价线或5日线再评估；若低开超-4%且放量走弱则放弃。",
       "k_features": "9/21涨停放量（成交85.42亿元、换手7.94%），股价处于均线多头排列区域，量价齐升；但前一日振幅较大、需防冲高回落，宜低吸不宜追高。",
       "market_cap": "约 1111.6 亿(流通) / 1111.6 亿(总)",
-      "pct_change_5d": "近5日 +25.48%"
+      "pct_change_5d": "近5日 +25.48%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-09-22",
+        "monitor_start_date": "2026-09-23",
+        "monitor_end_date": "2026-09-24",
+        "expire_date": "2026-09-28",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -85,7 +123,26 @@
       "price_condition": "竞价开盘幅度在-2%至+3%之间、量比>1.8，分时承接良好则介入；小盘高弹性品种，若高开超+5%则不追，待回踩5日线低吸；若低开超-3%放量走弱则放弃。",
       "k_features": "小市值（流通市值约107亿元）高弹性，近期随HVDC主题活跃，宜观察是否放量站上21日均线并形成均线多头；波动较大，严格控制仓位与止损。",
       "market_cap": "约 201.2 亿(流通) / 203.2 亿(总)",
-      "pct_change_5d": "近5日 +3.59%"
+      "pct_change_5d": "近5日 +3.59%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-09-22",
+        "monitor_start_date": "2026-09-23",
+        "monitor_end_date": "2026-09-24",
+        "expire_date": "2026-09-28",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

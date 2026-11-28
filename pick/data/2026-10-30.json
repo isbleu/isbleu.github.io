@@ -52,7 +52,26 @@
       "price_condition": "竞价开盘幅度在-3%至+2%区间且量比>1.8方可轻仓右侧介入；若高开超4%不追（低位股高开易冲高回落）；若低开超3%则等分时翻红、站上均价线并放量承接后再低吸，跌破前低36.9元附近则放弃。",
       "k_features": "股价自94.92元高点腰斩，近期在36.9—46元低位区间筑底、放量回升，3日累计+11.82%、成交26.56亿、换手25.71%，量能温和放大、阳多阴少，处于底部反包启动形态，筹码逐步由套牢盘向机构集中。",
       "market_cap": "约 65.9 亿(流通) / 805.4 亿(总)",
-      "pct_change_5d": "近5日 +25.39%"
+      "pct_change_5d": "近5日 +25.39%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.24,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 46.37,
+        "ref_price_type": "开盘价",
+        "sl_price": 44.75,
+        "act_price": 48.69,
+        "lock_price": 46.74,
+        "buy_date": "2026-10-30",
+        "monitor_start_date": "2026-11-02",
+        "monitor_end_date": "2026-11-03",
+        "expire_date": "2026-11-04",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -64,7 +83,26 @@
       "price_condition": "只在低开或平开时右侧低吸，绝不追涨停板。竞价低开-2%至+1%区间、开盘半小时内能站稳均价线且量比<2（缩量企稳）可轻仓介入；若直接高开>3%一律放弃；跌破50.82元（前收）方向失败，止损离场。",
       "k_features": "涨停后处于高位平台，封板质量偏弱（炸板8次、封流比0.027），筹码存在分歧；属‘愿意买的钱多于愿意封板的钱’结构，需以缩量回踩确认承接，警惕冲高回落。",
       "market_cap": "约 661.0 亿(流通) / 661.0 亿(总)",
-      "pct_change_5d": "近5日 +11.40%"
+      "pct_change_5d": "近5日 +11.40%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-10-30",
+        "monitor_start_date": "2026-11-02",
+        "monitor_end_date": "2026-11-03",
+        "expire_date": "2026-11-04",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -76,7 +114,26 @@
       "price_condition": "竞价开盘幅度-2%至+2%、量比>2.5且分时承接有力方可介入；高开超4%不追（太空算力属情绪弹性、易一日游）；若低开翻绿则等二次上攻突破前高再右侧跟进，跌破7.4元则离场。",
       "k_features": "10CM涨停后进入情绪放量区，低位起步、换手11.48%尚属健康，属题材启动初期形态，但连续拉升后需防冲高分歧，严守快进快出纪律。",
       "market_cap": "约 86.3 亿(流通) / 86.3 亿(总)",
-      "pct_change_5d": "近5日 +1.12%"
+      "pct_change_5d": "近5日 +1.12%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-10-30",
+        "monitor_start_date": "2026-11-02",
+        "monitor_end_date": "2026-11-03",
+        "expire_date": "2026-11-04",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

@@ -57,7 +57,26 @@
       "price_condition": "竞价开盘幅度-2%至+2%之间、量比>1.5且分时承接有力则介入；高开超3%追高风险大（大市值+缩量环境不宜追高）；低开超3%则等分时企稳翻红右侧低吸。",
       "k_features": "大市值平台龙头，9月累计回调超14%后具备修复空间，均线附近震荡、量能温和，呈缩量蓄势形态，宜低吸不宜追涨。",
       "market_cap": "约 1436.8 亿(流通) / 1513.2 亿(总)",
-      "pct_change_5d": "近5日 +5.39%"
+      "pct_change_5d": "近5日 +5.39%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 5.92,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 183.05,
+        "ref_price_type": "开盘价",
+        "sl_price": 176.64,
+        "act_price": 192.2,
+        "lock_price": 184.51,
+        "buy_date": "2026-09-10",
+        "monitor_start_date": "2026-09-11",
+        "monitor_end_date": "2026-09-14",
+        "expire_date": "2026-09-15",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -69,7 +88,26 @@
       "price_condition": "竞价-3%至+3%之间、重点看分时承接；因小市值弹性大，高开超5%不追、追高风险大；低开则等分时翻红右侧介入。",
       "k_features": "小市值高弹性，OCS催化密集（大尺寸YVO4晶体已量产、MEMS/压电陶瓷小批量验证），筹码活跃、换手充分，位置相对不高。",
       "market_cap": "约 367.8 亿(流通) / 367.8 亿(总)",
-      "pct_change_5d": "近5日 +9.20%"
+      "pct_change_5d": "近5日 +9.20%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-09-10",
+        "monitor_start_date": "2026-09-11",
+        "monitor_end_date": "2026-09-14",
+        "expire_date": "2026-09-15",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -81,7 +119,26 @@
       "price_condition": "竞价-3%至+2%、量比>1.2；当日-4.67%回调后机构逆势加仓，优先低吸等企稳，高开追高风险大、不追高。",
       "k_features": "小市值新主题，机构逆势净买入1413万，前期未充分炒作、位置相对低，回调后具备低吸价值。",
       "market_cap": "约 49.1 亿(流通) / 74.5 亿(总)",
-      "pct_change_5d": "近5日 +8.40%"
+      "pct_change_5d": "近5日 +8.40%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-09-10",
+        "monitor_start_date": "2026-09-11",
+        "monitor_end_date": "2026-09-14",
+        "expire_date": "2026-09-15",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

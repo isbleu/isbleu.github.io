@@ -51,7 +51,26 @@
       "price_condition": "竞价开盘幅度在-2%至+3%之间最佳；若平开或低开后分时承接有力、量比>1.5且快速翻红，可右侧低吸；若高开超5%（即接近12元上方）则追高风险大，不追，等回踩5日均线且缩量至昨日80%以下再分批介入；若竞价大幅低开超-4%说明情绪转弱，观望为主。",
       "k_features": "低换手缩量涨停、3日换手仅2.33%高度控盘，量价温和，处于一年高位区间的中位偏下，均线呈多头初排，底部阳多阴少。[数据待二次校验]",
       "market_cap": "约 240.4 亿(流通) / 240.4 亿(总)",
-      "pct_change_5d": "近5日 +22.16%"
+      "pct_change_5d": "近5日 +22.16%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 7.9,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 11.4,
+        "ref_price_type": "开盘价",
+        "sl_price": 11.0,
+        "act_price": 11.97,
+        "lock_price": 11.49,
+        "buy_date": "2026-11-12",
+        "monitor_start_date": "2026-11-13",
+        "monitor_end_date": "2026-11-16",
+        "expire_date": "2026-11-17",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -63,7 +82,26 @@
       "price_condition": "20CM涨停后次日不宜直接追高，竞价若高开超6%（即94元上方）不追；理想介入为竞价-3%至+2%高开回落至5日均线附近分批低吸，量比>2.0且分时抗跌为佳；若高开后快速冲高回落跌破昨日涨停价87.38元则观望，防炸板补跌。",
       "k_features": "昨日放量封死20CM涨停（+19.99%、成交8.98亿、换手13.43%），量能显著放大，位置处于年内相对高位，需警惕涨停后筹码松动，介入以回踩确认为主。[数据待二次校验]",
       "market_cap": "约 72.4 亿(流通) / 149.6 亿(总)",
-      "pct_change_5d": "近5日 +23.61%"
+      "pct_change_5d": "近5日 +23.61%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-11-12",
+        "monitor_start_date": "2026-11-13",
+        "monitor_end_date": "2026-11-16",
+        "expire_date": "2026-11-17",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -75,7 +113,26 @@
       "price_condition": "稳健低吸型，竞价开盘0%至+2%区间、量比>1.2时可在5日均线上方分批建仓；若随外围杀跌低开至-2%至-3%但分时缩量抗跌、不破10日均线，为右侧低吸良机；若高开超4%则不追，因该股弹性有限、追高性价比低。",
       "k_features": "股价约20元区间，处一年中位（一年高低14.44至33.73元），近期温和企稳，趋势稳健、阳多阴少，筹码结构健康，无高位补跌风险。[数据待二次校验]",
       "market_cap": "约 281.8 亿(流通) / 282.1 亿(总)",
-      "pct_change_5d": "近5日 +1.52%"
+      "pct_change_5d": "近5日 +1.52%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-11-12",
+        "monitor_start_date": "2026-11-13",
+        "monitor_end_date": "2026-11-16",
+        "expire_date": "2026-11-17",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

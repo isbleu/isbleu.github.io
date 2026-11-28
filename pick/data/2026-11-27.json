@@ -56,7 +56,26 @@
       "price_condition": "严禁竞价大幅高开追高：若竞价高开超5%一律放弃；仅在平开或小低开(-2%至+2%)且分时站稳均价、量能不背离时轻仓低吸；若冲高回落跌破13.7元支撑则离场观望；理想介入为回踩5日均线附近缩量企稳的右侧信号。",
       "k_features": "5天3板连续放量涨停，换手率29.20%极高、筹码高度松动，处于高位加速段落，短线波动剧烈，追高风险大，需严格执行低吸纪律。",
       "market_cap": "约 97.0 亿(流通) / 136.3 亿(总)",
-      "pct_change_5d": "近5日 +44.76%"
+      "pct_change_5d": "近5日 +44.76%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "8号高波档",
+        "atr_pct": 8.37,
+        "sl_pct": -5.0,
+        "act_pct": 8.0,
+        "cb_pct": 2.0,
+        "lock_pct": 1.2,
+        "ref_price": 16.88,
+        "ref_price_type": "开盘价",
+        "sl_price": 16.04,
+        "act_price": 18.23,
+        "lock_price": 17.08,
+        "buy_date": "2026-11-27",
+        "monitor_start_date": "2026-11-30",
+        "monitor_end_date": "2026-12-01",
+        "expire_date": "2026-12-02",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -68,7 +87,26 @@
       "price_condition": "竞价在-1%至+3%区间、量比>1.5且分时站稳均价可分批低吸；若低开-2%以内可右侧翻红介入；跌破20.5元（近期平台）止损离场，上方目标参考机构均价23.9元一线。",
       "k_features": "底部区域温和放量，11-26放量上涨6.42%、量价配合健康，长周期处于相对低位，筹码结构扎实，防御属性突出。",
       "market_cap": "约 123.0 亿(流通) / 123.5 亿(总)",
-      "pct_change_5d": "近5日 -1.09%"
+      "pct_change_5d": "近5日 -1.09%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-11-27",
+        "monitor_start_date": "2026-11-30",
+        "monitor_end_date": "2026-12-01",
+        "expire_date": "2026-12-02",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -80,7 +118,26 @@
       "price_condition": "处于52周低位区间（80-88元），仅在破位后企稳确认下轻仓试错：竞价0%至+2%、量比配合且分时守住86元（前低附近）可小仓介入；若再跌破80元前低则坚决观望止损；高开超3%不追，等待右侧缩量企稳。",
       "k_features": "补跌至52周低位区间（80.05-137.41元）下沿，11-25放量跌7%后11-26缩量企稳反弹2.25%，处超跌修复初期，下方80元为关键支撑，估值高、波动大。",
       "market_cap": "约 483.9 亿(流通) / 483.9 亿(总)",
-      "pct_change_5d": "近5日 -5.92%"
+      "pct_change_5d": "近5日 -5.92%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-11-27",
+        "monitor_start_date": "2026-11-30",
+        "monitor_end_date": "2026-12-01",
+        "expire_date": "2026-12-02",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

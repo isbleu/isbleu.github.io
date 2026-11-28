@@ -51,7 +51,26 @@
       "price_condition": "竞价开盘-2%至+3%之间、量比>1.5、分时回踩不破15.8元企稳则介入；若高开超5%放弃追高，等回踩5日线(约15.3元)缩量企稳后右侧低吸；若低开观察16元整数关口承接，跌破15.3元止损。属低位启动、可相对从容布局。",
       "k_features": "8/31收盘16.36元(+6.86%)，低位温和放量启动，阳多阴少，21日均线附近企稳向上，筹码集中于底部区间、无高位套牢盘，安全边际高",
       "market_cap": "约 387.1 亿(流通) / 408.3 亿(总)",
-      "pct_change_5d": "近5日 +7.63%"
+      "pct_change_5d": "近5日 +7.63%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.34,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 16.36,
+        "ref_price_type": "开盘价",
+        "sl_price": 15.79,
+        "act_price": 17.18,
+        "lock_price": 16.49,
+        "buy_date": "2026-09-01",
+        "monitor_start_date": "2026-09-02",
+        "monitor_end_date": "2026-09-03",
+        "expire_date": "2026-09-04",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -63,7 +82,26 @@
       "price_condition": "位置偏高不追高：竞价高开超3%放弃；等分时缩量回调至148-150元(5日线附近)企稳后低吸；若放量突破155元且量能配合可轻仓跟随，否则观望；跌破145元(10日线)止损。因连续4天上涨累计15.32%，仓位宜轻于网宿科技。",
       "k_features": "8/31收盘约152.99元(+5.04%)，连续4天上涨累计15.32%，总市值3716亿，均线多头排列但已处相对高位，短期乖离偏大，需回踩消化",
       "market_cap": "约 3699.6 亿(流通) / 3726.1 亿(总)",
-      "pct_change_5d": "近5日 +21.46%"
+      "pct_change_5d": "近5日 +21.46%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.77,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 152.0,
+        "ref_price_type": "开盘价",
+        "sl_price": 146.68,
+        "act_price": 159.6,
+        "lock_price": 153.22,
+        "buy_date": "2026-09-01",
+        "monitor_start_date": "2026-09-02",
+        "monitor_end_date": "2026-09-03",
+        "expire_date": "2026-09-04",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -75,7 +113,26 @@
       "price_condition": "小盘高波动、严格控制仓位(总仓位的1/4以内)：竞价高开不超过3%、量比>2、分时承接有力才介入；低吸为主、不追涨停；跌破5日线止损。因流通盘仅5468万股，流动性差，务必轻仓、分批、设好止损。",
       "k_features": "8/31涨5.64%温和放量，低位启动，流通市值9.15亿极小、筹码高度集中，波动剧烈，21日均线附近企稳但需警惕流动性风险",
       "market_cap": "约 12.8 亿(流通) / 43.3 亿(总)",
-      "pct_change_5d": "近5日 +37.28%"
+      "pct_change_5d": "近5日 +37.28%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-09-01",
+        "monitor_start_date": "2026-09-02",
+        "monitor_end_date": "2026-09-03",
+        "expire_date": "2026-09-04",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

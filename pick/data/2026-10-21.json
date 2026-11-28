@@ -56,7 +56,26 @@
       "price_condition": "竞价开盘幅度控制在-3%至+3%之间；量比>1.8且分时站稳均价上方方可右侧介入；若低开则待分时翻红、放量突破前高再跟进；20cm标的日内回撤大，切忌竞价高开追涨，单笔仓位不超上限5%。",
       "k_features": "3日累计+17.55%、换手14.86%，处阶段高位，K线放量突破后需防获利盘兑现，量能需持续温和放大方健康。",
       "market_cap": "约 62.4 亿(流通) / 62.4 亿(总)",
-      "pct_change_5d": "近5日 +18.91%"
+      "pct_change_5d": "近5日 +18.91%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.63,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 102.46,
+        "ref_price_type": "开盘价",
+        "sl_price": 98.87,
+        "act_price": 107.58,
+        "lock_price": 103.28,
+        "buy_date": "2026-10-21",
+        "monitor_start_date": "2026-10-22",
+        "monitor_end_date": "2026-10-23",
+        "expire_date": "2026-10-26",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -68,7 +87,26 @@
       "price_condition": "竞价高开幅度不超5%（昨收约20.56元对应涨停约24.67元）；若高开低走回踩23.5元下方有承接则低吸，若平开或小幅低开站稳分时均线可小仓试；封板不坚决（炸板/封流比偏薄）则观望，严禁在涨停板附近追高接盘。",
       "k_features": "首板20cm涨停（炸板1次、封流比偏薄），成交21.83亿为机器人链最大、量比4.70，突破前期平台，中大盘承接较好，需防高开抛压。",
       "market_cap": "约 334.9 亿(流通) / 335.9 亿(总)",
-      "pct_change_5d": "近5日 +18.72%"
+      "pct_change_5d": "近5日 +18.72%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-10-21",
+        "monitor_start_date": "2026-10-22",
+        "monitor_end_date": "2026-10-23",
+        "expire_date": "2026-10-26",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -80,7 +118,26 @@
       "price_condition": "竞价开盘幅度在-2%至+3%之间，量比>2；分时承接有力、量能温和放大则介入；端侧AI受GTC事件驱动、10/22大会闭幕前须减仓兑现，持仓周期不超2日；若高开超5%且量能背离则放弃。",
       "k_features": "10/20放量+16.86%（未封板）成交24.58亿、换手7.84%，沿均线多头排列，位置偏高，需防GTC事件兑现后的获利回吐。",
       "market_cap": "约 329.8 亿(流通) / 329.8 亿(总)",
-      "pct_change_5d": "近5日 +31.00%"
+      "pct_change_5d": "近5日 +31.00%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-10-21",
+        "monitor_start_date": "2026-10-22",
+        "monitor_end_date": "2026-10-23",
+        "expire_date": "2026-10-26",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

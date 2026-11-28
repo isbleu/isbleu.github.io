@@ -55,7 +55,26 @@
       "price_condition": "竞价开盘幅度在-2%至3%之间，量比>2.0，分时回踩不破9月11日涨停实体二分之一位（约前收盘价上方3%以内）可低吸；若高开超过5%则放弃追高，等待回踩5日均线附近再考虑；若低开超过3%且15分钟内不能翻红，则观望。",
       "k_features": "9月11日放量涨停，成交23.03亿元，主力净流入4.26亿元，零炸板，K线呈底部放量长阳，短期均线有望拐头向上，筹码在涨停板附近集中，上方套牢盘较轻。",
       "market_cap": "约 131.6 亿(流通) / 134.8 亿(总)",
-      "pct_change_5d": "近5日 +30.66%"
+      "pct_change_5d": "近5日 +30.66%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 5.84,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 20.66,
+        "ref_price_type": "开盘价",
+        "sl_price": 19.94,
+        "act_price": 21.69,
+        "lock_price": 20.83,
+        "buy_date": "2026-09-14",
+        "monitor_start_date": "2026-09-15",
+        "monitor_end_date": "2026-09-16",
+        "expire_date": "2026-09-17",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -67,7 +86,26 @@
       "price_condition": "竞价高开不超过5%且量比>1.5，分时回踩不破均价线可轻仓介入；若低开则观察是否快速翻红，翻红后回踩不破开盘价可低吸；若高开超过7%则放弃，等待回踩5日均线。",
       "k_features": "模拟芯片板块整体处于相对低位，杰华特近期未出现大幅拉升，K线可能在底部区域震荡，若今日放量高开则有望形成底部启动形态，筹码结构相对干净。",
       "market_cap": "约 481.8 亿(流通) / 481.8 亿(总)",
-      "pct_change_5d": "近5日 -6.14%"
+      "pct_change_5d": "近5日 -6.14%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-09-14",
+        "monitor_start_date": "2026-09-15",
+        "monitor_end_date": "2026-09-16",
+        "expire_date": "2026-09-17",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -79,7 +117,26 @@
       "price_condition": "竞价开盘幅度在-2%至2%之间，量比>1.2，分时回踩不破前低可低吸；若高开超过4%则等待回踩5日均线；若低开超过3%且不能快速收复，则观望。",
       "k_features": "科达利作为机构重仓股，K线可能处于中期均线上方，近期随大盘调整但相对抗跌，若今日放量企稳则有望重新走强，筹码锁定较好。",
       "market_cap": "约 359.4 亿(流通) / 490.8 亿(总)",
-      "pct_change_5d": "近5日 -0.52%"
+      "pct_change_5d": "近5日 -0.52%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-09-14",
+        "monitor_start_date": "2026-09-15",
+        "monitor_end_date": "2026-09-16",
+        "expire_date": "2026-09-17",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

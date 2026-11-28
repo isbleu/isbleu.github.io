@@ -56,7 +56,26 @@
       "price_condition": "竞价开盘幅度控制在-3%至+2%之间；若小幅低开翻红且量比>1.5、分时承接有力则右侧低吸；若开盘直接高开超3%则不追，等回踩5日线企稳再接；仓位单票≤5%，做T不隔夜加仓。",
       "k_features": "近期随大盘小幅回撤后在均线附近缩量企稳，整体位置偏低、无高位套牢压力，筹码结构相对干净，属低位阳多阴少雏形。",
       "market_cap": "约 77.1 亿(流通) / 117.5 亿(总)",
-      "pct_change_5d": "近5日 -2.73%"
+      "pct_change_5d": "近5日 -2.73%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "8号高波档",
+        "atr_pct": 9.81,
+        "sl_pct": -5.0,
+        "act_pct": 8.0,
+        "cb_pct": 2.0,
+        "lock_pct": 1.2,
+        "ref_price": 84.33,
+        "ref_price_type": "开盘价",
+        "sl_price": 80.11,
+        "act_price": 91.08,
+        "lock_price": 85.34,
+        "buy_date": "2026-10-28",
+        "monitor_start_date": "2026-10-29",
+        "monitor_end_date": "2026-10-30",
+        "expire_date": "2026-11-02",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -68,7 +87,26 @@
       "price_condition": "竞价开盘-2%至+3%区间视为正常；低开后分时放量翻红可低吸，若平开或小幅高开且量能温和则分批介入；因前期RSI曾进入超买区，若高开超4%坚决不追，等回踩10日线；单票≤5%。",
       "k_features": "近期横盘抗跌、沿均线缓步运行，未破位，量能温和；流通盘小、筹码集中，属强势整理形态而非高位失控。",
       "market_cap": "约 378.1 亿(流通) / 1723.8 亿(总)",
-      "pct_change_5d": "近5日 -0.72%"
+      "pct_change_5d": "近5日 -0.72%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-10-28",
+        "monitor_start_date": "2026-10-29",
+        "monitor_end_date": "2026-10-30",
+        "expire_date": "2026-11-02",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -80,7 +118,26 @@
       "price_condition": "因已2连板、追高风险大，竞价高开超3%坚决不追；仅接受平开或低开（-3%至-1%）后分时企稳、量比>1.2的右侧低吸；若冲高回落跌破前日涨停价17.22元下方2%则离场；单票≤4%，纯属做T/短线弹性，隔日不恋战。",
       "k_features": "连续两日涨停、贴区间上沿（近20日位置约94%），获利盘约95%、现价较中位成本+14.8%，RSI6约74进入偏高区，属强势但拥挤的高位形态，须以回踩确认。",
       "market_cap": "约 87.8 亿(流通) / 96.8 亿(总)",
-      "pct_change_5d": "近5日 +15.42%"
+      "pct_change_5d": "近5日 +15.42%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-10-28",
+        "monitor_start_date": "2026-10-29",
+        "monitor_end_date": "2026-10-30",
+        "expire_date": "2026-11-02",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

@@ -57,7 +57,26 @@
       "price_condition": "竞价开盘-3%至+2%区间、量比≥1.5为佳；分时回踩不破昨日均价（约37.6元）且缩量企稳，可右侧低吸半仓；若高开超5%坚决不追，等回踩5日线（约35元）企稳再介入；若低开超-5%，视为情绪冰点，等翻红或二次探底不创新低后小仓试探。注意今日为宇树上市首日，机器人板块冲高回落风险大，仅左侧轻仓、不追板。",
       "k_features": "8/18放量长阳+11.06%（开37.64/高42.00/低36.28/收39.06），量能50.09M明显放大，短期均线多头排列但偏离5日线较大；8/14曾现26.02元大宗折价-11.22%的机构承接，底部筹码有上移迹象；前高42.00为短线压力，5日线约35元为强支撑。",
       "market_cap": "约 69.0 亿(流通) / 82.4 亿(总)",
-      "pct_change_5d": "近5日 +64.12%"
+      "pct_change_5d": "近5日 +64.12%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.07,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 39.0,
+        "ref_price_type": "开盘价",
+        "sl_price": 37.63,
+        "act_price": 40.95,
+        "lock_price": 39.31,
+        "buy_date": "2026-08-19",
+        "monitor_start_date": "2026-08-20",
+        "monitor_end_date": "2026-08-21",
+        "expire_date": "2026-08-24",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -69,7 +88,26 @@
       "price_condition": "竞价-5%至-2%区间、量比<1.2（缩量回调）为佳；分时不再创当日新低且出现承接则可右侧低吸；若低开超-7%或放量下杀，等待缩量企稳后的二次冰点再介入；不追高、不参与反抽追涨。",
       "k_features": "5天4板（8/7-8/13，市值从63亿升至94.77亿）后高位回调，8/18缩量下跌-4.42%，短期5日/10日均线拐头向下，机构在回调中承接；下方60日线与前期平台（约2.6-2.7元）为支撑区。",
       "market_cap": "约 100.0 亿(流通) / 106.1 亿(总)",
-      "pct_change_5d": "近5日 +35.61%"
+      "pct_change_5d": "近5日 +35.61%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-08-19",
+        "monitor_start_date": "2026-08-20",
+        "monitor_end_date": "2026-08-21",
+        "expire_date": "2026-08-24",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -81,7 +119,26 @@
       "price_condition": "竞价-2%至+1%区间、量比≥1.2为佳；回踩5日线（约125元）不破可轻仓；若高开超4%放弃追高；若低开超-4%，等企稳翻红后再考虑，且单票仓位控制在总仓位10%以内。",
       "k_features": "股价自7月低点约100元缓升至8/14的129.09元，沿5日/10日均线多头排列但斜率偏缓；PE(TTM)89倍处96.83%历史分位，估值透支较多，属趋势延续但非低位启动，追高性价比一般。",
       "market_cap": "约 2318.4 亿(流通) / 2475.7 亿(总)",
-      "pct_change_5d": "近5日 -4.66%"
+      "pct_change_5d": "近5日 -4.66%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "8号高波档",
+        "atr_pct": 8.8,
+        "sl_pct": -5.0,
+        "act_pct": 8.0,
+        "cb_pct": 2.0,
+        "lock_pct": 1.2,
+        "ref_price": 117.87,
+        "ref_price_type": "开盘价",
+        "sl_price": 111.98,
+        "act_price": 127.3,
+        "lock_price": 119.28,
+        "buy_date": "2026-08-19",
+        "monitor_start_date": "2026-08-20",
+        "monitor_end_date": "2026-08-21",
+        "expire_date": "2026-08-24",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

@@ -61,7 +61,26 @@
       "price_condition": "竞价开盘幅度在-2%至+2%之间、量比>1.5且分时承接有力则轻仓介入；若高开超4%则坚决不追、等回踩29元下方确认支撑；若低开跌破28元（较涨停价约-5%）则不接、等盘中翻红放量再右侧跟进；高位巨量炸板则放弃。",
       "k_features": "10/16首板涨停（+9.99%）收29.39元、封单约1167万、换手仅1.76%筹码锁定良好；股价处52周高46.99元下方绝对低位，突破前期平台，量能温和放大、底部阳线启动形态。",
       "market_cap": "约 62.1 亿(流通) / 62.9 亿(总)",
-      "pct_change_5d": "近5日 +3.05%"
+      "pct_change_5d": "近5日 +3.05%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 3.71,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 32.33,
+        "ref_price_type": "开盘价",
+        "sl_price": 31.2,
+        "act_price": 33.95,
+        "lock_price": 32.59,
+        "buy_date": "2026-10-19",
+        "monitor_start_date": "2026-10-20",
+        "monitor_end_date": "2026-10-21",
+        "expire_date": "2026-10-22",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -73,7 +92,26 @@
       "price_condition": "竞价开盘-2%至+2%、量比回升至1.5以上、缩量止跌后分时企稳可低吸；若低开跌破18.5元（近期低点）则不接、等右侧翻红再跟进；不追高开超3%，跌破18元止损。",
       "k_features": "连续回调后10/16缩量收十字星止跌（成交2.93亿、换手1.30%），距52周高48.27元-61%的绝对低位，PE-TTM约26倍，超跌企稳、底部区域，抛压衰竭形态。",
       "market_cap": "约 223.8 亿(流通) / 224.8 亿(总)",
-      "pct_change_5d": "近5日 -10.31%"
+      "pct_change_5d": "近5日 -10.31%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-10-19",
+        "monitor_start_date": "2026-10-20",
+        "monitor_end_date": "2026-10-21",
+        "expire_date": "2026-10-22",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -85,7 +123,26 @@
       "price_condition": "竞价开盘0%至+3%、量比>1.5、突破26.2元近期平台可轻仓；低开则等企稳翻红、站稳5日均线再介入；不追高开超4%，量能不足或破24元则放弃。",
       "k_features": "站上5/10/30日均线呈多头排列（5日24.12、10日22.80、30日21.66），近5日+4.65%、近10日+4.44%温和放量；但五日资金净流出约3990万，需放量突破确认。",
       "market_cap": "约 207.4 亿(流通) / 207.4 亿(总)",
-      "pct_change_5d": "近5日 +18.04%"
+      "pct_change_5d": "近5日 +18.04%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-10-19",
+        "monitor_start_date": "2026-10-20",
+        "monitor_end_date": "2026-10-21",
+        "expire_date": "2026-10-22",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

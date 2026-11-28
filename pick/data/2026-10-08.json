@@ -65,7 +65,26 @@
       "price_condition": "竞价开盘幅度在-2%至+3%之间（约150-158元区间），量比>1.5且分时承接有力可低吸；若受存储情绪带动高开超5%（>161元）则不追高、等回踩150-153元不破再介入；若低开超3%则等分时企稳翻红、右侧再跟。",
       "k_features": "9月30日随大盘缩量回调收153.24元（-4.34%），较9月18日174.32元高点回落约12%，正回踩至21日均线附近区域，量能温和萎缩，属高位放量后缩量回踩、筹码逐步沉淀的健康形态，下方152元一带为主要支撑。[关键数据待二次校验]",
       "market_cap": "约 687.3 亿(流通) / 719.5 亿(总)",
-      "pct_change_5d": "近5日 -15.43%"
+      "pct_change_5d": "近5日 -15.43%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 5.57,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 153.61,
+        "ref_price_type": "开盘价",
+        "sl_price": 148.23,
+        "act_price": 161.29,
+        "lock_price": 154.84,
+        "buy_date": "2026-10-08",
+        "monitor_start_date": "2026-10-09",
+        "monitor_end_date": "2026-10-12",
+        "expire_date": "2026-10-13",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -77,7 +96,26 @@
       "price_condition": "竞价开盘幅度0%至+4%，量比>1.8、放量站上前期箱体上沿则右侧跟进；若高开超6%等日内回踩分时均价线再介入；若平开或低开2%以内且早盘承接有力，可于均价线附近右侧低吸。",
       "k_features": "长期箱体震荡、筹码在低位区反复沉淀，年内随国产算力主线上试后回落，当前处于均线附近的蓄势区，底部量能温和放大，无高位连板包袱，具备低位启动的筹码优势。[关键数据待二次校验]",
       "market_cap": "约 271.9 亿(流通) / 298.9 亿(总)",
-      "pct_change_5d": "近5日 -8.35%"
+      "pct_change_5d": "近5日 -8.35%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-10-08",
+        "monitor_start_date": "2026-10-09",
+        "monitor_end_date": "2026-10-12",
+        "expire_date": "2026-10-13",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -89,7 +127,26 @@
       "price_condition": "竞价开盘幅度-3%至+2%（约787-827元区间），超跌大市值品种宜低吸不宜追高；若在780-800元区间缩量企稳、分时止跌回升可左侧分批低吸；若放量站稳840元上方则右侧跟进；若跌破780元则观望不接。",
       "k_features": "9月29日报811.12元、总市值约9000亿，较年内高点（944.68元回购上限对应区间）回调超40%，属深度超跌后于800元一带构筑平台，量能较前期高点显著萎缩，筹码大幅换手沉淀，回调充分。[关键数据待二次校验]",
       "market_cap": "约 8973.2 亿(流通) / 9522.7 亿(总)",
-      "pct_change_5d": "近5日 -12.86%"
+      "pct_change_5d": "近5日 -12.86%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 5.03,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 810.0,
+        "ref_price_type": "开盘价",
+        "sl_price": 781.65,
+        "act_price": 850.5,
+        "lock_price": 816.48,
+        "buy_date": "2026-10-08",
+        "monitor_start_date": "2026-10-09",
+        "monitor_end_date": "2026-10-12",
+        "expire_date": "2026-10-13",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

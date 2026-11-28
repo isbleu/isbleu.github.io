@@ -70,7 +70,26 @@
       "price_condition": "该股为权重级首板，切忌竞价大幅高开追涨。介入条件：竞价开盘幅度在-1%至+3%之间、量比>1.5；若高开超过+4%则放弃追高、等分时回踩28.68元（涨停价）附近不破再右侧低吸；若平开或小幅低开且开盘30分钟内在28.00-28.68区间缩量止跌、分时重心不下移，则可分批低吸；严格止损位27.50元（跌破视为P0方向证伪），单一标的不超过总仓位15%。",
       "k_features": "9月29日早盘约8分钟封死涨停、封单一度超百万手，全天零炸板、换手仅2.66%，属典型『大市值＋高锁定』封板结构；日线呈均线多头排列、放量突破前期平台，底部阳多阴少，筹码锁定度高。",
       "market_cap": "约 498.1 亿(流通) / 520.5 亿(总)",
-      "pct_change_5d": "近5日 +7.54%"
+      "pct_change_5d": "近5日 +7.54%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 3.29,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 30.49,
+        "ref_price_type": "开盘价",
+        "sl_price": 29.42,
+        "act_price": 32.01,
+        "lock_price": 30.73,
+        "buy_date": "2026-09-30",
+        "monitor_start_date": "2026-10-08",
+        "monitor_end_date": "2026-10-09",
+        "expire_date": "2026-10-12",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -82,7 +101,26 @@
       "price_condition": "该股为20cm涨停股，次日高开追高风险极大。介入条件：竞价开盘幅度在-3%至+2%之间、量比>1.8；若竞价高开超过+5%则坚决不追、等分时回踩75.70元附近若缩量止跌再考虑右侧低吸；若低开跌破71元且板块无第二只标的跟上，则视为一日游、直接放弃。目标位参考板块内高度，止损设71元下方。",
       "k_features": "9月29日20cm涨停、全天零炸板、换手10.19%处于健康区间，封板质量优于同方向10cm标的；均线呈多头排列，前期已有资金反复活跃，属涨价链弹性最大高端环节。",
       "market_cap": "约 101.0 亿(流通) / 101.0 亿(总)",
-      "pct_change_5d": "近5日 +3.40%"
+      "pct_change_5d": "近5日 +3.40%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-09-30",
+        "monitor_start_date": "2026-10-08",
+        "monitor_end_date": "2026-10-09",
+        "expire_date": "2026-10-12",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -94,7 +132,26 @@
       "price_condition": "订单公告属实质性利好，警惕竞价一步到位高开。介入条件：竞价开盘幅度在-2%至+3%之间、量比>1.5；若高开超过+5%则不追、等分时回踩不破均价线再低吸；若平开或小幅低开、分时放量翻红可右侧介入；止损设买入价下方5%，不宜重仓押注单一订单。",
       "k_features": "订单公告前呈震荡蓄势形态，均线趋于黏合；公告落地后量能有望温和放大，若在21日均线附近企稳温和放量则为最佳介入形态。",
       "market_cap": "约 220.6 亿(流通) / 232.1 亿(总)",
-      "pct_change_5d": "近5日 -12.11%"
+      "pct_change_5d": "近5日 -12.11%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-09-30",
+        "monitor_start_date": "2026-10-08",
+        "monitor_end_date": "2026-10-09",
+        "expire_date": "2026-10-12",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

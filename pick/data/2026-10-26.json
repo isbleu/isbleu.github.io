@@ -57,7 +57,26 @@
       "price_condition": "存储大票波动大，若竞价高开超4%则放弃追高；以平开至+3%区间、量比>1.2、分时站稳均价线为低吸条件；若随大盘回踩不破5日线则右侧加,盘中冲高不追。",
       "k_features": "上周五放量+7.93%突破近期平台，站上短中期均线、呈多头初排列；成交额近200亿、主力净流入8.14%筹码未见派发，底部阳线放量、量价健康。[数据待二次校验]",
       "market_cap": "约 1929.5 亿(流通) / 29088.3 亿(总)",
-      "pct_change_5d": "近5日 -4.82%"
+      "pct_change_5d": "近5日 -4.82%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.38,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 41.89,
+        "ref_price_type": "开盘价",
+        "sl_price": 40.42,
+        "act_price": 43.98,
+        "lock_price": 42.23,
+        "buy_date": "2026-10-26",
+        "monitor_start_date": "2026-10-27",
+        "monitor_end_date": "2026-10-28",
+        "expire_date": "2026-10-29",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -69,7 +88,26 @@
       "price_condition": "因物理AI周末被吹爆，竞价高开超5%坚决不追；以盘中分歧回踩、翻红站稳均价线，或低开-2%以内企稳、量比>2且分时承接有力为低吸条件；弱势缩量则观望，不博高开。",
       "k_features": "低位温和放量、股价贴近21日均线企稳、底部阳多阴少，估值低位有安全垫支撑，筹码未见高位松动，符合‘低位低吸’形态。[数据待二次校验]",
       "market_cap": "约 48.6 亿(流通) / 48.6 亿(总)",
-      "pct_change_5d": "近5日 +6.56%"
+      "pct_change_5d": "近5日 +6.56%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-10-26",
+        "monitor_start_date": "2026-10-27",
+        "monitor_end_date": "2026-10-28",
+        "expire_date": "2026-10-29",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -81,7 +119,26 @@
       "price_condition": "竞价-1%至+3%、量比>1.3且分时温和放量为佳；突破前高可轻仓跟随，缩量回踩5日线低吸为主；高开超4%不追。",
       "k_features": "均线多头初排列、沿21日线温和放量上行、底部阳多阴少，Q3业绩兑现支撑下筹码结构健康,未见高位补跌。[数据待二次校验]",
       "market_cap": "约 209.9 亿(流通) / 222.3 亿(总)",
-      "pct_change_5d": "近5日 -2.97%"
+      "pct_change_5d": "近5日 -2.97%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.67,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 48.03,
+        "ref_price_type": "开盘价",
+        "sl_price": 46.35,
+        "act_price": 50.43,
+        "lock_price": 48.41,
+        "buy_date": "2026-10-26",
+        "monitor_start_date": "2026-10-27",
+        "monitor_end_date": "2026-10-28",
+        "expire_date": "2026-10-29",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

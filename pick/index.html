@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- MarkedJS (Markdown Parser) -->
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <!-- Chart.js (Strategy NAV Chart) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <!-- Custom Style Sheet -->
   <link rel="stylesheet" href="index.css">
 </head>
@@ -35,7 +37,7 @@
           <i class="fa-solid fa-file-lines"></i> 每日决策报告
         </button>
         <button class="view-tab-btn" id="tab-btn-tracker">
-          <i class="fa-solid fa-chart-line"></i> 📊 战法实盘追踪与胜率
+          <i class="fa-solid fa-chart-line"></i> 📊 五号策略实盘追踪
         </button>
       </div>
 
@@ -164,87 +166,96 @@
       </section>
     </main>
 
-    <!-- 视图 2：实盘跟踪与历史胜率复盘看板 -->
+    <!-- 视图 2：五号策略实盘追踪与收益复盘看板 -->
     <main class="app-main tracker-view" id="tracker-content" style="display: none;">
-      <!-- KPI 胜率与统计卡片 -->
+      <!-- 策略规则与数据口径横幅 -->
+      <section class="card glass-card strategy-banner">
+        <div class="strategy-banner-left">
+          <div class="strategy-badge-row">
+            <span class="strategy-pill primary"><i class="fa-solid fa-bolt"></i> 五号策略（极简双档 1/4 回撤版）</span>
+            <span class="strategy-pill" id="strategy-date-range">区间加载中...</span>
+            <span class="strategy-pill" id="strategy-bench-label">基准：中证500 (sh000905)</span>
+          </div>
+          <p class="strategy-rule-desc" id="strategy-rule-desc">
+            5号标准档 (ATR≤8%): 止损 -3.5% / 激活 +5.0% / 1/4回撤 1.25% / 保本 +0.8% &nbsp;|&nbsp;
+            8号高波档 (ATR&gt;8%): 止损 -5.0% / 激活 +8.0% / 1/4回撤 2.00% / 保本 +1.2% &nbsp;|&nbsp;
+            轮动周期：T日开盘买，T+1~T+2 5分钟跟踪，T+3开盘轮动
+          </p>
+        </div>
+        <div class="strategy-banner-right">
+          <span class="strategy-update-time" id="strategy-updated-at">更新时间: --</span>
+        </div>
+      </section>
+
+      <!-- 核心绩效 KPI 卡片 -->
       <section class="tracker-kpi-grid">
         <div class="kpi-card glass-card">
-          <div class="kpi-icon win-bg"><i class="fa-solid fa-trophy"></i></div>
+          <div class="kpi-icon win-bg"><i class="fa-solid fa-sack-dollar"></i></div>
           <div class="kpi-info">
-            <span class="kpi-label">战法整体胜率</span>
-            <div class="kpi-value highlight-green" id="stat-win-rate">--%</div>
-            <span class="kpi-sub" id="stat-win-ratio">盈利 / 总计样本</span>
+            <span class="kpi-label">五号策略累计收益</span>
+            <div class="kpi-value" id="stat-total-ret">--%</div>
+            <span class="kpi-sub" id="stat-end-equity">期末净资产: -- 元</span>
           </div>
         </div>
         <div class="kpi-card glass-card">
-          <div class="kpi-icon gain-bg"><i class="fa-solid fa-arrow-trend-up"></i></div>
+          <div class="kpi-icon gain-bg"><i class="fa-solid fa-chart-area"></i></div>
           <div class="kpi-info">
-            <span class="kpi-label">平均 5 日最高冲高</span>
-            <div class="kpi-value text-color-green" id="stat-avg-gain">+--%</div>
-            <span class="kpi-sub">潜在最大波段获利</span>
+            <span class="kpi-label">相对中证500超额 (Alpha)</span>
+            <div class="kpi-value" id="stat-alpha">--%</div>
+            <span class="kpi-sub" id="stat-bench-ret">中证500同期: --%</span>
           </div>
         </div>
         <div class="kpi-card glass-card">
-          <div class="kpi-icon loss-bg"><i class="fa-solid fa-shield-heart"></i></div>
+          <div class="kpi-icon loss-bg"><i class="fa-solid fa-shield-halved"></i></div>
           <div class="kpi-info">
-            <span class="kpi-label">平均 5 日最大回撤</span>
-            <div class="kpi-value text-color-red" id="stat-avg-loss">---%</div>
-            <span class="kpi-sub">风控安全边际参考</span>
+            <span class="kpi-label">最大回撤 (MaxDD)</span>
+            <div class="kpi-value text-color-blue" id="stat-max-dd">--%</div>
+            <span class="kpi-sub" id="stat-risk-ratios">夏普: -- | 卡玛: --</span>
           </div>
         </div>
         <div class="kpi-card glass-card">
-          <div class="kpi-icon rank-bg"><i class="fa-solid fa-medal"></i></div>
+          <div class="kpi-icon rank-bg"><i class="fa-solid fa-scale-balanced"></i></div>
           <div class="kpi-info">
-            <span class="kpi-label">首选 Top 1 胜率</span>
-            <div class="kpi-value text-color-blue" id="stat-top1-win">--%</div>
-            <span class="kpi-sub" id="stat-rank-breakdown">Top2: --% | Top3: --%</span>
+            <span class="kpi-label">胜率 / 盈亏比 (赔率)</span>
+            <div class="kpi-value text-color-yellow" id="stat-win-pl">--% / --</div>
+            <span class="kpi-sub" id="stat-expectancy">平均赢/输: -- / -- | 期望: --</span>
           </div>
         </div>
       </section>
 
-      <!-- 历史跟踪明细表格 -->
+      <!-- 净值收益走势图 (vs 中证500) -->
       <section class="card glass-card tracker-table-card">
         <div class="card-header tracker-header-flex">
-          <h2><i class="fa-solid fa-list-ol header-icon"></i>历史推荐标的实盘收益与走势追踪</h2>
-          <div class="tracker-filters">
-            <input type="text" id="tracker-search" class="custom-input" placeholder="🔍 搜索股票/代码/主线方向...">
-            <select id="tracker-status-filter" class="custom-select">
-              <option value="ALL">全部状态</option>
-              <option value="WIN">🟢 超预期冲高 (WIN)</option>
-              <option value="DRAW">🟡 震荡蓄势 (DRAW)</option>
-              <option value="LOSS">🔴 回撤走弱 (LOSS)</option>
-              <option value="PENDING">⏳ 跟踪中 (PENDING)</option>
-            </select>
-          </div>
+          <h2><i class="fa-solid fa-chart-line header-icon"></i>策略累计收益率曲线 vs 中证500基准 (5分钟高精度撮合)</h2>
+          <span class="chart-coverage-note" id="strategy-coverage-note">5分钟路径覆盖率: 100%</span>
         </div>
         <div class="card-body">
-          <div class="table-container">
-            <table class="modern-table tracker-table">
-              <thead>
-                <tr>
-                  <th>决策日期</th>
-                  <th>排名</th>
-                  <th>股票代码</th>
-                  <th>股票名称</th>
-                  <th class="col-direction">所属主线 / 方向</th>
-                  <th>评分</th>
-                  <th>开盘买入价</th>
-                  <th>T日收盘</th>
-                  <th>T+1收益</th>
-                  <th>T+3收益</th>
-                  <th>3日最高冲高</th>
-                  <th>3日最大回撤</th>
-                  <th>5日最高冲高</th>
-                  <th>5日最大回撤</th>
-                  <th>实盘走势状态</th>
-                </tr>
-              </thead>
-              <tbody id="tracker-table-body">
-                <tr>
-                  <td colspan="15" class="text-center text-muted">正在加载历史跟踪数据...</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="chart-wrapper">
+            <canvas id="strategy-nav-chart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <!-- 当前在途持仓 / 今日待开盘队列 -->
+      <section class="card glass-card tracker-table-card" id="active-holdings-card" style="display: none;">
+        <div class="card-header tracker-header-flex">
+          <h2><i class="fa-solid fa-crosshairs header-icon"></i>当前在途持仓与止盈止损监控</h2>
+          <span class="text-muted" style="font-size: 12.5px;">三槽位滚动持仓，T+1起盘中实时触发止盈/止损</span>
+        </div>
+        <div class="card-body">
+          <div id="active-holdings-grid" class="active-holdings-grid"></div>
+        </div>
+      </section>
+
+      <!-- 按月折叠操作明细 (默认展开最新月份) -->
+      <section class="card glass-card tracker-table-card">
+        <div class="card-header tracker-header-flex">
+          <h2><i class="fa-solid fa-calendar-check header-icon"></i>月度收益归因与每日个股操作明细</h2>
+          <span class="text-muted" style="font-size: 12.5px;">点击月份栏可展开 / 折叠每日操作流水（默认展开最新月份）</span>
+        </div>
+        <div class="card-body">
+          <div id="monthly-accordion-container" class="monthly-accordion-container">
+            <div class="text-center text-muted" style="padding: 32px;">正在加载五号策略月度追踪数据...</div>
           </div>
         </div>
       </section>

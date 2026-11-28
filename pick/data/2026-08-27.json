@@ -52,7 +52,26 @@
       "price_condition": "竞价高开0%-3%以内且量比>2可轻仓试错参与；若高开超5%则坚决不追，等待回踩分时均线或盘中翻绿缩量企稳后的右侧低吸；若平开/低开则等翻红并站上昨日收盘价再介入。核心原则是'业绩兑现龙头不追涨停、回踩右侧才上'，以防英伟达利好高开低走。",
       "k_features": "经8月中旬连续阴跌后于525-530一带止跌企稳，8/26温和放量中阳反弹，K线回到5日、10日均线附近，量价配合良性，未出现顶部连板博弈，筹码结构相对干净。",
       "market_cap": "约 5001.7 亿(流通) / 5560.0 亿(总)",
-      "pct_change_5d": "近5日 -3.09%"
+      "pct_change_5d": "近5日 -3.09%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 7.52,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 406.0,
+        "ref_price_type": "开盘价",
+        "sl_price": 391.79,
+        "act_price": 426.3,
+        "lock_price": 409.25,
+        "buy_date": "2026-08-27",
+        "monitor_start_date": "2026-08-28",
+        "monitor_end_date": "2026-08-31",
+        "expire_date": "2026-09-01",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -64,7 +83,26 @@
       "price_condition": "8/26已涨停，今日若高开超5%坚决不追（涨停次日高开兑现风险大），等待回踩至昨日涨停价附近（约190元）或分时缩量企稳后的低吸；若大幅低开-3%以下则先观察承接，待缩量回踩5日线企稳、出现右侧放量再介入。该标的属弹性博弈，仓位宜轻、严格止损。",
       "k_features": "中报披露后连续走强，8/26放量涨停收190.85，短期站上所有均线呈多头排列，但涨停次日博弈激烈、波动加大，筹码换手充分（五日换手率较高），短线处于强势但需防高位分歧。",
       "market_cap": "约 526.0 亿(流通) / 702.8 亿(总)",
-      "pct_change_5d": "近5日 +13.97%"
+      "pct_change_5d": "近5日 +13.97%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-08-27",
+        "monitor_start_date": "2026-08-28",
+        "monitor_end_date": "2026-08-31",
+        "expire_date": "2026-09-01",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -76,7 +114,26 @@
       "price_condition": "8/24大跌后处于超跌反弹窗口，今日若高开2%以内且量比>1.5可轻仓试错；若高开超4%则追高需谨慎（存储波动剧烈），更优策略是等回踩不破381前低后的放量右侧确认再介入；严格设止损，跌破前低离场。",
       "k_features": "8/24放量长阴-6.70%跌破20日线，RSI低位（34附近）、MACD柱收敛，属超跌形态；今日受存储涨价+英伟达财报利好驱动存在反抽需求，但需放量站稳20日线方能确认企稳，否则仅视为弱势反抽。",
       "market_cap": "约 2623.8 亿(流通) / 2754.3 亿(总)",
-      "pct_change_5d": "近5日 -2.78%"
+      "pct_change_5d": "近5日 -2.78%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.36,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 397.01,
+        "ref_price_type": "开盘价",
+        "sl_price": 383.11,
+        "act_price": 416.86,
+        "lock_price": 400.19,
+        "buy_date": "2026-08-27",
+        "monitor_start_date": "2026-08-28",
+        "monitor_end_date": "2026-08-31",
+        "expire_date": "2026-09-01",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

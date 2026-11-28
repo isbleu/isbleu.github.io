@@ -56,7 +56,26 @@
       "price_condition": "竞价开盘幅度在-2%至+1%之间、量比>1.2可关注；长鑫利好或引发高开，若高开超3%坚决不追、耐心等回踩。分时回踩不破395/390元支撑且缩量企稳可右侧低吸；若放量跌破390元则放弃。稳健走法是'高开低走借势洗一洗'，只要不暴量即问题不大，深水性价比优先。",
       "k_features": "8/28收396.82元、-3.50%，近5日-2.99%，从52周高846回撤53%后处于区间中部；8/27+4.76%放量、8/28回吐，K线呈涨势中段回调，底部未破390元支撑，筹码结构偏健康、无高位连板风险。",
       "market_cap": "约 2652.7 亿(流通) / 2784.7 亿(总)",
-      "pct_change_5d": "近5日 -2.99%"
+      "pct_change_5d": "近5日 -2.99%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 5.65,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 387.06,
+        "ref_price_type": "开盘价",
+        "sl_price": 373.51,
+        "act_price": 406.41,
+        "lock_price": 390.16,
+        "buy_date": "2026-08-31",
+        "monitor_start_date": "2026-09-01",
+        "monitor_end_date": "2026-09-02",
+        "expire_date": "2026-09-03",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -68,7 +87,26 @@
       "price_condition": "因8/27已大涨+8.43%且8/28随PCB回调，今日不宜追高。竞价-3%至0%之间、或分时回踩21日均线附近企稳且缩量可低吸；若高开超2%则放弃，耐心等回踩。量比>1、分时承接有力（不破前低）为介入信号。",
       "k_features": "8/27收盘140.97元、+8.43%，年内+98.5%，52周高位附近（距历史高-26.5%）；8/28随PCB/半导体板块回调（胜宏科技-8%），K线在高位放量后回踩，需等缩量企稳，短线波动率偏高。",
       "market_cap": "约 3512.7 亿(流通) / 3537.8 亿(总)",
-      "pct_change_5d": "近5日 +9.68%"
+      "pct_change_5d": "近5日 +9.68%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.67,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 141.0,
+        "ref_price_type": "开盘价",
+        "sl_price": 136.06,
+        "act_price": 148.05,
+        "lock_price": 142.13,
+        "buy_date": "2026-08-31",
+        "monitor_start_date": "2026-09-01",
+        "monitor_end_date": "2026-09-02",
+        "expire_date": "2026-09-03",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -80,7 +118,26 @@
       "price_condition": "竞价-1%至+1%之间、温和放量即可关注；分时不破19元支撑可低吸，属防守低位标的，温和低吸为主，不追涨。若放量站稳20元则趋势转强、可顺势加码。",
       "k_features": "股价约19元，低位窄幅震荡，52周区间17.32-24.29元，筹码集中在低位；近期随大盘温和波动，无高位连板、无大幅透支，K线呈底部企稳待突破形态，防守属性突出。",
       "market_cap": "约 1618.6 亿(流通) / 1756.2 亿(总)",
-      "pct_change_5d": "近5日 +1.60%"
+      "pct_change_5d": "近5日 +1.60%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-08-31",
+        "monitor_start_date": "2026-09-01",
+        "monitor_end_date": "2026-09-02",
+        "expire_date": "2026-09-03",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

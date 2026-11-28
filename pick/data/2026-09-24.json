@@ -70,7 +70,26 @@
       "price_condition": "竞价开盘幅度控制在-2%至+3%之间，量比需大于2.5；若高开幅度超过+5%则坚决放弃追高（规避节前脉冲式拉升后估值修正）；若低开在-3%以内且分时快速翻红、站稳均价线，可右侧轻仓低吸；若开盘即冲高回落跌破当日均价线，则放弃，等待回踩企稳。",
       "k_features": "近期连续放量20cm涨停、短期处于相对高位，量价齐升但需防冲高回落；筹码换手较为充分、机构主导特征明显，属于『资金型』而非纯情绪标的，务必以量能与分时承接为介入前提。",
       "market_cap": "约 128.6 亿(流通) / 128.6 亿(总)",
-      "pct_change_5d": "近5日 +50.09%"
+      "pct_change_5d": "近5日 +50.09%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.93,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 111.87,
+        "ref_price_type": "开盘价",
+        "sl_price": 107.95,
+        "act_price": 117.46,
+        "lock_price": 112.76,
+        "buy_date": "2026-09-24",
+        "monitor_start_date": "2026-09-28",
+        "monitor_end_date": "2026-09-29",
+        "expire_date": "2026-09-30",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -82,7 +101,26 @@
       "price_condition": "竞价开盘幅度-1%至+2%之间，量比大于1.5；因大市值机构票、波动相对温和，可在回踩21日均线附近分批低吸；若高开超过+4%则不追，等回踩确认支撑；若跟随大盘低开-3%以内且量能地量，可视为节前低吸窗口。",
       "k_features": "大市值科创板标的，前期未出现连续暴涨、位置相对健康；股价在21日均线附近温和放量、底部结构逐步修复，底部阳多阴少，属于低吸型而非追涨型标的。",
       "market_cap": "约 711.0 亿(流通) / 822.3 亿(总)",
-      "pct_change_5d": "近5日 +4.49%"
+      "pct_change_5d": "近5日 +4.49%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-09-24",
+        "monitor_start_date": "2026-09-28",
+        "monitor_end_date": "2026-09-29",
+        "expire_date": "2026-09-30",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -94,7 +132,26 @@
       "price_condition": "竞价开盘幅度-2%至+2%之间，量比大于1.5；玻璃基板属偏主题方向，需以订单与放量验证，建议以回踩低吸为主、不追高；若开盘冲高超过+5%则放弃，若低开后企稳翻红可轻仓右侧介入。",
       "k_features": "股价处于相对中位，前期未大幅透支；需关注量能是否温和放大与均线多头排列的形成，底部结构尚在修复中，属于主题弹性标的，仓位从严控制。",
       "market_cap": "约 232.0 亿(流通) / 369.1 亿(总)",
-      "pct_change_5d": "近5日 +9.94%"
+      "pct_change_5d": "近5日 +9.94%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-09-24",
+        "monitor_start_date": "2026-09-28",
+        "monitor_end_date": "2026-09-29",
+        "expire_date": "2026-09-30",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

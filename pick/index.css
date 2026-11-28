@@ -932,3 +932,426 @@ body {
   color: #10b981;
 }
 
+/* ==========================================================================
+   五号策略实盘追踪、月度折叠看板与每日闭环交易计划卡片样式
+   ========================================================================== */
+
+.ret-up {
+  color: #f87171 !important;
+  font-weight: 700;
+}
+
+.ret-down {
+  color: #34d399 !important;
+  font-weight: 700;
+}
+
+/* --- 每日选股详情内的闭环交易计划卡片 --- */
+.trade-plan-box {
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin: 14px 0 18px;
+}
+
+.trade-plan-box.primary-plan {
+  border-color: rgba(244, 63, 94, 0.45);
+  background: linear-gradient(135deg, rgba(244, 63, 94, 0.08), rgba(15, 23, 42, 0.72));
+}
+
+.trade-plan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.trade-plan-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-title);
+  font-size: 14px;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.trade-plan-title i {
+  color: #fbbf24;
+}
+
+.primary-exec-badge {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  background: rgba(244, 63, 94, 0.2);
+  color: #fda4af;
+  border: 1px solid rgba(244, 63, 94, 0.4);
+}
+
+.ref-exec-badge {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  background: rgba(148, 163, 184, 0.15);
+  color: #cbd5e1;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+.trade-plan-tags {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.atr-tag {
+  font-size: 12px;
+  color: #94a3b8;
+  font-family: monospace;
+}
+
+.tier-badge {
+  display: inline-block;
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+.tier-badge-std {
+  background: rgba(56, 189, 248, 0.16);
+  color: #7dd3fc;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+}
+
+.tier-badge-high {
+  background: rgba(245, 158, 11, 0.18);
+  color: #fcd34d;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+}
+
+.trade-plan-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.tp-cell {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 9px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.tp-label {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.tp-val {
+  font-family: var(--font-title);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.tp-sl .tp-val { color: #34d399; }
+.tp-act .tp-val { color: #f87171; }
+.tp-cb .tp-val { color: #fbbf24; }
+.tp-lock .tp-val { color: #60a5fa; }
+
+.tp-sub {
+  font-size: 11px;
+  color: #cbd5e1;
+}
+
+.trade-plan-timeline {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: rgba(30, 41, 59, 0.55);
+  border: 1px dashed rgba(148, 163, 184, 0.25);
+  font-size: 12px;
+  color: #e2e8f0;
+}
+
+.tp-step {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tp-step-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.tp-step-dot.buy { background: #60a5fa; }
+.tp-step-dot.track { background: #fbbf24; }
+.tp-step-dot.exit { background: #f43f5e; }
+
+.tp-step-arrow {
+  color: #64748b;
+  font-size: 11px;
+}
+
+/* --- 策略追踪横幅与走势图 --- */
+.strategy-banner {
+  grid-column: 1 / -1;
+  padding: 16px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.strategy-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.strategy-pill {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 16px;
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  color: #cbd5e1;
+}
+
+.strategy-pill.primary {
+  background: rgba(244, 63, 94, 0.16);
+  border-color: rgba(244, 63, 94, 0.4);
+  color: #fda4af;
+  font-weight: 700;
+}
+
+.strategy-rule-desc {
+  font-size: 12.5px;
+  color: #94a3b8;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.strategy-update-time {
+  font-size: 12px;
+  color: #94a3b8;
+  font-family: monospace;
+}
+
+.chart-coverage-note {
+  font-size: 12px;
+  color: #7dd3fc;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  padding: 4px 10px;
+  border-radius: 14px;
+}
+
+.chart-wrapper {
+  position: relative;
+  height: 320px;
+  width: 100%;
+}
+
+/* --- 当前在途持仓卡片 --- */
+.active-holdings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+}
+
+.holding-mini-card {
+  background: rgba(15, 23, 42, 0.68);
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  border-radius: 10px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.holding-mini-card.pending-card {
+  border-color: rgba(245, 158, 11, 0.4);
+}
+
+.holding-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.holding-meta,
+.holding-levels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 12px;
+  color: #cbd5e1;
+}
+
+.holding-deadline {
+  font-size: 12px;
+  color: #94a3b8;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 6px;
+}
+
+/* --- 按月折叠面板 --- */
+.monthly-accordion-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.month-accordion-item {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+
+.month-accordion-item.active {
+  border-color: rgba(59, 130, 246, 0.45);
+}
+
+.month-accordion-header {
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  cursor: pointer;
+  background: rgba(30, 41, 59, 0.5);
+  user-select: none;
+}
+
+.month-accordion-header:hover {
+  background: rgba(30, 41, 59, 0.85);
+}
+
+.month-title-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.month-chevron {
+  color: #94a3b8;
+  font-size: 12px;
+  transition: transform 0.2s ease;
+}
+
+.month-accordion-item.active .month-chevron {
+  transform: rotate(90deg);
+  color: #60a5fa;
+}
+
+.month-label {
+  font-family: var(--font-title);
+  font-size: 16px;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.month-count-badge {
+  font-size: 12px;
+  padding: 2px 9px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #cbd5e1;
+}
+
+.month-stats-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.month-pill {
+  font-size: 12.5px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: #94a3b8;
+}
+
+.month-accordion-body {
+  display: none;
+  padding: 12px 16px 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.month-accordion-item.active .month-accordion-body {
+  display: block;
+}
+
+.strategy-trades-table th,
+.strategy-trades-table td {
+  white-space: nowrap;
+  padding: 9px 10px;
+  font-size: 12.5px;
+  text-align: center;
+}
+
+.exit-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 11.5px;
+  font-weight: 600;
+}
+
+.exit-tag-win {
+  background: rgba(244, 63, 94, 0.16);
+  color: #fda4af;
+  border: 1px solid rgba(244, 63, 94, 0.35);
+}
+
+.exit-tag-loss {
+  background: rgba(16, 185, 129, 0.16);
+  color: #6ee7b7;
+  border: 1px solid rgba(16, 185, 129, 0.35);
+}
+
+.exit-tag-rotate {
+  background: rgba(148, 163, 184, 0.16);
+  color: #cbd5e1;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+.exit-tag-hold {
+  background: rgba(56, 189, 248, 0.16);
+  color: #7dd3fc;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+}
+
+@media (max-width: 768px) {
+  .trade-plan-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .chart-wrapper {
+    height: 240px;
+  }
+}
+

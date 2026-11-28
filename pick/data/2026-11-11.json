@@ -56,7 +56,26 @@
       "price_condition": "因已20CM涨停、波动较大，今日不追高。竞价开盘幅度在-3%至+2%之间且量比>1.2、分时站稳前日均价线、承接有力则以轻仓低吸为主；若高开超5%一律放弃追高，等回踩5日均线缩量再考虑；跌破10日均线无条件止损。",
       "k_features": "20CM涨停强势封板、量价配合，属均线多头向上突破形态，但短期涨幅已大、需防高位分歧[流通市值与近5日涨幅待二次校验]",
       "market_cap": "约 175.9 亿(流通) / 186.4 亿(总)",
-      "pct_change_5d": "近5日 +29.06%"
+      "pct_change_5d": "近5日 +29.06%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "8号高波档",
+        "atr_pct": 8.52,
+        "sl_pct": -5.0,
+        "act_pct": 8.0,
+        "cb_pct": 2.0,
+        "lock_pct": 1.2,
+        "ref_price": 82.0,
+        "ref_price_type": "开盘价",
+        "sl_price": 77.9,
+        "act_price": 88.56,
+        "lock_price": 82.98,
+        "buy_date": "2026-11-11",
+        "monitor_start_date": "2026-11-12",
+        "monitor_end_date": "2026-11-13",
+        "expire_date": "2026-11-16",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -68,7 +87,26 @@
       "price_condition": "高位分歧、换手率达24.45%、游资流出，切忌追高。竞价低开-4%至0%且缩量企稳方可轻仓试错，量比<2、分时承接良好再介入；若高开超3%坚决不追；跌破分时均价线或5日均线止损。",
       "k_features": "放量涨停但换手极高（24.45%），属高位分歧加剧形态，需警惕获利盘兑现，仅宜低吸不宜追涨[流通市值待二次校验]",
       "market_cap": "约 63.2 亿(流通) / 88.8 亿(总)",
-      "pct_change_5d": "近5日 +22.44%"
+      "pct_change_5d": "近5日 +22.44%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "8号高波档",
+        "atr_pct": 8.81,
+        "sl_pct": -5.0,
+        "act_pct": 8.0,
+        "cb_pct": 2.0,
+        "lock_pct": 1.2,
+        "ref_price": 11.19,
+        "ref_price_type": "开盘价",
+        "sl_price": 10.63,
+        "act_price": 12.09,
+        "lock_price": 11.32,
+        "buy_date": "2026-11-11",
+        "monitor_start_date": "2026-11-12",
+        "monitor_end_date": "2026-11-13",
+        "expire_date": "2026-11-16",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -80,7 +118,26 @@
       "price_condition": "10%涨停后需低吸。竞价开盘-2%至+3%且量比>1.5、分时站稳均价线上方可介入；低开翻红确认右侧可参与；若高开超5%等回踩5日均线；跌破5日均线止损。",
       "k_features": "放量封死10%涨停、机构主导，底部温和放量转强形态，确定性较好但需防炸板[流通市值待二次校验]",
       "market_cap": "约 268.4 亿(流通) / 268.8 亿(总)",
-      "pct_change_5d": "近5日 +7.92%"
+      "pct_change_5d": "近5日 +7.92%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-11-11",
+        "monitor_start_date": "2026-11-12",
+        "monitor_end_date": "2026-11-13",
+        "expire_date": "2026-11-16",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

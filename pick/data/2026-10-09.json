@@ -52,7 +52,26 @@
       "price_condition": "竞价若低开0%至-3%区间（对应21.9-22.6元），量比≥1.5且分时承接有力（不破21.5元）可右侧低吸；若高开超过+4%（越过23.5元）则追高风险大，改为等盘中回踩22.6元（昨涨停价）企稳再介入；若低开破21.0元则暂停，观察分时是否带量翻红后再定。",
       "k_features": "10.8放量涨停突破前期平台，换手仅1.01%、封单1.80亿元，筹码高度锁定；站上22.62元则打开上行空间。",
       "market_cap": "约 865.9 亿(流通) / 1237.6 亿(总)",
-      "pct_change_5d": "近5日 +7.31%"
+      "pct_change_5d": "近5日 +7.31%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 5.4,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 23.07,
+        "ref_price_type": "开盘价",
+        "sl_price": 22.26,
+        "act_price": 24.22,
+        "lock_price": 23.25,
+        "buy_date": "2026-10-09",
+        "monitor_start_date": "2026-10-12",
+        "monitor_end_date": "2026-10-13",
+        "expire_date": "2026-10-14",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -64,7 +83,26 @@
       "price_condition": "竞价高开0%-2%（50.9-51.9元）且量比≥1.2可参与；若高开超过+5%（越过53.5元）不追，等回踩49.7元（昨最低）附近企稳低吸；若低开破49.0元则观望，跌破46.0元则确认涨价逻辑被否、坚决放弃。",
       "k_features": "10.8盘中触及涨停53.04元后回落收+5.60%、换手11%、成交57.95亿元显著放量，形成带长上影的放量阳线，需放量站稳50.9元方可确认强势。",
       "market_cap": "约 514.4 亿(流通) / 514.4 亿(总)",
-      "pct_change_5d": "近5日 -7.42%"
+      "pct_change_5d": "近5日 -7.42%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-10-09",
+        "monitor_start_date": "2026-10-12",
+        "monitor_end_date": "2026-10-13",
+        "expire_date": "2026-10-14",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -76,7 +114,26 @@
       "price_condition": "竞价平开至低开2%区间（3.15-3.21元）且量比≥1.5、分时守住3.10元可低吸；若高开超过+4%（越过3.34元）不追，等回踩3.10元企稳；若跌破3.05元则观望。",
       "k_features": "10.8放量涨6.29%、振幅16.49%、成交11.41亿元，低价小市值（3.21元）资金活跃度高，但震荡剧烈、需严格止损。",
       "market_cap": "约 63.5 亿(流通) / 64.0 亿(总)",
-      "pct_change_5d": "近5日 +1.26%"
+      "pct_change_5d": "近5日 +1.26%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-10-09",
+        "monitor_start_date": "2026-10-12",
+        "monitor_end_date": "2026-10-13",
+        "expire_date": "2026-10-14",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

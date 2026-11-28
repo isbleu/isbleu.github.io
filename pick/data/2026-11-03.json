@@ -57,7 +57,26 @@
       "price_condition": "竞价开在-1.5%至+2%区间且量比>1.3、分时站稳均价线上方可右侧介入；若高开>4%则放弃追高、等回踩17.90-18.20元区间再观察；若受外围情绪低开>-3%，须等分时翻红放量承接后再介入，跌破昨日收盘17.60元下方则观望不接。",
       "k_features": "11/2放量+6.31%收18.71元，成交86.46亿、换手约3%，站上短期均线，量价配合温和；估值处历史极低分位，底部区域性价比突出。",
       "market_cap": "约 2505.7 亿(流通) / 2960.3 亿(总)",
-      "pct_change_5d": "近5日 +0.86%"
+      "pct_change_5d": "近5日 +0.86%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 2.99,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 18.5,
+        "ref_price_type": "开盘价",
+        "sl_price": 17.85,
+        "act_price": 19.43,
+        "lock_price": 18.65,
+        "buy_date": "2026-11-03",
+        "monitor_start_date": "2026-11-04",
+        "monitor_end_date": "2026-11-05",
+        "expire_date": "2026-11-06",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -69,7 +88,26 @@
       "price_condition": "严禁追高。竞价开在-3%至+2%区间、量比>1.5且分时有承接可低吸；若高开>5%一律放弃；回踩4.70元（11/2前收）为第一支撑，跌破4.60元（11/2最低）即技术失效离场；追高的坚决不做。",
       "k_features": "11/2自4.60元最低拉至5.64元涨停收盘（收在最高），振幅22.13%、换手17.34%、量比4.59，属大成交晚拉型；股价此前刚经历急跌（10/30前近5日-15.77%），当前处超跌反弹第一根阳线，需防次日高开回落。",
       "market_cap": "约 136.2 亿(流通) / 150.2 亿(总)",
-      "pct_change_5d": "近5日 +1.99%"
+      "pct_change_5d": "近5日 +1.99%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-11-03",
+        "monitor_start_date": "2026-11-04",
+        "monitor_end_date": "2026-11-05",
+        "expire_date": "2026-11-06",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -81,7 +119,26 @@
       "price_condition": "温和低吸为主：回踩前期平台/21日均线附近、量比>1.2且分时止跌企稳可分批介入；不高开追涨，若因AI硬件情绪拖累低开则右侧等翻红承接后低吸；单票仓位建议不超过组合的1/3，跌破近期平台下沿则止损。",
       "k_features": "近期在180-190元区间高位震荡，历史上曾在机器人催化下放量单日大涨（如10/23曾+14.67%至190.9元），换手约5%级别；需防高位补跌，仅作低吸。[待二次校验]",
       "market_cap": "约 167.8 亿(流通) / 206.4 亿(总)",
-      "pct_change_5d": "近5日 -8.11%"
+      "pct_change_5d": "近5日 -8.11%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-11-03",
+        "monitor_start_date": "2026-11-04",
+        "monitor_end_date": "2026-11-05",
+        "expire_date": "2026-11-06",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

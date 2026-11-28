@@ -57,7 +57,26 @@
       "price_condition": "竞价开盘幅度在-2%至+3%之间、量比≥1.5、分时承接有力方可分批低吸；若低开超4%则说明避险情绪仍在释放，等分时站稳均价线并翻红后右侧介入；若高开超5%则追高风险大，改为回踩21日均线不破再介入；严禁竞价一字或脉冲式追单。",
       "k_features": "K线在21日均线（约32元一线）附近企稳，近月缩量回踩后温和放量，呈均线粘合、底部阳多阴少形态，筹码相对干净，未出现高位连板断板特征。",
       "market_cap": "约 486.5 亿(流通) / 522.4 亿(总)",
-      "pct_change_5d": "近5日 -4.09%"
+      "pct_change_5d": "近5日 -4.09%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 3.2,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 31.77,
+        "ref_price_type": "开盘价",
+        "sl_price": 30.66,
+        "act_price": 33.36,
+        "lock_price": 32.02,
+        "buy_date": "2026-09-29",
+        "monitor_start_date": "2026-09-30",
+        "monitor_end_date": "2026-10-08",
+        "expire_date": "2026-10-09",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -69,7 +88,26 @@
       "price_condition": "竞价开盘幅度在-3%至+2%之间、量比≥1.3可分批低吸；若低开则等待分时止跌企稳并回补缺口后再介入；若高开超4%则等回踩不破前一日均价线再介入；不参与任何竞价脉冲追高。",
       "k_features": "股价自年内高点（约76元）大幅回撤至40元附近，已充分消化前期涨幅，近期在均线附近缩量筑底、呈现底部小阳线排列，筹码处于低位密集区，超跌后安全性较高。",
       "market_cap": "约 183.7 亿(流通) / 197.6 亿(总)",
-      "pct_change_5d": "近5日 -6.68%"
+      "pct_change_5d": "近5日 -6.68%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-09-29",
+        "monitor_start_date": "2026-09-30",
+        "monitor_end_date": "2026-10-08",
+        "expire_date": "2026-10-09",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -81,7 +119,26 @@
       "price_condition": "竞价开盘幅度在-1.5%至+2%之间可低吸底仓；作为防御配置，若竞价大幅低开则为主要防御承接点，可等分时企稳后买入；若高开超3%则不追、等回踩前收盘价附近再配置；仓位作底仓防守，不追求短线弹性。",
       "k_features": "股价在82-83元区间窄幅震荡，长期均线多头，量能温和、换手率仅0.2%左右，属典型低波动防御型筹码结构，回撤空间有限。",
       "market_cap": "约 5646.4 亿(流通) / 6256.5 亿(总)",
-      "pct_change_5d": "近5日 -2.84%"
+      "pct_change_5d": "近5日 -2.84%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-09-29",
+        "monitor_start_date": "2026-09-30",
+        "monitor_end_date": "2026-10-08",
+        "expire_date": "2026-10-09",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

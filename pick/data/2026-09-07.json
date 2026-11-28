@@ -56,7 +56,26 @@
       "price_condition": "竞价开盘幅度在-2%至+3%区间为最佳介入窗口；若高开超过4%则不追、等分时回踩均价线不破再低吸；若低开超过-4%则等盘中翻红或放量收回前一日低点再右侧介入。量比要求>1.5，分时承接有力（回踩不破开盘价）则分批介入，仓位控制在总仓位的10%-15%。",
       "k_features": "上周五半导体设备板块高开跳水但尾盘资金逆势抄底，K线呈'高开长上影后的缩量企稳'形态，接近21日均线附近，属于超跌反弹起点的温和放量结构；若今日能放量收复上周五开盘价则确认反弹趋势。",
       "market_cap": "约 1767.5 亿(流通) / 1817.1 亿(总)",
-      "pct_change_5d": "近5日 -7.08%"
+      "pct_change_5d": "近5日 -7.08%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.07,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 638.0,
+        "ref_price_type": "开盘价",
+        "sl_price": 615.67,
+        "act_price": 669.9,
+        "lock_price": 643.1,
+        "buy_date": "2026-09-07",
+        "monitor_start_date": "2026-09-08",
+        "monitor_end_date": "2026-09-09",
+        "expire_date": "2026-09-10",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -68,7 +87,26 @@
       "price_condition": "竞价开盘幅度在-2%至+2%区间为佳；若高开3%-5%需量比>2且分时放量不回落才可小仓跟随，否则等回踩；低开不超过-3%则观察竞价承接，翻红或缩量企稳后介入。仓位控制在总仓位8%-12%。",
       "k_features": "存储板块上周整体被半导体崩塌拖累回调，K线处于21日均线下方蓄势，今日受海外存储大涨映射有望跳空高开，若放量收复5日线则形成'超跌+催化共振'的反弹结构，需防高开低走、优先等分时确认。",
       "market_cap": "约 2148.7 亿(流通) / 2290.9 亿(总)",
-      "pct_change_5d": "近5日 -11.88%"
+      "pct_change_5d": "近5日 -11.88%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 5.83,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 194.88,
+        "ref_price_type": "开盘价",
+        "sl_price": 188.06,
+        "act_price": 204.62,
+        "lock_price": 196.44,
+        "buy_date": "2026-09-07",
+        "monitor_start_date": "2026-09-08",
+        "monitor_end_date": "2026-09-09",
+        "expire_date": "2026-09-10",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -80,7 +118,26 @@
       "price_condition": "竞价开盘幅度在-1%至+2%区间为佳；光纤属低位方向，低开-3%以内可考虑低吸（涨价逻辑独立于科技情绪）；高开超过4%则等回踩不破开盘价再介入。量比>1.2即可，仓位控制在总仓位8%-10%。",
       "k_features": "位置相对低、与AI硬件杀跌低相关，K线呈底部温和放量、阳多阴少结构，若今日放量站上短期均线则确认涨价逻辑的资金认可，属'低位+硬催化'的稳健型标的。",
       "market_cap": "约 1539.2 亿(流通) / 3136.1 亿(总)",
-      "pct_change_5d": "近5日 -10.31%"
+      "pct_change_5d": "近5日 -10.31%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 7.59,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 390.0,
+        "ref_price_type": "开盘价",
+        "sl_price": 376.35,
+        "act_price": 409.5,
+        "lock_price": 393.12,
+        "buy_date": "2026-09-07",
+        "monitor_start_date": "2026-09-08",
+        "monitor_end_date": "2026-09-09",
+        "expire_date": "2026-09-10",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

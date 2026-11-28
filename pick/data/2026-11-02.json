@@ -57,7 +57,26 @@
       "price_condition": "竞价开盘幅度在-2%至+3%之间为佳；若高开超4%不追（大成交薄封单易反复）；低开不破5日均线（约72-74区间）且分时快速翻红放量、量比>2.5则分批低吸；盘中急跌回踩21日均线附近承接有力可右侧介入，急拉至涨停上方不介入。",
       "k_features": "10/30放量涨停收77.07，换手仅2.81%筹码锁定极佳，站上21日均线(约70.78)但250日均线(约100.58)仍在上方压制，长期空头排列，属底部反转向上的第一波估值修复，量增价升形态健康。",
       "market_cap": "约 1133.8 亿(流通) / 1134.4 亿(总)",
-      "pct_change_5d": "近5日 +10.12%"
+      "pct_change_5d": "近5日 +10.12%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 3.18,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 77.7,
+        "ref_price_type": "开盘价",
+        "sl_price": 74.98,
+        "act_price": 81.59,
+        "lock_price": 78.32,
+        "buy_date": "2026-11-02",
+        "monitor_start_date": "2026-11-03",
+        "monitor_end_date": "2026-11-04",
+        "expire_date": "2026-11-05",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -69,7 +88,26 @@
       "price_condition": "竞价开盘幅度在-3%至+2%之间；若高开>4%不追（首板后炸板7次存在兑现压力）；低开回踩前一日均价94.71附近、不破93一线且分时企稳可低吸；量比>1.5、分时承接有力则介入，急拉不追。",
       "k_features": "10/30首板涨停收95.70，换手仅2.56%筹码锁定好，量比2.76温和放量，站上中短期均线，底部区域估值修复形态，位置远低于52周高点，非高位连板。",
       "market_cap": "约 391.0 亿(流通) / 505.9 亿(总)",
-      "pct_change_5d": "近5日 +10.74%"
+      "pct_change_5d": "近5日 +10.74%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-11-02",
+        "monitor_start_date": "2026-11-03",
+        "monitor_end_date": "2026-11-04",
+        "expire_date": "2026-11-05",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -81,7 +119,26 @@
       "price_condition": "因振幅16.57%分歧大，竞价开盘幅度在-3%至+2%之间；不追高于+4%的冲高；回踩10日均线(约28.03)或28元附近企稳、量比>1.5、分时右侧转强则分批低吸；若破27元一线则观望。",
       "k_features": "10/30宽幅震荡收29.24(+2.96%)，长下影线显示28元下方有承接，换手13.22%、成交31.18亿放量，近5日高位宽幅震荡（区间24-30），非连续连板、位置中性，属放量洗盘后的分歧修复形态。",
       "market_cap": "约 229.3 亿(流通) / 283.2 亿(总)",
-      "pct_change_5d": "近5日 +0.21%"
+      "pct_change_5d": "近5日 +0.21%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-11-02",
+        "monitor_start_date": "2026-11-03",
+        "monitor_end_date": "2026-11-04",
+        "expire_date": "2026-11-05",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

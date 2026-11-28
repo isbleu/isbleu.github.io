@@ -51,7 +51,26 @@
       "price_condition": "竞价开盘幅度在-1%至+3%之间、量比>2.0可轻仓右侧介入；若低开不破5日线并分时翻红则低吸；若竞价直接一字（3连板）则放弃追高，等炸板回踩不破前一日涨停价再视情况接；盘中冲高至+7%以上不追，防止3板后炸板。",
       "k_features": "两连阳封板（10/23、10/26均10%涨停），主力连续净流入（10/26主力净额2.7亿、超大单1.9亿），换手13.38%温和，均线呈多头排列，筹码锁定度较高。",
       "market_cap": "约 120.0 亿(流通) / 120.0 亿(总)",
-      "pct_change_5d": "近5日 +25.07%"
+      "pct_change_5d": "近5日 +25.07%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 7.0,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 12.9,
+        "ref_price_type": "开盘价",
+        "sl_price": 12.45,
+        "act_price": 13.55,
+        "lock_price": 13.0,
+        "buy_date": "2026-10-27",
+        "monitor_start_date": "2026-10-28",
+        "monitor_end_date": "2026-10-29",
+        "expire_date": "2026-10-30",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -63,7 +82,26 @@
       "price_condition": "竞价开盘幅度在-2%至+2%之间、量比>1.2可逢低右侧低吸；盘中站稳5日线且分时企稳则介入，跌破142元严格止损；若高开超4%则不追，等回踩145元附近缩量再考虑。",
       "k_features": "业绩披露日缩量回调-3.52%，处于前期上涨后的中继整理，回踩至10日均线附近，量能温和收缩，无一字跌停或恐慌性抛压，属健康回踩。",
       "market_cap": "约 687.9 亿(流通) / 687.9 亿(总)",
-      "pct_change_5d": "近5日 -6.36%"
+      "pct_change_5d": "近5日 -6.36%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-10-27",
+        "monitor_start_date": "2026-10-28",
+        "monitor_end_date": "2026-10-29",
+        "expire_date": "2026-10-30",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -75,7 +113,26 @@
       "price_condition": "严禁追高：竞价若高开>3%直接放弃；仅在盘中出现大分歧、回踩至600-620元区间（约-5%至-8%）且量能萎缩至昨日一半以下、分时企稳时轻仓试探；10/29财报披露前不宜重仓，财报不确定性为大分歧的核心来源。",
       "k_features": "近7日累计反弹65.89%，10/26收672元、最高737.50、换手37.72%，PE465倍严重高估，已触发异常波动公告，高位巨震、筹码高度松动，属典型高位分歧形态。",
       "market_cap": "约 202.2 亿(流通) / 2718.0 亿(总)",
-      "pct_change_5d": "近5日 +35.51%"
+      "pct_change_5d": "近5日 +35.51%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-10-27",
+        "monitor_start_date": "2026-10-28",
+        "monitor_end_date": "2026-10-29",
+        "expire_date": "2026-10-30",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

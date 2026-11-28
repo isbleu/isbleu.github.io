@@ -51,7 +51,26 @@
       "price_condition": "竞价开盘幅度-3%至+2%之间可关注，量比>1.2为佳。若低开-3%至-5%，观察开盘15分钟能否翻红且分时承接有力（每波回调不破前低），则可右侧低吸。若高开>5%则放弃追高，等高开回落后企稳再考虑。止损位设在近5日低点253元下方。目标仓位不超过总仓位的15%。",
       "k_features": "三连阳后小幅回调，量价温和。近期从153元低点V型反弹至281元，处于21日均线（约260元）上方运行。52周高377.77元，筹码密集区在200-300元区间。MACD金叉向上，短期动能偏多。",
       "market_cap": "约 250.8 亿(流通) / 389.6 亿(总)",
-      "pct_change_5d": "近5日 +2.04%"
+      "pct_change_5d": "近5日 +2.04%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "8号高波档",
+        "atr_pct": 8.64,
+        "sl_pct": -5.0,
+        "act_pct": 8.0,
+        "cb_pct": 2.0,
+        "lock_pct": 1.2,
+        "ref_price": 300.01,
+        "ref_price_type": "开盘价",
+        "sl_price": 285.01,
+        "act_price": 324.01,
+        "lock_price": 303.61,
+        "buy_date": "2026-08-21",
+        "monitor_start_date": "2026-08-24",
+        "monitor_end_date": "2026-08-25",
+        "expire_date": "2026-08-26",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -63,7 +82,26 @@
       "price_condition": "竞价开盘-2%至+4%可关注，量比>1.5为佳。阿里财报催化为增量信息，若开盘高开3%-6%且分时回踩不破开盘价，可于回踩时轻仓介入。若低开超过-4%则观察能否快速翻红，不翻红则放弃。目标仓位不超过总仓位的12%。止损位设在近10日均线下方。",
       "k_features": "中小市值标的，52周范围28.17-109.99元。阿里Capex催化为全新增量信息，此前股价未包含此预期。需结合当日盘面确认是否有资金明显介入（量能放大+分时承接有力）。",
       "market_cap": "约 233.3 亿(流通) / 238.0 亿(总)",
-      "pct_change_5d": "近5日 +18.43%"
+      "pct_change_5d": "近5日 +18.43%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-08-21",
+        "monitor_start_date": "2026-08-24",
+        "monitor_end_date": "2026-08-25",
+        "expire_date": "2026-08-26",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -75,7 +113,26 @@
       "price_condition": "竞价开盘-3%至+3%可关注，量比>1.0。中报超预期+高分红为增量利好，若开盘后分时回踩不破开盘价且量能温和放大，可轻仓介入。若高开>6%则放弃追高，等待回调至5日均线附近再考虑。目标仓位不超过总仓位的10%。严格止损，止损位设在390元（约-9%）。",
       "k_features": "年内涨幅巨大（+210%），7月经历-36.45%深度调整后8月反弹+22.80%。当前处于高位震荡平台，中报业绩为关键验证节点。筹码结构：机构持股集中度高，北向+QFII参与活跃。高位高波动特征明显，适合短线有纪律操作。",
       "market_cap": "约 407.3 亿(流通) / 1747.1 亿(总)",
-      "pct_change_5d": "近5日 -7.42%"
+      "pct_change_5d": "近5日 -7.42%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-08-21",
+        "monitor_start_date": "2026-08-24",
+        "monitor_end_date": "2026-08-25",
+        "expire_date": "2026-08-26",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [

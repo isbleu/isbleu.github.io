@@ -57,7 +57,26 @@
       "price_condition": "竞价开盘幅度在-2%至+4%之间为佳。若高开超过5%不追，防一字后抛压；若平开或小幅低开后在分时均线上方站稳、量比>1.8且承接有力可右侧介入。跌破13.35（前一日涨停价下方关键支撑）视为一日游失败、放弃。",
       "k_features": "首板实体阳线封死、零炸板、量比1.44温和放量，均线呈多头排列初期，底部阳多阴少，突破形态初现。10/19涨停价14.69，站稳则趋势延续。[待二次校验]",
       "market_cap": "约 70.5 亿(流通) / 78.2 亿(总)",
-      "pct_change_5d": "近5日 +9.63%"
+      "pct_change_5d": "近5日 +9.63%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.33,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": 15.18,
+        "ref_price_type": "开盘价",
+        "sl_price": 14.65,
+        "act_price": 15.94,
+        "lock_price": 15.3,
+        "buy_date": "2026-10-20",
+        "monitor_start_date": "2026-10-21",
+        "monitor_end_date": "2026-10-22",
+        "expire_date": "2026-10-23",
+        "is_primary_execution": true
+      }
     },
     {
       "rank": 2,
@@ -69,7 +88,26 @@
       "price_condition": "竞价开盘-3%至+2%均可，重点看低开后的右侧低吸：若低开高走翻红、分时量能温和放大且不破前日低点可介入；若高开超3%且量能背离则观望。缩量回踩5日线获支撑为最佳买点，切忌追高。",
       "k_features": "10/19收阴洗盘但成交放大（换手24.22%），量价背离式吸筹，K线在21日均线附近企稳、底部形态扎实，非高位追涨型，筹码位置相对健康。[待二次校验]",
       "market_cap": "约 147.0 亿(流通) / 147.0 亿(总)",
-      "pct_change_5d": "近5日 +21.78%"
+      "pct_change_5d": "近5日 +21.78%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "8号高波档",
+        "atr_pct": 8.94,
+        "sl_pct": -5.0,
+        "act_pct": 8.0,
+        "cb_pct": 2.0,
+        "lock_pct": 1.2,
+        "ref_price": 24.01,
+        "ref_price_type": "开盘价",
+        "sl_price": 22.81,
+        "act_price": 25.93,
+        "lock_price": 24.3,
+        "buy_date": "2026-10-20",
+        "monitor_start_date": "2026-10-21",
+        "monitor_end_date": "2026-10-22",
+        "expire_date": "2026-10-23",
+        "is_primary_execution": false
+      }
     },
     {
       "rank": 3,
@@ -81,7 +119,26 @@
       "price_condition": "竞价开盘-2%至+3%之间可观察。若高开超5%不追，防20CM后情绪退潮；若平开缩量回踩5日线且分时承接有力为低吸点，量比>1.5确认增量资金再介入。跌破前一日实体下沿放弃。",
       "k_features": "放量大阳逼近涨停，均线多头排列，TGV题材+K线突破形态，但当日换手22%筹码有松动，需观察次日能否有效换手再上攻。[待二次校验]",
       "market_cap": "约 59.0 亿(流通) / 59.3 亿(总)",
-      "pct_change_5d": "近5日 +11.49%"
+      "pct_change_5d": "近5日 +11.49%",
+      "trade_plan": {
+        "strategy_name": "五号策略（极简双档 1/4 回撤版）",
+        "tier": "5号标准档",
+        "atr_pct": 6.5,
+        "sl_pct": -3.5,
+        "act_pct": 5.0,
+        "cb_pct": 1.25,
+        "lock_pct": 0.8,
+        "ref_price": null,
+        "ref_price_type": "昨收参考",
+        "sl_price": null,
+        "act_price": null,
+        "lock_price": null,
+        "buy_date": "2026-10-20",
+        "monitor_start_date": "2026-10-21",
+        "monitor_end_date": "2026-10-22",
+        "expire_date": "2026-10-23",
+        "is_primary_execution": false
+      }
     }
   ],
   "excluded_stocks": [
