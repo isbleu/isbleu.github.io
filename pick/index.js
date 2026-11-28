@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const tabBtnTracker = document.getElementById("tab-btn-tracker");
 
   // 每日决策 DOM 元素
+  const dailyActionSubtitle = document.getElementById("daily-action-subtitle");
+  const dailyActionBody = document.getElementById("daily-action-body");
   const marketSummaryText = document.getElementById("market-summary-text");
   const badNewsTableBody = document.getElementById("bad-news-table-body");
   const catalystAccordion = document.getElementById("catalyst-accordion");
@@ -228,8 +230,87 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   }
 
+  function renderDailyActionChecklist(data) {
+    if (!dailyActionBody) return;
+    const actions = data.position_actions || [];
+    const top1 = (data.top_three_stocks && data.top_three_stocks[0]) || null;
+    const tp = top1 && top1.trade_plan ? top1.trade_plan : null;
+
+    if (dailyActionSubtitle) {
+      dailyActionSubtitle.textContent = `${data.date || "--"} 盘前指令 · 已有持仓 ${actions.length} 笔`;
+    }
+
+    let html = '<div class="action-list">';
+    if (actions.length === 0) {
+      html += `
+        <div class="action-empty-banner">
+          <i class="fa-solid fa-circle-check"></i>
+          <span>当前无在途老仓需要处理，今日开盘仅需按右侧“五号策略闭环计划”执行新选 Top 1 标的。</span>
+        </div>
+      `;
+    } else {
+      actions.forEach((act) => {
+        const urgCls = `urgency-${act.urgency || "normal"}`;
+        const tierCls = act.tier && act.tier.includes("8号") ? "tier-badge-high" : "tier-badge-std";
+        const retCls = act.unrealized_ret > 0 ? "ret-up" : act.unrealized_ret < 0 ? "ret-down" : "text-muted";
+        const retSign = act.unrealized_ret > 0 ? "+" : "";
+        html += `
+          <div class="action-item ${urgCls}">
+            <div class="action-item-top">
+              <div class="action-stock-info">
+                <span class="action-badge">${act.action_badge}</span>
+                <strong class="action-stock-name">${act.name}</strong>
+                <span class="font-mono text-muted">${act.code}</span>
+                <span class="tier-badge ${tierCls}">${act.tier}</span>
+                <span class="hold-day-pill">${act.hold_day_label || ""}</span>
+              </div>
+              <div class="action-ret-box">
+                <span class="text-muted" style="font-size: 12px;">买入 ${act.buy_date} @ ${Number(act.buy_price).toFixed(2)}元</span>
+                <span class="font-mono ${retCls}" style="margin-left: 10px;">昨收 ${Number(act.prev_close).toFixed(2)}元 (${retSign}${Number(act.unrealized_ret).toFixed(2)}%)</span>
+              </div>
+            </div>
+            <div class="action-metrics">
+              <span>今日防守止损价: <strong>${Number(act.stop_price).toFixed(2)}元</strong>${act.is_trailing ? " (已激活移动)" : ""}</span>
+              <span>移动激活价: <strong>${Number(act.act_price).toFixed(2)}元</strong></span>
+              <span>1/4回撤: <strong>${Number(act.cb_pct).toFixed(2)}%</strong></span>
+              <span>激活保底: <strong>${Number(act.lock_price).toFixed(2)}元</strong></span>
+              <span>T+3到期轮动: <strong>${act.expire_date} 09:30</strong></span>
+            </div>
+            <div class="action-instruction">${act.instruction}</div>
+          </div>
+        `;
+      });
+    }
+    html += "</div>";
+
+    if (top1 && tp) {
+      const top1TierCls = tp.tier && tp.tier.includes("8号") ? "tier-badge-high" : "tier-badge-std";
+      const refText = tp.ref_price ? `${tp.ref_price_type} ${Number(tp.ref_price).toFixed(2)}元` : "开盘价基准";
+      html += `
+        <div class="new-buy-strip">
+          <div class="new-buy-title">
+            <span class="primary-exec-badge">今日新开仓 Top 1</span>
+            <strong>${top1.name} (${top1.code})</strong>
+            <span class="tier-badge ${top1TierCls}">${tp.tier}</span>
+            <span class="text-muted font-mono">ATR14=${tp.atr_pct}% | ${refText}</span>
+          </div>
+          <div class="new-buy-params">
+            <span>硬止损 <strong>${tp.sl_pct}%</strong>${tp.sl_price ? ` (${tp.sl_price.toFixed(2)}元)` : ""}</span>
+            <span>移动激活 <strong>+${tp.act_pct}%</strong>${tp.act_price ? ` (${tp.act_price.toFixed(2)}元)` : ""}</span>
+            <span>1/4回撤 <strong>${tp.cb_pct}%</strong></span>
+            <span>跟踪期 <strong>${tp.monitor_start_date} ~ ${tp.monitor_end_date}</strong></span>
+            <span>最迟轮动 <strong>${tp.expire_date} 09:30</strong></span>
+          </div>
+        </div>
+      `;
+    }
+
+    dailyActionBody.innerHTML = html;
+  }
+
   // --- 4. 每日决策渲染逻辑 ---
   function renderDailyUI(data) {
+    renderDailyActionChecklist(data);
     marketSummaryText.textContent = data.market_summary || "暂无大盘评述";
 
     badNewsTableBody.innerHTML = "";
@@ -560,10 +641,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     (holdings || []).forEach((h) => {
       const card = document.createElement("div");
-      card.className = "holding-mini-card";
+      const urgCls = h.next_action_urgency ? `urgency-${h.next_action_urgency}` : "";
+      card.className = `holding-mini-card ${urgCls}`;
       const retHtml = formatReturnSpan(h.unrealized_ret);
       const profSign = h.unrealized_profit >= 0 ? "+" : "";
       const profCls = h.unrealized_profit >= 0 ? "ret-up" : "ret-down";
+      const nextAlertHtml = h.next_action_badge
+        ? `<div class="holding-next-alert">
+             <span class="action-badge">${h.next_action_badge} (${h.next_trading_day || ""})</span>
+             <p>${h.next_action_instruction || ""}</p>
+           </div>`
+        : "";
       card.innerHTML = `
         <div class="holding-top">
           <div>
@@ -582,6 +670,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <span>激活价: <strong>${h.act_price.toFixed(2)}元</strong></span>
           <span>回撤: <strong>${h.cb_pct}%</strong></span>
         </div>
+        ${nextAlertHtml}
         <div class="holding-deadline">最迟 T+3 到期轮动日: <strong>${h.expire_date} 09:30</strong></div>
       `;
       activeHoldingsGrid.appendChild(card);

@@ -57,6 +57,17 @@
 
     <!-- 视图 1：每日决策详情看板 -->
     <main class="app-main" id="main-content" style="display: none;">
+      <!-- 顶栏：今日实盘仓位处置与开盘执行清单（已有仓位 + 新股闭环） -->
+      <section class="card glass-card daily-action-card fade-in" id="daily-action-card">
+        <div class="card-header tracker-header-flex">
+          <h2><i class="fa-solid fa-clipboard-check header-icon"></i>零、今日实盘仓位处置与开盘执行清单 (五号策略闭环)</h2>
+          <span class="action-date-pill" id="daily-action-subtitle">盘前执行指令</span>
+        </div>
+        <div class="card-body" id="daily-action-body">
+          <div class="text-muted">正在加载仓位处置清单...</div>
+        </div>
+      </section>
+
       <!-- 第一大列：大局研判与市场排除 -->
       <section class="main-column col-left">
         <!-- 核心卡片 1：市场环境与模式判定 -->
